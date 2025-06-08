@@ -1,9 +1,10 @@
 import './App.css'
+import Landing_Page from "./components/Landing_Page/Landing_Page";
 
 function App() {
   return (
     <>
-      <h1 className="text-4xl font-bold text-center mt-10 mb-10">ایران سنس</h1>
+      <Landing_Page />
     </>
   );
 }
