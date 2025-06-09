@@ -1,7 +1,4 @@
 import React from 'react'
-import { data } from "../../helper/data"
-
-console.log(data);
 
 
 const Landing_page = () => {
