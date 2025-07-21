@@ -7,3 +7,7 @@ body{
     font-family: "IRANSansWeb";
 }
 
+#root{
+    width: 100%;
+    max-width: 1440px;
+}

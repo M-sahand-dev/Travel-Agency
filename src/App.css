@@ -2,6 +2,33 @@
 @import "../public/css/stylesheet.css";
 
 @theme {
+    /* color */
+    /* dark */
+    --color-dark-primary: #1e1e1e;
+    --color-dark-secondary: #404040;
+    --color-dark-tertiary: #515151;
+    --color-dark-quaternary: #2f2f2f;
+    /* blue */
+    --color-blue-primary: #5264ff;
+    --color-blue-secondary: #0098ea;
+    /* gary */
+    --color-gary-primary: #898989;
+    --color-gary-secondary: #e2e2e2;
+    --color-gary-tertiary: #a6a6a6;
+    --color-gray-quaternary: #40404040;
+    --color-gray-quinary: #d0d0d0;
+    /* orange */
+    --color-orange-primary: #ff782c;
+    --color-orange-secondary: rgba(255, 170, 124, 0.2);
+    --color-orange-tertiary: #ff782c40;
+    /* red */
+    --color-red-primary: #ff3b3b;
+    
+    --color-glases-primary: #ffffff5c;
+    /* radius */
+    --radius-5xl: 3rem;
+    --radius-6xl: 4rem;
+    /* font */
     --font-IRANSansWeb: "IRANSansWeb";
     --font-Rokh:"RokhFaNum Normal";
     --font-Roboto:"Roboto";
