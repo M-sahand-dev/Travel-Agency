@@ -1,1 +1,8 @@
 @import "tailwindcss";
+@import "../public/css/stylesheet.css";
+
+@theme {
+    --font-IRANSansWeb: "IRANSansWeb";
+    --font-Rokh:"RokhFaNum Normal";
+    --font-Roboto:"Roboto";
+}
