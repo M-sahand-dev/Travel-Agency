@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @import "../public/css/stylesheet.css";
 
+/* Change to data-set  */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
     /* color */
     /* dark */
@@ -11,6 +14,7 @@
     /* blue */
     --color-blue-primary: #5264ff;
     --color-blue-secondary: #0098ea;
+    --color-blue-tertiary: #4E30FF;
     /* gary */
     --color-gary-primary: #898989;
     --color-gary-secondary: #e2e2e2;
@@ -23,8 +27,8 @@
     --color-orange-tertiary: #ff782c40;
     /* red */
     --color-red-primary: #ff3b3b;
-    
-    --color-glases-primary: #ffffff5c;
+    /* white */
+    --color-white-primary: #FFFBFB;
     /* radius */
     --radius-5xl: 3rem;
     --radius-6xl: 4rem;

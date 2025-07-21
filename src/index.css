@@ -2,10 +2,6 @@
     transition: all 400ms ease-in-out;
 }
 
-body{
-    background-color: #FFFBFB;
-    font-family: "IRANSansWeb";
-}
 
 #root{
     width: 100%;
