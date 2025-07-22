@@ -30,6 +30,7 @@
     --color-red-primary: #ff3b3b;
     /* white */
     --color-white-primary: #FFFBFB;
+    --color-white-secondary: #FFFFFF40;
     /* radius */
     --radius-5xl: 3rem;
     --radius-6xl: 4rem;
