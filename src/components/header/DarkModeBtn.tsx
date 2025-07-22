@@ -1,14 +1,12 @@
 import type { JSX } from "react";
 import { FaRegMoon } from "react-icons/fa";
 import { MdOutlineWbSunny } from "react-icons/md";
+import type { DarkModeProps } from "../../types";
 
 export const DarkMode = ({
   onClick,
   toggleDarkMode,
-}: {
-  onClick: () => void;
-  toggleDarkMode: boolean;
-}): JSX.Element => {
+}: DarkModeProps): JSX.Element => {
   return (
     <button
       onClick={onClick}

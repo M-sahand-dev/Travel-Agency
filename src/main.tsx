@@ -3,13 +3,16 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "./App.tsx";
+import { LandingPage } from "./components";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
+          <Route index element={<LandingPage />} />
           <Route path="/" element={<App />} />
+          {/* Add other routes here as needed */}
         </Route>
       </Routes>
     </BrowserRouter>

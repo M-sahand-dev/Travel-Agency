@@ -3,16 +3,13 @@ import { IoIosArrowDown } from "react-icons/io";
 import { RiSearch2Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { BagBtn, Title, UserBtnPanel, DarkModeMobile } from "./index";
+import type { MenuResponsiveProps } from "../../types";
 
 export const MenuResponsive = ({
   isMenuOpen,
   isDarkMode,
   handleDarkModeToggle,
-}: {
-  isMenuOpen: boolean;
-  isDarkMode: boolean;
-  handleDarkModeToggle: () => void;
-}): JSX.Element => {
+}: MenuResponsiveProps): JSX.Element => {
   return (
     <div
       className={`z-[60] fixed top-[-1rem] ${!isMenuOpen ? "right-[-24rem]" : "right-[-1rem]"} dark:bg-dark-primary bg-white-primary h-screen p-8 lg:hidden flex flex-col gap-8 dark:shadow-tertiary shadow-primary `}>

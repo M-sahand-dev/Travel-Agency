@@ -1,14 +1,12 @@
 import type { JSX } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import type { ToggleBtnProps } from "../../types";
 
 export const ToggleBtn = ({
   onClick,
   isMenuOpen,
-}: {
-  onClick: () => void;
-  isMenuOpen: boolean;
-}): JSX.Element => {
+}: ToggleBtnProps): JSX.Element => {
   return (
     <button
       onClick={onClick}

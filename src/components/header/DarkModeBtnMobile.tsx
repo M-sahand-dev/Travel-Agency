@@ -1,14 +1,12 @@
 import type { JSX } from "react";
 import { FaRegMoon } from "react-icons/fa";
 import { MdOutlineWbSunny } from "react-icons/md";
+import type { DarkModeMobileProps } from "../../types";
 
 export const DarkModeMobile = ({
   onClick,
   isDarkMode,
-}: {
-  onClick: () => void;
-  isDarkMode: boolean;
-}): JSX.Element => {
+}: DarkModeMobileProps): JSX.Element => {
   return (
     <button
       onClick={onClick}

@@ -1,12 +1,7 @@
 import type { JSX } from "react";
+import type { ShapeProps } from "../../types";
 
-export const Shape = ({
-  isMenuOpen,
-  onClick,
-}: {
-  isMenuOpen: boolean;
-  onClick: () => void;
-}): JSX.Element => {
+export const Shape = ({ isMenuOpen, onClick }: ShapeProps): JSX.Element => {
   return (
     <div
       onClick={onClick}
