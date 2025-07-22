@@ -22,3 +22,9 @@ export interface ToggleBtnProps {
   onClick: () => void;
   isMenuOpen: boolean;
 }
+
+export interface IIconBar {
+  id: number;
+  icon: string;
+  title: string;
+}

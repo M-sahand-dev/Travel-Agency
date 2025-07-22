@@ -23,9 +23,9 @@
     --color-gray-quaternary: #40404040;
     --color-gray-quinary: #d0d0d0;
     /* orange */
-    --color-orange-primary: #ff782c;
-    --color-orange-secondary: rgba(255, 170, 124, 0.2);
-    --color-orange-tertiary: #ff782c40;
+    --color-orange-primary: #FF782C;
+    --color-orange-secondary: #FF782C40;
+    --color-orange-tertiary: #FFAA7C33;
     /* red */
     --color-red-primary: #ff3b3b;
     /* white */
@@ -42,4 +42,10 @@
     --font-IRANSansWeb: "IRANSansWeb";
     --font-Rokh:"RokhFaNum Normal";
     --font-Roboto:"Roboto";
+    /* font size */
+    --text-2xs: 0.625rem; /* 10px */
+    --text-xs: 0.75rem; /* 12px */
+    --text-sm: 15px; /* 14px */    
+    --text-base: 1rem; /* 16px */
+    --text-72:72px;
 }
