@@ -11,6 +11,7 @@
     --color-dark-secondary: #404040;
     --color-dark-tertiary: #515151;
     --color-dark-quaternary: #2f2f2f;
+    --color-dark-glass-contrast: #000000e6;
     /* blue */
     --color-blue-primary: #5264ff;
     --color-blue-secondary: #0098ea;
@@ -32,6 +33,10 @@
     /* radius */
     --radius-5xl: 3rem;
     --radius-6xl: 4rem;
+    /* shadow */
+    --shadow-primary :rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    --shadow-secondary: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    --shadow-tertiary: rgb(255 255 255 / 2%) 0px 1px 3px 0px, rgb(255 255 255 / 15%) 0px 0px 0px 1px;
     /* font */
     --font-IRANSansWeb: "IRANSansWeb";
     --font-Rokh:"RokhFaNum Normal";
