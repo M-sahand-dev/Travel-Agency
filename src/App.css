@@ -31,6 +31,7 @@
     /* white */
     --color-white-primary: #FFFBFB;
     --color-white-secondary: #FFFFFF40;
+    --color-white-tertiary: #FFFFFF66;
     /* radius */
     --radius-5xl: 3rem;
     --radius-6xl: 4rem;
@@ -45,7 +46,11 @@
     /* font size */
     --text-2xs: 0.625rem; /* 10px */
     --text-xs: 0.75rem; /* 12px */
-    --text-sm: 15px; /* 14px */    
+    --text-sm: 15px; /* 15px */  
+    --text-md: 1rem; /* 16px */
     --text-base: 1rem; /* 16px */
     --text-72:72px;
+    --text-76: 76px; /* 76px */
+    /* Gradient */
+    --color-gradent-primary: linear-gradient(to bottom, #FFFFFF 0%, rgba(228, 228, 228, 0.75) 75.1%, rgba(255, 255, 255, 0.61) 100%);
 }
