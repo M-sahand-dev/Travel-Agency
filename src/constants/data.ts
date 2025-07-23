@@ -33,3 +33,12 @@ export const dataHeroImg: dataHeroImgType[] = [
     city: "انتالیا",
   },
 ];
+
+export const cityNames: string[] = [
+  "تهران",
+  "دبی",
+  "اصفهان",
+  "استانبول",
+  "شیراز",
+  "کیف",
+];
