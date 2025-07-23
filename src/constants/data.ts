@@ -1,4 +1,4 @@
-import type { IIconBar, dataHeroImgType } from "../types";
+import type { IIconBar, dataHeroImgType, ProductTour } from "../types";
 
 export const iconBar: IIconBar[] = [
   { id: 1, icon: "⛺", title: "کمپ" },
@@ -41,4 +41,34 @@ export const cityNames: string[] = [
   "استانبول",
   "شیراز",
   "کیف",
+];
+
+export const productTour: ProductTour[] = [
+  {
+    id: 1,
+    title: "مالزی",
+    img: "/public/image/place/malezy.png",
+    numbers: 4.1,
+    time: "3 روز و 4 شب",
+    price: "85.000.000",
+    discount: 20,
+  },
+  {
+    id: 2,
+    title: "دبی",
+    img: "/public/image/place/Dubai .png",
+    numbers: 4.9,
+    time: "3 روز و 4 شب",
+    price: "65.000.000 ",
+    discount: 0,
+  },
+  {
+    id: 3,
+    title: "آنتالیا",
+    img: "/public/image/place/antalia.png",
+    numbers: 4.1,
+    time: "3 روز و 4 شب",
+    price: "45.000.000",
+    discount: 0,
+  },
 ];

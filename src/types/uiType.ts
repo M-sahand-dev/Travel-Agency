@@ -35,3 +35,13 @@ export interface dataHeroImgType {
   contry: string;
   city: string;
 }
+
+export interface ProductTour {
+  id: number;
+  title: string;
+  img: string;
+  numbers: number;
+  time: string;
+  price: string;
+  discount: number;
+}

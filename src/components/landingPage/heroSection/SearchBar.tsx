@@ -16,7 +16,7 @@ export const SearchBar = (): JSX.Element => {
 
   return (
     <div className="hidden lg:block absolute border border-dark-secondary bg-white dark:bg-dark-quinary dark:border-white-quaternary p-8 rounded-6xl z-50 left-24 right-24 bottom-[-4rem] max-xl:left-16 max-xl:right-16">
-      <div className="max-xl:text-base relative  flex items-center gap-8 justify-between *:flex *:gap-2 *:items-center *:cursor-pointer text-2xl">
+      <div className="max-xl:text-base relative  flex items-center gap-8 justify-between *:flex *:gap-2 *:items-center *:cursor-pointer text-xl">
         <div className="" onClick={handleToggle}>
           <CiLocationOn className="" />
 
