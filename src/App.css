@@ -1,5 +1,7 @@
 @import "tailwindcss";
 @import "../public/css/stylesheet.css";
+@import 'swiper/css';
+@import 'swiper/css/navigation';
 
 /* Change to data-set  */
 @custom-variant dark (&:where(.dark, .dark *));

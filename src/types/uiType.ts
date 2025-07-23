@@ -28,3 +28,10 @@ export interface IIconBar {
   icon: string;
   title: string;
 }
+
+export interface dataHeroImgType {
+  id: number;
+  img: string;
+  contry: string;
+  city: string;
+}
