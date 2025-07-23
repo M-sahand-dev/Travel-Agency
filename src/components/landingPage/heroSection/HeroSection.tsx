@@ -8,7 +8,7 @@ import {
 
 export const HroSection = (): JSX.Element => {
   return (
-    <section className="pt-8 px-12">
+    <section className="pt-8 ">
       <div className="container mx-auto  flex justify-between">
         <HroSectionTxt />
         <SearchBar />

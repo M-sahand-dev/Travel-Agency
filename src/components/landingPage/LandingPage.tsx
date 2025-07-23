@@ -1,12 +1,13 @@
 import type { JSX } from "react";
 import { Header } from "../index";
-import { HroSection } from "./heroSection";
+import { HroSection, ProductTour } from "./index";
 
 export const LandingPage = (): JSX.Element => {
   return (
-    <div className="LandingPage">
+    <div className="px-12">
       <Header />
       <HroSection />
+      <ProductTour />
     </div>
   );
 };
