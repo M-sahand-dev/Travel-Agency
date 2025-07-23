@@ -12,7 +12,7 @@ export const PlaceBox = (): JSX.Element => {
           <div
             className="flex font-bold flex-col items-center gap-2"
             key={id + item.id}>
-            <div className="p-4 border  border-dark-secondary dark:border-b-white-secondary rounded-2xl text-2xl">
+            <div className="p-4 border  border-dark-secondary dark:border-b-white-secondary rounded-2xl text-2xl grid place-items-center">
               {item.icon}
             </div>
             <span className="">{item.title}</span>
