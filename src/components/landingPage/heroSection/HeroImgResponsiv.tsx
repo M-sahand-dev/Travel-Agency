@@ -9,7 +9,7 @@ import { dataHeroImg } from "../../../constants";
 import type { dataHeroImgType } from "../../../types";
 import type { Swiper as SwiperType } from "swiper";
 
-export const HeroImg = (): JSX.Element => {
+export const HeroImgResponsiv = (): JSX.Element => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [, setSwiperInstance] = useState<SwiperType | null>(null);
   const id = uuidv4();
@@ -19,7 +19,7 @@ export const HeroImg = (): JSX.Element => {
   };
   return (
     //
-    <div className=" xl:w-[636px] w-[400px] xl:h-[808px] h-[600px] lg:block hidden relative font-Rokh text-white">
+    <div className="w-full h-72 relative font-Rokh text-white">
       <Swiper
         modules={[Navigation]}
         spaceBetween={50}

@@ -6,7 +6,7 @@ import { LuUserRound } from "react-icons/lu";
 import { v4 as uuidv4 } from "uuid";
 import { cityNames } from "../../../constants/data";
 
-export const SearchBar = (): JSX.Element => {
+export const SearchBarResponsive = (): JSX.Element => {
   const id = uuidv4();
   const [toggleShape, setToggleShape] = useState(false);
 
@@ -15,8 +15,8 @@ export const SearchBar = (): JSX.Element => {
   };
 
   return (
-    <div className="hidden lg:block absolute border border-dark-secondary bg-white dark:bg-dark-quinary dark:border-white-quaternary p-8 rounded-6xl z-50 left-24 right-24 bottom-[-4rem] max-xl:left-16 max-xl:right-16">
-      <div className="max-xl:text-base relative  flex items-center gap-8 justify-between *:flex *:gap-2 *:items-center *:cursor-pointer text-2xl">
+    <div className="block lg:hidden  border border-dark-secondary bg-white dark:bg-dark-quinary dark:border-white-quaternary p-8 rounded-6xl ">
+      <div className=" relative  flex flex-col gap-8 justify-between *:flex *:gap-2 *:items-center *:cursor-pointer text-2xl">
         <div className="" onClick={handleToggle}>
           <CiLocationOn className="" />
 
@@ -29,7 +29,7 @@ export const SearchBar = (): JSX.Element => {
           />
           <div
             className={`${!toggleShape ? "opacity-0 -translate-y-4 h-0 overflow-hidden" : "opacity-100 translate-y-0 h-auto"} 
-    absolute top-16 right-4 w-48 border dark:border-white-secondary border-dark-glass-contrast 
+    absolute top-12 right-4 w-48 border dark:border-white-secondary border-dark-glass-contrast 
     bg-white dark:bg-dark-primary p-4 rounded-2xl 
     transition-all duration-300 ease-in-out`}>
             <ul className="flex flex-col gap-2 *:hover:bg-gray-200 dark:*:hover:bg-gray-950">
@@ -61,7 +61,7 @@ export const SearchBar = (): JSX.Element => {
         </div>
         <button
           type="button"
-          className="py-3.5 px-14 bg-blue-primary rounded-5xl text-white">
+          className="py-3.5 px-14 bg-blue-primary rounded-5xl text-white flex mx-4 justify-center">
           جستجو
         </button>
       </div>

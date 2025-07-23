@@ -1,5 +1,10 @@
 import type { JSX } from "react";
-import { HroSectionTxt, HeroImg, SearchBar } from "./index";
+import {
+  HroSectionTxt,
+  HeroImg,
+  SearchBar,
+  HeroSectionResponsve,
+} from "./index";
 
 export const HroSection = (): JSX.Element => {
   return (
@@ -8,6 +13,7 @@ export const HroSection = (): JSX.Element => {
         <HroSectionTxt />
         <SearchBar />
         <HeroImg />
+        <HeroSectionResponsve />
       </div>
     </section>
   );

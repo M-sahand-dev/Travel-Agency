@@ -5,3 +5,6 @@ export * from "./HeroTitle";
 export * from "./PlaceBox";
 export * from "./HeroImg";
 export * from "./SearchBar";
+export * from "./HeroSectionResponsve";
+export * from "./HeroImgResponsiv";
+export * from "./SearchBarResponsive";

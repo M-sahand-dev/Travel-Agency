@@ -50,6 +50,10 @@
     --font-Roboto:"Roboto";
     /* font size */
     --text-2xs: 0.625rem; /* 10px */
+    --text-3xs: 0.7rem; 
+    --text-4xs: 0.8rem; 
+    --text-5xs: 0.9rem; 
+    --text-6xs: 1.5rem; 
     --text-xs: 0.75rem; /* 12px */
     --text-sm: 15px; /* 15px */  
     --text-md: 1rem; /* 16px */

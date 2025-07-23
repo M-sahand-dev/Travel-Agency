@@ -6,7 +6,7 @@ import type { IIconBar } from "../../../types";
 export const PlaceBox = (): JSX.Element => {
   const id = uuidv4();
   return (
-    <div className="flex gap-4 ">
+    <div className="flex gap-4 max-lg:items-center max-lg:justify-around">
       {iconBar.map((item: IIconBar) => {
         return (
           <div
