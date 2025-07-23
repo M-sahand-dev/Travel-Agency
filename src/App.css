@@ -13,6 +13,8 @@
     --color-dark-secondary: #404040;
     --color-dark-tertiary: #515151;
     --color-dark-quaternary: #2f2f2f;
+    --color-dark-quinary: #1D1D1D;
+
     --color-dark-glass-contrast: #000000e6;
     /* blue */
     --color-blue-primary: #5264ff;
@@ -34,6 +36,7 @@
     --color-white-primary: #FFFBFB;
     --color-white-secondary: #FFFFFF40;
     --color-white-tertiary: #FFFFFF66;
+    --color-white-quaternary: #FFFFFF59;
     /* radius */
     --radius-5xl: 3rem;
     --radius-6xl: 4rem;

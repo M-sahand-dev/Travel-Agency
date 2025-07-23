@@ -4,3 +4,4 @@ export * from "./BoxTxt";
 export * from "./HeroTitle";
 export * from "./PlaceBox";
 export * from "./HeroImg";
+export * from "./SearchBar";
