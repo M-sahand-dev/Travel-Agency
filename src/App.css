@@ -26,6 +26,8 @@
     --color-gary-tertiary: #a6a6a6;
     --color-gray-quaternary: #40404040;
     --color-gray-quinary: #d0d0d0;
+    --color-gray-quinary:#EAEAEA;
+    --color-gray-quinary-2: #FBFBFB;
     /* orange */
     --color-orange-primary: #FF782C;
     --color-orange-secondary: #FF782C40;
@@ -37,6 +39,7 @@
     --color-white-secondary: #FFFFFF40;
     --color-white-tertiary: #FFFFFF66;
     --color-white-quaternary: #FFFFFF59;
+    
     /* radius */
     --radius-5xl: 3rem;
     --radius-6xl: 4rem;
