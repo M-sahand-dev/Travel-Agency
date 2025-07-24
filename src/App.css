@@ -3,6 +3,12 @@
 @import 'swiper/css';
 @import 'swiper/css/navigation';
 
+
+
+.discountP{
+    background-image: url('/public/image/Vector-.png');
+    background-repeat: no-repeat;
+}
 /* Change to data-set  */
 @custom-variant dark (&:where(.dark, .dark *));
 

@@ -6,6 +6,7 @@ import { FaStar, FaPlus } from "react-icons/fa";
 
 export const ProductTour = (): JSX.Element => {
   const id = uuidv4();
+
   return (
     <div className="my-14">
       <div className="container mx-auto">
@@ -24,7 +25,17 @@ export const ProductTour = (): JSX.Element => {
           {productTour.map((product) => (
             <div
               key={id + product.id}
-              className="p-4 bg-white dark:bg-dark-primary border border-dark-secondary dark:border-white-secondary rounded-4xl">
+              className=" relative p-4 bg-white dark:bg-dark-primary border border-dark-secondary dark:border-white-secondary rounded-4xl">
+              {product.discount > 0 ? (
+                <div className="discountP absolute top-[-1rem] w-[5.3rem] h-[5.3rem] p-4 grid font-Rokh place-items-center right-[-1rem]">
+                  <span className="font-bold text-2xl">
+                    % {product.discount}
+                  </span>
+                  <div className="">تخفیف</div>
+                </div>
+              ) : (
+                ""
+              )}
               <img
                 src={product.img}
                 alt={product.title}
@@ -44,7 +55,20 @@ export const ProductTour = (): JSX.Element => {
                 <div className="flex justify-between items-center mt-12">
                   <div className="flex items-center gap-1">
                     <p className="font-Rokh text-4xl font-semibold">
-                      {product.price}
+                      {product.discount > 0 ? (
+                        <div className="">
+                          <span className="mt-4">
+                            {Math.round(
+                              product.price * (1 - product.discount / 100)
+                            ).toLocaleString("fa-IR")}
+                          </span>
+                          <p className="text-gray-600 text-6xs absolute">
+                            <del>{product.price.toLocaleString("fa-IR")}</del>
+                          </p>
+                        </div>
+                      ) : (
+                        product.price.toLocaleString("fa-IR")
+                      )}
                     </p>
                     <span className="font-Rokh text-2xl font-semibold">
                       تومان

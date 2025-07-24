@@ -50,8 +50,8 @@ export const productTour: ProductTour[] = [
     img: "/public/image/place/malezy.png",
     numbers: 4.1,
     time: "3 روز و 4 شب",
-    price: "85.000.000",
-    discount: 20,
+    price: 85000000,
+    discount: 30,
   },
   {
     id: 2,
@@ -59,7 +59,7 @@ export const productTour: ProductTour[] = [
     img: "/public/image/place/Dubai .png",
     numbers: 4.9,
     time: "3 روز و 4 شب",
-    price: "65.000.000 ",
+    price: 65000000,
     discount: 0,
   },
   {
@@ -68,7 +68,7 @@ export const productTour: ProductTour[] = [
     img: "/public/image/place/antalia.png",
     numbers: 4.1,
     time: "3 روز و 4 شب",
-    price: "45.000.000",
+    price: 45000000,
     discount: 0,
   },
 ];

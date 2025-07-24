@@ -42,6 +42,6 @@ export interface ProductTour {
   img: string;
   numbers: number;
   time: string;
-  price: string;
+  price: number;
   discount: number;
 }
