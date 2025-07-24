@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import { productTour } from "../../../constants";
 import { FaStar, FaPlus } from "react-icons/fa";
+import { LoremProduct } from "../../ui";
 
 export const ProductTour = (): JSX.Element => {
   const id = uuidv4();
@@ -27,7 +28,7 @@ export const ProductTour = (): JSX.Element => {
               key={id + product.id}
               className=" relative p-4 bg-white dark:bg-dark-primary border border-dark-secondary dark:border-white-secondary rounded-4xl">
               {product.discount > 0 ? (
-                <div className="discountP absolute top-[-1rem] w-[5.3rem] h-[5.3rem] p-4 grid font-Rokh place-items-center right-[-1rem]">
+                <div className="text-white discountP absolute top-[-1rem] w-[5.3rem] h-[5.3rem] p-4 grid font-Rokh place-items-center right-[-1rem]">
                   <span className="font-bold text-2xl">
                     % {product.discount}
                   </span>
@@ -87,6 +88,7 @@ export const ProductTour = (): JSX.Element => {
             </div>
           ))}
         </div>
+        <LoremProduct />
       </div>
     </div>
   );

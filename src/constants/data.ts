@@ -51,7 +51,7 @@ export const productTour: ProductTour[] = [
     numbers: 4.1,
     time: "3 روز و 4 شب",
     price: 85000000,
-    discount: 30,
+    discount: 20,
   },
   {
     id: 2,
