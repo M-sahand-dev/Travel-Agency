@@ -9,6 +9,7 @@
     background-image: url('/public/image/Vector-.png');
     background-repeat: no-repeat;
 }
+
 /* Change to data-set  */
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -20,12 +21,16 @@
     --color-dark-tertiary: #515151;
     --color-dark-quaternary: #2f2f2f;
     --color-dark-quinary: #1D1D1D;
+    --color-dark-quinary-2: #4A4A4A;
 
     --color-dark-glass-contrast: #000000e6;
     /* blue */
     --color-blue-primary: #5264ff;
     --color-blue-secondary: #0098ea;
     --color-blue-tertiary: #4E30FF;
+    --color-blue-quaternary: #7D8BFF;
+    --color-blue-quinary: #3E5CFB73;
+
     /* gary */
     --color-gary-primary: #898989;
     --color-gary-secondary: #e2e2e2;
@@ -45,6 +50,7 @@
     --color-white-secondary: #FFFFFF40;
     --color-white-tertiary: #FFFFFF66;
     --color-white-quaternary: #FFFFFF59;
+    --color-white-quinary: #FBFBFB40;
     
     /* radius */
     --radius-5xl: 3rem;

@@ -1,4 +1,9 @@
-import type { IIconBar, dataHeroImgType, ProductTour } from "../types";
+import type {
+  IIconBar,
+  dataHeroImgType,
+  ProductTour,
+  WhyUsTravelData,
+} from "../types";
 
 export const iconBar: IIconBar[] = [
   { id: 1, icon: "⛺", title: "کمپ" },
@@ -70,5 +75,27 @@ export const productTour: ProductTour[] = [
     time: "3 روز و 4 شب",
     price: 45000000,
     discount: 0,
+  },
+];
+
+export const whyUsTravelData: WhyUsTravelData[] = [
+  {
+    id: 1,
+    title: "رزرو آنلاین",
+    icon: "/public/image/icon/airplane.png",
+    description: "رزرو آنلاین بلیط هواپیما و هتل با بهترین قیمت و کیفیت",
+  },
+  {
+    id: 2,
+    title: "ضمانت بهترین قیمت",
+    icon: "/public/image/icon/duler.png",
+    description: "ما بهترین قیمت ها را برای شما تضمین می کنیم",
+  },
+  {
+    id: 3,
+    title: "پشتیبانی 24 ساعته",
+    icon: "/public/image/icon/clock.png",
+    description:
+      "تیم پشتیبانی ما در هر ساعت از شبانه روز آماده پاسخگویی به شماست",
   },
 ];

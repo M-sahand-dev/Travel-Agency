@@ -45,3 +45,10 @@ export interface ProductTour {
   price: number;
   discount: number;
 }
+
+export interface WhyUsTravelData {
+  id: number;
+  title: string;
+  icon: string;
+  description: string;
+}
