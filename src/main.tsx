@@ -12,6 +12,9 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/" element={<App />}>
           <Route index element={<LandingPage />} />
           <Route path="/" element={<App />} />
+          <Route path="/" element={<LandingPage />}>
+            <Route path="/*" element={<LandingPage />} />
+          </Route>
           {/* Add other routes here as needed */}
         </Route>
       </Routes>

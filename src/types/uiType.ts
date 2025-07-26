@@ -128,3 +128,12 @@ export interface TourProduct {
   hostTour: HostTour;
   comment: Comment[];
 }
+
+export interface TourProductCategory {
+  id: number;
+  title: string;
+  to: string;
+}
+export interface TourProductProps {
+  filteredTours: TourProduct[];
+}

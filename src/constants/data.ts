@@ -4,6 +4,7 @@ import type {
   ProductTour,
   WhyUsTravelData,
   TourProduct,
+  TourProductCategory,
 } from "../types";
 import { PiPizzaLight } from "react-icons/pi";
 import { IoWifiSharp } from "react-icons/io5";
@@ -939,6 +940,13 @@ export const tourProductData: TourProduct[] = [
   //     },
   //   ],
   // },
+];
+
+export const tourProductCategory: TourProductCategory[] = [
+  { id: 1, title: "همه تور ها", to: "/" },
+  { id: 2, title: "تور ایران", to: "/" },
+  { id: 3, title: "تور اروپا", to: "/" },
+  { id: 4, title: "تور آسیا", to: "/" },
 ];
 
 export const whyUsTravelData: WhyUsTravelData[] = [
