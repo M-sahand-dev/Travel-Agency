@@ -5,6 +5,7 @@ import type {
   WhyUsTravelData,
   TourProduct,
   TourProductCategory,
+  CommentUser,
 } from "../types";
 import { PiPizzaLight } from "react-icons/pi";
 import { IoWifiSharp } from "react-icons/io5";
@@ -968,5 +969,53 @@ export const whyUsTravelData: WhyUsTravelData[] = [
     icon: "/public/image/icon/clock.png",
     description:
       "تیم پشتیبانی ما در هر ساعت از شبانه روز آماده پاسخگویی به شماست",
+  },
+];
+
+export const commentUser: CommentUser[] = [
+  {
+    id: 1,
+    userName: "@ali_mohammadi",
+    name: "علی محمدی",
+    image:
+      "https://www.profilebakery.com/wp-content/uploads/2023/04/LINKEDIN-Profile-Picture-AI.jpg",
+    description:
+      "با تور های اینترنتی، می توانید به راحتی تور هایی را انتخاب کنید که می خواهید و بهترین قیمت را برای شما دریافت کنید. این تور ها بهترین تجربه و خوشمزه ترین تور هایی را ارائه می دهند.",
+    date: "1402/07/30",
+  },
+  {
+    id: 2,
+    userName: "@poetry_lover",
+    name: "زهرا حسینی",
+    image:
+      "https://www.profilebakery.com/wp-content/uploads/2023/04/AI-Profile-Picture.jpg",
+    description: "حافظیه فضای بسیار روح‌نوازی داشت!",
+    date: "1402/07/30",
+  },
+  {
+    id: 3,
+    userName: "@poetry_lover",
+    name: "محمد حسینی",
+    image:
+      "https://img.freepik.com/premium-photo/ai-generated-images-build-user-profile-page_1290175-101.jpg",
+    description: "حافظیه فضای بسیار روح‌نوازی داشت!",
+    date: "1402/07/30",
+  },
+  {
+    id: 4,
+    userName: "@poetry_lover",
+    name: "سارا رحیمی",
+    image:
+      "https://lucid.content-delivery-one.com/cdn-cgi/image/w=600,format=auto,metadata=none/675703157f0da.png",
+    description: "حافظیه فضای بسیار روح‌نوازی داشت!",
+    date: "1402/07/30",
+  },
+  {
+    id: 5,
+    userName: "@poetry_lover",
+    name: "سیدرضا حسینی",
+    image: "/public/image/ad2fccd6f19d4f77fe6308520136edbc166eb172.png",
+    description: "حافظیه فضای بسیار روح‌نوازی داشت!",
+    date: "1402/07/30",
   },
 ];

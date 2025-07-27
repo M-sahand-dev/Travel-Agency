@@ -6,6 +6,7 @@ import {
   ProductTour,
   TorsPruduct,
   WhyUsTravel,
+  Comment,
 } from "./index";
 
 export const LandingPage = (): JSX.Element => {
@@ -17,6 +18,7 @@ export const LandingPage = (): JSX.Element => {
       <WhyUsTravel />
       <TorsPruduct />
       <Banner />
+      <Comment />
     </div>
   );
 };

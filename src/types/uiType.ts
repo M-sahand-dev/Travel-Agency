@@ -137,3 +137,15 @@ export interface TourProductCategory {
 export interface TourProductProps {
   filteredTours: TourProduct[];
 }
+export interface CommentUser {
+  id: number;
+  userName: string;
+  name: string;
+  image: string;
+  description: string;
+  date: string;
+}
+export type UserInteraction = {
+  liked: boolean;
+  disliked: boolean;
+};
