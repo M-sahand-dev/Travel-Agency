@@ -6,6 +6,7 @@ import type {
   TourProduct,
   TourProductCategory,
   CommentUser,
+  FooterMenu,
 } from "../types";
 import { PiPizzaLight } from "react-icons/pi";
 import { IoWifiSharp } from "react-icons/io5";
@@ -1018,4 +1019,10 @@ export const commentUser: CommentUser[] = [
     description: "حافظیه فضای بسیار روح‌نوازی داشت!",
     date: "1402/07/30",
   },
+];
+
+export const footerMenu: FooterMenu[] = [
+  { id: 1, title: "صفحه اصلی", to: "/" },
+  { id: 2, title: "درباره ما", to: "/" },
+  { id: 3, title: "تماس با ما", to: "/" },
 ];

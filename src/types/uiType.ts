@@ -149,3 +149,8 @@ export type UserInteraction = {
   liked: boolean;
   disliked: boolean;
 };
+export interface FooterMenu {
+  id: number;
+  title: string;
+  to: string;
+}

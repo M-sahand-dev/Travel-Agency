@@ -29,6 +29,8 @@
     --color-dark-quaternary: #2f2f2f;
     --color-dark-quinary: #1D1D1D;
     --color-dark-quinary-2: #4A4A4A;
+    --color-dark-quinary-3: #232323;
+
 
     --color-dark-glass-contrast: #000000e6;
     /* blue */
@@ -62,6 +64,7 @@
     --color-white-quaternary: #FFFFFF59;
     --color-white-quinary: #FBFBFB40;
     --color-white-quinary-2: #FBFBFB;
+    --color-white-quinary-3:#EDEDED;
     /* radius */
     --radius-5xl: 3rem;
     --radius-6xl: 4rem;

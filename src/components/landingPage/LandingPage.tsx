@@ -1,5 +1,5 @@
 import type { JSX } from "react";
-import { Header } from "../index";
+import { Footer, Header } from "../index";
 import {
   Banner,
   HroSection,
@@ -11,14 +11,17 @@ import {
 
 export const LandingPage = (): JSX.Element => {
   return (
-    <div className="px-12">
+    <div className="">
       <Header />
-      <HroSection />
-      <ProductTour />
-      <WhyUsTravel />
-      <TorsPruduct />
-      <Banner />
-      <Comment />
+      <div className="px-12">
+        <HroSection />
+        <ProductTour />
+        <WhyUsTravel />
+        <TorsPruduct />
+        <Banner />
+        <Comment />
+      </div>
+      <Footer />
     </div>
   );
 };
