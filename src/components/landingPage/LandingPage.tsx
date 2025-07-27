@@ -1,6 +1,12 @@
 import type { JSX } from "react";
 import { Header } from "../index";
-import { HroSection, ProductTour, TorsPruduct, WhyUsTravel } from "./index";
+import {
+  Banner,
+  HroSection,
+  ProductTour,
+  TorsPruduct,
+  WhyUsTravel,
+} from "./index";
 
 export const LandingPage = (): JSX.Element => {
   return (
@@ -10,6 +16,7 @@ export const LandingPage = (): JSX.Element => {
       <ProductTour />
       <WhyUsTravel />
       <TorsPruduct />
+      <Banner />
     </div>
   );
 };

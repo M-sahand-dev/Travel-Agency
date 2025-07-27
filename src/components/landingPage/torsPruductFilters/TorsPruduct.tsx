@@ -18,7 +18,7 @@ export const TorsPruduct = (): JSX.Element => {
   };
   return (
     <div>
-      <div className="my-40">
+      <div className="mt-40">
         <div className="container mx-auto">
           <TitleMenu handleCategory={handleCategory} />
           <CategoryMenuMobile handleCategory={handleCategory} />

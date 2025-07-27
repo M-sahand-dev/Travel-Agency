@@ -9,7 +9,14 @@
     background-image: url('/public/image/Vector-.png');
     background-repeat: no-repeat;
 }
-
+.bane-dark {
+    background-image: url('/public/image/baner/dark.png');
+    background-repeat: no-repeat;
+}
+.bane-light {
+    background-image: url('/public/image/baner/light.png');
+    background-repeat: no-repeat;
+}
 /* Change to data-set  */
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -39,6 +46,7 @@
     --color-gray-quinary: #d0d0d0;
     --color-gray-quinary:#EAEAEA;
     --color-gray-quinary-2: #D3D3D3;
+    --color-gray-quinary-3: #D9D9D9;
     /* orange */
     --color-orange-primary: #FF782C;
     --color-orange-secondary: #FF782C40;
@@ -52,7 +60,6 @@
     --color-white-quaternary: #FFFFFF59;
     --color-white-quinary: #FBFBFB40;
     --color-white-quinary-2: #FBFBFB;
-    
     /* radius */
     --radius-5xl: 3rem;
     --radius-6xl: 4rem;
