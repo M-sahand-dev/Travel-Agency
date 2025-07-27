@@ -40,7 +40,7 @@ export const Header = (): JSX.Element => {
     setIsMenuOpen((prev) => !prev);
   };
   return (
-    <header className="w-full relative  py-2 border-b-1 border-solid dark:border-white-secondary border-gray-quaternary ">
+    <header className="w-full fixed right-0 bg-white-primary dark:bg-dark-primary z-[1000000]  py-2 border-b-1 border-solid dark:border-white-secondary border-gray-quaternary ">
       <div className="container relative mx-auto flex items-center justify-between">
         <div className=" flex items-center gap-8">
           {/* title logo component */}
