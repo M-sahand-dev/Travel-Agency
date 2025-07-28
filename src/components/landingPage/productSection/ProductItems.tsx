@@ -1,11 +1,12 @@
 import { type JSX } from "react";
 import { productTour } from "../../../constants";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import { FaStar, FaPlus } from "react-icons/fa";
 
 export const ProductItems = (): JSX.Element => {
   const id = uuidv4();
+  const location = useLocation();
   return (
     <div className=" grid grid-cols-3 max-lg:grid-cols-1 gap-4 mt-8">
       {productTour.map((product) => (
@@ -27,7 +28,9 @@ export const ProductItems = (): JSX.Element => {
           />
           <div className="mt-4 p-2">
             <div className="flex justify-between ">
-              <Link to={"/"} className=" text-2xl">
+              <Link
+                to={`/detail/${product.id}${location.search}`}
+                className=" text-2xl">
                 تور {product.title}
               </Link>
               <p className="flex items-center gap-1">

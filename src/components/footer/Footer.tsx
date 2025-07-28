@@ -7,8 +7,8 @@ import { FaXTwitter, FaFacebookF, FaInstagram } from "react-icons/fa6";
 export const Footer = (): JSX.Element => {
   const id = useId();
   return (
-    <div className="footer mt-14">
-      <div className=" container bg-dark-quinary-3 p-4">
+    <div className="footer mt-14 bg-dark-quinary-3  p-4 grid place-items-center text-white">
+      <div className=" container px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2">
             {footerMenu.map((item) => (

@@ -92,7 +92,12 @@ export const tourProductData: TourProduct[] = [
     title: "مالزی",
     contry: "مالزی",
     categoryTour: "تور آسیا",
-    img: "https://satraa.com/blog/wp-content/uploads/2020/01/Untitled-1-min.jpg",
+    isDomestic: false,
+    img: [
+      "https://satraa.com/blog/wp-content/uploads/2020/01/Untitled-1-min.jpg",
+      "https://mohajermag.ir/wp-content/uploads/2021/03/malasiya-wallpaper-780x470.jpg",
+      "https://www.alefbatour.com/api/UploadedImages/?set=GalleryImages&name=Mabul-Island-Malaysia.webp",
+    ],
     numbers: 4.1,
     time: "3 روز و 4 شب",
     price: 85000000,
@@ -298,8 +303,12 @@ export const tourProductData: TourProduct[] = [
     id: 2,
     title: "دبی",
     contry: "امارات متحده عربی",
-    categoryTour: "تور آسیا",
-    img: "https://www.investindubai.gov.ae/-/media/gathercontent/poi/b/burj-khalifa/fallback-image/burj-khalifa-det-3.jpg",
+    isDomestic: false,
+    img: [
+      "https://www.investindubai.gov.ae/-/media/gathercontent/poi/b/burj-khalifa/fallback-image/burj-khalifa-det-3.jpg",
+      "https://example.com/dubai1.jpg",
+      "https://example.com/dubai2.jpg",
+    ],
     numbers: 4.9,
     time: "3 روز و 4 شب",
     price: 65000000,
@@ -422,13 +431,19 @@ export const tourProductData: TourProduct[] = [
         date: "1402/05/15",
       },
     ],
+    categoryTour: "",
   },
   {
     id: 3,
     title: "آنتالیا",
     contry: "ترکیه",
     categoryTour: "تور اروپا",
-    img: "https://last-cdn.com/2022/07/19/7DSH4MFE8BEGMZ6d1o77g0v71bzfpjmq0X73uxzn.jpg",
+    isDomestic: false,
+    img: [
+      "https://last-cdn.com/2022/07/19/7DSH4MFE8BEGMZ6d1o77g0v71bzfpjmq0X73uxzn.jpg",
+      "https://example.com/antalya1.jpg",
+      "https://example.com/antalya2.jpg",
+    ],
     numbers: 4.1,
     time: "3 روز و 4 شب",
     price: 45000000,
@@ -556,7 +571,12 @@ export const tourProductData: TourProduct[] = [
     title: "استانبول",
     contry: "ترکیه",
     categoryTour: "تور اروپا",
-    img: "https://assets.micontenthub.com/traveloffers/travel-tips/the-blue-mosque-in-istanbul-turkey_uBl9m1ErD.jpg",
+    isDomestic: false, // تور خارجی
+    img: [
+      "https://assets.micontenthub.com/traveloffers/travel-tips/the-blue-mosque-in-istanbul-turkey_uBl9m1ErD.jpg",
+      "https://example.com/istanbul1.jpg",
+      "https://example.com/istanbul2.jpg",
+    ],
     numbers: 4.7,
     time: "4 روز و 3 شب",
     price: 55000000,
@@ -645,7 +665,12 @@ export const tourProductData: TourProduct[] = [
     title: "اصفهان",
     contry: "ایران",
     categoryTour: "تور ایران",
-    img: "https://luxuryproperties.ir/uploads/images/images/Blog/Things%20to%20Do%20in%20Iran/Top%2010%20Historical%20Landmarks%20%26%20Monuments%20in%20Isfahan/1khajoo.jpg",
+    isDomestic: true,
+    img: [
+      "https://luxuryproperties.ir/uploads/images/images/Blog/Things%20to%20Do%20in%20Iran/Top%2010%20Historical%20Landmarks%20%26%20Monuments%20in%20Isfahan/1khajoo.jpg",
+      "https://example.com/isfahan1.jpg",
+      "https://example.com/isfahan2.jpg",
+    ],
     numbers: 4.9,
     time: "2 روز و 1 شب",
     price: 25000000,
@@ -721,7 +746,12 @@ export const tourProductData: TourProduct[] = [
     title: "بالی",
     contry: "اندونزی",
     categoryTour: "تور آسیا",
-    img: "https://media.digitalnomads.world/wp-content/uploads/2021/01/20120709/bali-for-digital-nomads.jpg",
+    isDomestic: false, // تور خارجی
+    img: [
+      "https://media.digitalnomads.world/wp-content/uploads/2021/01/20120709/bali-for-digital-nomads.jpg",
+      "https://example.com/bali1.jpg",
+      "https://example.com/bali2.jpg",
+    ],
     numbers: 4.8,
     time: "5 روز و 4 شب",
     price: 75000000,
@@ -791,157 +821,167 @@ export const tourProductData: TourProduct[] = [
       },
     ],
   },
-  // {
-  //   id: 7,
-  //   title: "پاریس",
-  //   contry: "فرانسه",
-  //   categoryTour: "تور اروپا",
-  //   img: "https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_4:3,w_3840,g_auto/f_auto/q_auto/v1/shutterstock_2118458942_ss_non-editorial_jnjpwq?_a=BAVAZGE70",
-  //   numbers: 4.9,
-  //   time: "5 روز و 4 شب",
-  //   price: 120000000,
-  //   discount: 0,
-  //   startTour: "1403/12/20",
-  //   endTour: "1403/12/24",
-  //   strength: "2 بزرگ سال",
-  //   benefitsItem: [
-  //     { id: 1, benefits: "تور رود سن", cont: 300000 },
-  //     { id: 2, benefits: "بلیط موزه لوور", cont: 200000 },
-  //   ],
-  //   benefits: [],
-  //   checkTour: [
-  //     {
-  //       id: 1,
-  //       description: "گشت‌وگذار در شهر عشق و تماشای شاهکارهای هنری و معماری",
-  //       features: [
-  //         { id: 1, icon: PiPizzaLight, title: "صبحانه فرانسوی" },
-  //         { id: 2, icon: IoWifiSharp, title: "وای فای پرسرعت" },
-  //       ],
-  //       planDay: [
-  //         {
-  //           id: 1,
-  //           title: "روز اول",
-  //           description: "برج ایفل و شانزلیزه",
-  //         },
-  //         {
-  //           id: 2,
-  //           title: "روز دوم",
-  //           description: "موزه لوور و نوتردام",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  //   place: [
-  //     {
-  //       id: 1,
-  //       img: "/images/paris/eiffel.jpg",
-  //       title: "برج ایفل",
-  //       description: "نماد پاریس با چشم‌انداز پانوراما از شهر",
-  //     },
-  //     {
-  //       id: 2,
-  //       img: "/images/paris/louvre.jpg",
-  //       title: "موزه لوور",
-  //       description: "خانه مونالیزا و هزاران اثر هنری ارزشمند",
-  //     },
-  //   ],
-  //   lows: {
-  //     general: ["پاسپورت با حداقل 6 ماه اعتبار", "ویزای شینگن الزامی است"],
-  //     cancellation: ["لغو تا 40 روز قبل: بازپرداخت 70%"],
-  //     health: [],
-  //     notes: [],
-  //   },
-  //   hostTour: {
-  //     title: "میزبانی تور پاریس",
-  //     services: ["اقامت در هتل 4 ستاره", "راهنمای فارسی زبان"],
-  //     conditions: ["پرداخت 50% پیش‌پرداخت"],
-  //   },
-  //   comment: [
-  //     {
-  //       id: 1,
-  //       userName: "@paris_amour",
-  //       image: "/images/users/paris1.jpg",
-  //       description: "پاریس واقعاً شهر عشق است!",
-  //       date: "1402/09/10",
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: 8,
-  //   title: "شیراز",
-  //   contry: "ایران",
-  //   categoryTour: "تور ایران",
-  //   img: "https://www.tappersia.com/blog/wp-content/uploads/2019/12/Persepolis-Shiraz.jpg",
-  //   numbers: 4.8,
-  //   time: "3 روز و 2 شب",
-  //   price: 30000000,
-  //   discount: 5,
-  //   startTour: "1403/10/15",
-  //   endTour: "1403/10/17",
-  //   strength: "3 بزرگ سال",
-  //   benefitsItem: [
-  //     { id: 1, benefits: "رستوران سنتی", cont: 70000 },
-  //     { id: 2, benefits: "تور شبانه", cont: 100000 },
-  //   ],
-  //   benefits: [],
-  //   checkTour: [
-  //     {
-  //       id: 1,
-  //       description:
-  //         "سفر به شهر شعر و ادب و بازدید از جاذبه‌های تاریخی و فرهنگی",
-  //       features: [
-  //         { id: 1, icon: PiPizzaLight, title: "شام شیرازی" },
-  //         { id: 2, icon: IoWifiSharp, title: "وای فای رایگان" },
-  //       ],
-  //       planDay: [
-  //         {
-  //           id: 1,
-  //           title: "روز اول",
-  //           description: "بازدید از حافظیه و سعدیه",
-  //         },
-  //         {
-  //           id: 2,
-  //           title: "روز دوم",
-  //           description: "تخت جمشید و پاسارگاد",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  //   place: [
-  //     {
-  //       id: 1,
-  //       img: "/images/shiraz/persepolis.jpg",
-  //       title: "تخت جمشید",
-  //       description: "پایتخت باشکوه هخامنشیان با معماری بی‌نظیر",
-  //     },
-  //     {
-  //       id: 2,
-  //       img: "/images/shiraz/hafezieh.jpg",
-  //       title: "حافظیه",
-  //       description: "آرامگاه حافظ شیرازی شاعر بزرگ ایرانی",
-  //     },
-  //   ],
-  //   lows: {
-  //     general: ["کارت ملی الزامی است"],
-  //     cancellation: ["لغو تا 10 روز قبل: بازپرداخت کامل"],
-  //     health: [],
-  //     notes: [],
-  //   },
-  //   hostTour: {
-  //     title: "میزبانی تور شیراز",
-  //     services: ["اقامت در هتل 3 ستاره", "راهنمای محلی"],
-  //     conditions: ["حداقل 3 نفر"],
-  //   },
-  //   comment: [
-  //     {
-  //       id: 1,
-  //       userName: "@poetry_lover",
-  //       image: "/images/users/shiraz1.jpg",
-  //       description: "حافظیه فضای بسیار روح‌نوازی داشت!",
-  //       date: "1402/07/30",
-  //     },
-  //   ],
-  // },
+  {
+    id: 7,
+    title: "پاریس",
+    contry: "فرانسه",
+    categoryTour: "تور اروپا",
+    isDomestic: false, // تور خارجی
+    img: [
+      "https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_4:3,w_3840,g_auto/f_auto/q_auto/v1/shutterstock_2118458942_ss_non-editorial_jnjpwq?_a=BAVAZGE70",
+      "https://example.com/paris1.jpg",
+      "https://example.com/paris2.jpg",
+    ],
+    numbers: 4.9,
+    time: "5 روز و 4 شب",
+    price: 120000000,
+    discount: 0,
+    startTour: "1403/12/20",
+    endTour: "1403/12/24",
+    strength: "2 بزرگ سال",
+    benefitsItem: [
+      { id: 1, benefits: "تور رود سن", cont: 300000 },
+      { id: 2, benefits: "بلیط موزه لوور", cont: 200000 },
+    ],
+    benefits: [],
+    checkTour: [
+      {
+        id: 1,
+        description: "گشت‌وگذار در شهر عشق و تماشای شاهکارهای هنری و معماری",
+        features: [
+          { id: 1, icon: PiPizzaLight, title: "صبحانه فرانسوی" },
+          { id: 2, icon: IoWifiSharp, title: "وای فای پرسرعت" },
+        ],
+        planDay: [
+          {
+            id: 1,
+            title: "روز اول",
+            description: "برج ایفل و شانزلیزه",
+          },
+          {
+            id: 2,
+            title: "روز دوم",
+            description: "موزه لوور و نوتردام",
+          },
+        ],
+      },
+    ],
+    place: [
+      {
+        id: 1,
+        img: "/images/paris/eiffel.jpg",
+        title: "برج ایفل",
+        description: "نماد پاریس با چشم‌انداز پانوراما از شهر",
+      },
+      {
+        id: 2,
+        img: "/images/paris/louvre.jpg",
+        title: "موزه لوور",
+        description: "خانه مونالیزا و هزاران اثر هنری ارزشمند",
+      },
+    ],
+    lows: {
+      general: ["پاسپورت با حداقل 6 ماه اعتبار", "ویزای شینگن الزامی است"],
+      cancellation: ["لغو تا 40 روز قبل: بازپرداخت 70%"],
+      health: [],
+      notes: [],
+    },
+    hostTour: {
+      title: "میزبانی تور پاریس",
+      services: ["اقامت در هتل 4 ستاره", "راهنمای فارسی زبان"],
+      conditions: ["پرداخت 50% پیش‌پرداخت"],
+    },
+    comment: [
+      {
+        id: 1,
+        userName: "@paris_amour",
+        image: "/images/users/paris1.jpg",
+        description: "پاریس واقعاً شهر عشق است!",
+        date: "1402/09/10",
+      },
+    ],
+  },
+  {
+    id: 8,
+    title: "شیراز",
+    contry: "ایران",
+    categoryTour: "تور ایران",
+    isDomestic: true, // تور داخلی
+    img: [
+      "https://www.tappersia.com/blog/wp-content/uploads/2019/12/Persepolis-Shiraz.jpg",
+      "https://example.com/shiraz1.jpg",
+      "https://example.com/shiraz2.jpg",
+    ],
+    numbers: 4.8,
+    time: "3 روز و 2 شب",
+    price: 30000000,
+    discount: 5,
+    startTour: "1403/10/15",
+    endTour: "1403/10/17",
+    strength: "3 بزرگ سال",
+    benefitsItem: [
+      { id: 1, benefits: "رستوران سنتی", cont: 70000 },
+      { id: 2, benefits: "تور شبانه", cont: 100000 },
+    ],
+    benefits: [],
+    checkTour: [
+      {
+        id: 1,
+        description:
+          "سفر به شهر شعر و ادب و بازدید از جاذبه‌های تاریخی و فرهنگی",
+        features: [
+          { id: 1, icon: PiPizzaLight, title: "شام شیرازی" },
+          { id: 2, icon: IoWifiSharp, title: "وای فای رایگان" },
+        ],
+        planDay: [
+          {
+            id: 1,
+            title: "روز اول",
+            description: "بازدید از حافظیه و سعدیه",
+          },
+          {
+            id: 2,
+            title: "روز دوم",
+            description: "تخت جمشید و پاسارگاد",
+          },
+        ],
+      },
+    ],
+    place: [
+      {
+        id: 1,
+        img: "/images/shiraz/persepolis.jpg",
+        title: "تخت جمشید",
+        description: "پایتخت باشکوه هخامنشیان با معماری بی‌نظیر",
+      },
+      {
+        id: 2,
+        img: "/images/shiraz/hafezieh.jpg",
+        title: "حافظیه",
+        description: "آرامگاه حافظ شیرازی شاعر بزرگ ایرانی",
+      },
+    ],
+    lows: {
+      general: ["کارت ملی الزامی است"],
+      cancellation: ["لغو تا 10 روز قبل: بازپرداخت کامل"],
+      health: [],
+      notes: [],
+    },
+    hostTour: {
+      title: "میزبانی تور شیراز",
+      services: ["اقامت در هتل 3 ستاره", "راهنمای محلی"],
+      conditions: ["حداقل 3 نفر"],
+    },
+    comment: [
+      {
+        id: 1,
+        userName: "@poetry_lover",
+        image: "/images/users/shiraz1.jpg",
+        description: "حافظیه فضای بسیار روح‌نوازی داشت!",
+        date: "1402/07/30",
+      },
+    ],
+  },
 ];
 
 export const tourProductCategory: TourProductCategory[] = [

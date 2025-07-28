@@ -1,12 +1,13 @@
 import { type JSX } from "react";
 import { v4 as uuidv4 } from "uuid";
 import type { TourProduct, TourProductProps } from "../../../types";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaPlus, FaStar } from "react-icons/fa6";
 
 export const ProductTurItem = ({
   filteredTours,
 }: TourProductProps): JSX.Element => {
+  const location = useLocation();
   const id = uuidv4();
   return (
     <div className=" grid grid-cols-3 max-lg:grid-cols-1 gap-4 mt-8">
@@ -23,13 +24,15 @@ export const ProductTurItem = ({
             ""
           )}
           <img
-            src={product.img}
+            src={product.img[0]}
             alt={product.title}
             className="w-full rounded-4xl h-64"
           />
           <div className="mt-4 p-2">
             <div className="flex justify-between ">
-              <Link to={"/"} className=" text-2xl">
+              <Link
+                to={`/detail/${product.id}${location.search}`}
+                className=" text-2xl">
                 تور {product.title}
               </Link>
               <p className="flex items-center gap-1">

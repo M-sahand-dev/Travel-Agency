@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "./App.tsx";
-import { LandingPage } from "./components";
+import { LandingPage, DetailPage } from "./components";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -15,6 +15,7 @@ createRoot(document.getElementById("root")!).render(
           <Route path="/" element={<LandingPage />}>
             <Route path="/*" element={<LandingPage />} />
           </Route>
+          <Route path="/detail/:id" element={<DetailPage />} />
           {/* Add other routes here as needed */}
         </Route>
       </Routes>

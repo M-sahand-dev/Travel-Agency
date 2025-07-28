@@ -112,7 +112,8 @@ export interface TourProduct {
   title: string;
   contry: string;
   categoryTour: string;
-  img: string;
+  isDomestic: boolean;
+  img: string[];
   numbers: number;
   time: string;
   price: number;
