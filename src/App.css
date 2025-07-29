@@ -30,6 +30,7 @@
     --color-dark-quinary: #1D1D1D;
     --color-dark-quinary-2: #4A4A4A;
     --color-dark-quinary-3: #232323;
+    --color-dark-quinary-4: #2E2E2E;
 
 
     --color-dark-glass-contrast: #000000e6;
@@ -52,6 +53,7 @@
     --color-gray-quinary-3: #D9D9D9;
     --color-gray-quinary-4:#3C3C4380;
     --color-gray-quinary-5: #BFBFBF80;
+    --color-gray-quinary-6: #F5F6FA;
     /* orange */
     --color-orange-primary: #FF782C;
     --color-orange-secondary: #FF782C40;
@@ -66,6 +68,10 @@
     --color-white-quinary: #FBFBFB40;
     --color-white-quinary-2: #FBFBFB;
     --color-white-quinary-3:#EDEDED;
+
+    /* pink */
+    --color-pink-primary: #FF6588;
+    
     /* radius */
     --radius-5xl: 3rem;
     --radius-6xl: 4rem;

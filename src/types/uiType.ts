@@ -66,13 +66,13 @@ interface Feature {
   title: string;
 }
 
-interface PlanDay {
+export interface PlanDay {
   id: number;
   title: string;
   description: string;
 }
 
-interface CheckTour {
+export interface CheckTour {
   id: number;
   description: string;
   features: Feature[];
