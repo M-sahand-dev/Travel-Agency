@@ -1,18 +1,18 @@
-import { type JSX, useId, useState } from "react";
-import { Link, Outlet } from "react-router-dom";
-import { FaArrowLeft, FaMinus } from "react-icons/fa6";
-import { FaChevronDown } from "react-icons/fa";
-import { BsCalendarDate } from "react-icons/bs";
+import { type JSX, useId } from "react";
+import { Link, Outlet, useParams } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa6";
 import { CiBookmarkPlus } from "react-icons/ci";
-import { ReservedMenu, SliderImg } from "./index";
-import type { CheckTour, TourProduct } from "../../types";
+import { ReservedMenu, Review, SliderImg } from "./index";
+// import type { TourProduct } from "../../types";
+import { tourProductData } from "../../constants";
 
-export const ProductDetails = ({
-  tureProduct,
-}: {
-  tureProduct: TourProduct;
-}): JSX.Element => {
+export const ProductDetails = (): JSX.Element => {
   const id = useId();
+  const getProduct = (number: number) => {
+    return tourProductData.find((tour) => tour.id === number);
+  };
+  const params = useParams();
+  const tureProduct = getProduct(parseInt(String(params.id)));
 
   if (tureProduct) {
     return (
@@ -33,17 +33,25 @@ export const ProductDetails = ({
         </div>
         <SliderImg tureProduct={tureProduct} />
         <div className="flex gap-6 mt-4">
-          <div className="flex justify-between items-center w-full">
-            <div className=" font-bold flex items-center gap-1 text-4xl font-Rokh">
-              تور
-              <h1>
-                {tureProduct.checkTour.map((item) => item.planDay.length)}
-              </h1>
-              روزه {tureProduct.contry}/{tureProduct.title}
+          <div className="w-full">
+            <div className="flex justify-between items-center ">
+              <div className=" font-bold flex items-center gap-1 text-4xl font-Rokh">
+                تور
+                <h1>
+                  {tureProduct.checkTour.map((item) => item.planDay.length)}
+                </h1>
+                روزه {tureProduct.contry}/{tureProduct.title}
+              </div>
+              <button className="dark:bg-dark-quinary-4 grid place-items-center p-4 rounded-full bg-gray-quinary-6 text-6xs font-bold">
+                <CiBookmarkPlus />
+              </button>
             </div>
-            <button className="dark:bg-dark-quinary-4 grid place-items-center p-4 rounded-full bg-gray-quinary-6 text-6xs font-bold">
-              <CiBookmarkPlus />
-            </button>
+            <div className=" font-Rokh">
+              {tureProduct.isDomestic ? "تور داخلی" : "تور خارجی"}/
+              {tureProduct.categoryTour}/{tureProduct.contry}/
+              {tureProduct.title}
+            </div>
+            <Review />
           </div>
           <ReservedMenu tureProduct={tureProduct} />
         </div>

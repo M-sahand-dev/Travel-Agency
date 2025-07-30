@@ -155,3 +155,11 @@ export interface FooterMenu {
   title: string;
   to: string;
 }
+export interface NavReview {
+  id: number;
+  name: string;
+  to: string;
+}
+export type OutletContext = {
+  currentTour: TourProduct;
+};

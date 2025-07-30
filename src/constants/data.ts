@@ -7,6 +7,7 @@ import type {
   TourProductCategory,
   CommentUser,
   FooterMenu,
+  NavReview,
 } from "../types";
 import { PiPizzaLight } from "react-icons/pi";
 import { IoWifiSharp } from "react-icons/io5";
@@ -1065,4 +1066,12 @@ export const footerMenu: FooterMenu[] = [
   { id: 1, title: "صفحه اصلی", to: "/" },
   { id: 2, title: "درباره ما", to: "/" },
   { id: 3, title: "تماس با ما", to: "/" },
+];
+
+export const navReview: NavReview[] = [
+  { id: 1, name: "بررسی", to: "/detail/:id/check" },
+  { id: 2, name: "مکان ها", to: "/detail/:id/place" },
+  { id: 3, name: "قوانین", to: "/detail/:id/lows" },
+  { id: 4, name: "میزبان تور", to: "/detail/:id/hostTour" },
+  { id: 5, name: "نظرات", to: "/detail/:id/coment" },
 ];
