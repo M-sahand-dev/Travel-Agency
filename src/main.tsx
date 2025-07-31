@@ -11,6 +11,7 @@ import {
   LowsTure,
   HostTour,
   Coment,
+  ReservedMenu,
 } from "./components";
 
 createRoot(document.getElementById("root")!).render(
@@ -31,6 +32,9 @@ createRoot(document.getElementById("root")!).render(
             <Route path="hostTour" element={<HostTour />} />
             <Route path="coment" element={<Coment />} />
           </Route>
+          {/* <Route path="/detail/:id" element={<DetailPage />}>
+            <Route path="/detail/:id/reserved" element={<ReservedMenu />} />
+          </Route> */}
         </Route>
       </Routes>
     </BrowserRouter>

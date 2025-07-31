@@ -21,7 +21,7 @@ export const Place = (): JSX.Element => {
                 alt={place.title}
               />
             </div>
-            <div className=" flex flex-col gap-4">
+            <div className=" flex flex-col gap-4 mt-4">
               <h2 className="text-2xl font-semibold">{place.title}</h2>
               <p className="text-gray-500">{place.description}</p>
             </div>

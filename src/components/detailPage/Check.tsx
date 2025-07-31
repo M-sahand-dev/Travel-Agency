@@ -26,7 +26,7 @@ export const CheckTour = (): JSX.Element => {
               </div>
               <Link
                 className="py-4 px-8 rounded-4xl bg-blue-primary text-white"
-                to={"/"}>
+                to={"/reserved"}>
                 رزرو کنید
               </Link>
             </div>

@@ -13,12 +13,12 @@ export const HostTour = (): JSX.Element => {
         <div className=" mb-4 font-black text-xl">
           {currentTour?.hostTour.title}
         </div>
-        <div className="">
+        <div className="flex flex-col gap-2">
           {currentTour?.hostTour.services.map((item: string, i: number) => (
             <span key={i}>{item}</span>
           ))}
         </div>
-        <div className="">
+        <div className="flex flex-col gap-2 mt-4">
           {currentTour?.hostTour.conditions.map((item: string, i: number) => (
             <span key={i}>{item}</span>
           ))}
