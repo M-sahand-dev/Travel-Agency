@@ -12,7 +12,8 @@ export const ProductTurItem = ({
   return (
     <div className=" grid grid-cols-3 max-lg:grid-cols-1 gap-4 mt-8">
       {filteredTours.map((product: TourProduct) => (
-        <div
+        <Link
+          to={`/detail/${product.id}${location.search}`}
           key={id + product.id}
           className=" relative h-full p-4 bg-white dark:bg-dark-primary border border-dark-secondary dark:border-white-secondary rounded-4xl">
           {product.discount > 0 ? (
@@ -71,7 +72,7 @@ export const ProductTurItem = ({
               </button>
             </div>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );

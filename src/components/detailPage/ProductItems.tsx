@@ -8,12 +8,10 @@ export const ProductItems = (): JSX.Element => {
   const id = uuidv4();
   const location = useLocation();
   return (
-    <Link
-      // change import link
-      to={`/detail/${1}${location.search}`}
-      className=" grid grid-cols-3 max-lg:grid-cols-1 gap-4 mt-8">
+    <div className=" grid grid-cols-3 max-lg:grid-cols-1 gap-4 mt-8">
       {productTour.map((product) => (
-        <div
+        <Link
+          to={`/detail/${product.id}${location.search}`}
           key={id + product.id}
           className=" relative p-4 bg-white dark:bg-dark-primary border border-dark-secondary dark:border-white-secondary rounded-4xl">
           {product.discount > 0 ? (
@@ -72,8 +70,8 @@ export const ProductItems = (): JSX.Element => {
               </button>
             </div>
           </div>
-        </div>
+        </Link>
       ))}
-    </Link>
+    </div>
   );
 };
