@@ -32,7 +32,7 @@ export const SliderImg = ({
           </div>
         </div>
         <div className="w-full border"></div>
-        <div className="flex w-20 px-4">
+        <div className="flex w-20 px-4 max-lg:px-px">
           {tureProduct.img.length} / {String(activeIndex + 1).padStart(2)}
         </div>
       </div>

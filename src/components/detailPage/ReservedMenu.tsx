@@ -15,7 +15,7 @@ export const ReservedMenu = ({
   const discountAmount = totalBeforeDiscount * (tureProduct.discount / 100);
   const finalPrice = totalBeforeDiscount - discountAmount;
   return (
-    <div className=" bg-white border h-[909px]  dark:border-white-secondary dark:bg-dark-primary border-dark-secondary p-4 w-[416px] rounded-4xl">
+    <div className=" max-lg:hidden bg-white border h-[909px]  dark:border-white-secondary dark:bg-dark-primary border-dark-secondary p-4 w-[416px] rounded-4xl">
       <div className="flex flex-col justify-between h-full">
         <div className=" font-Rokh flex items-center justify-between w-full">
           {tureProduct.discount > 0 ? (

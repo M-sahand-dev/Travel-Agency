@@ -1,5 +1,5 @@
 import { type JSX, useId, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { tourProductData } from "../../constants";
 import { FaChevronDown } from "react-icons/fa";
 
@@ -19,10 +19,20 @@ export const CheckTour = (): JSX.Element => {
         {currentTour?.checkTour.map((item) => (
           <div key={idTour + item.id} className=" flex flex-col gap-8 py-4 ">
             <p className="text-base">{item.description}</p>
-            <div className="w-full border border-dark-secondary"></div>
-            <div className="font-Rokh flex flex-col gap-6">
+            <div className="w-full border border-dark-secondary max-lg:hidden"></div>
+            <div className=" max-lg:flex hidden  items-center justify-between dark:bg-dark-quinary-5 p-4">
+              <div className=" font-Rokh text-2xl font-bold">
+                {currentTour?.price.toLocaleString("fa-IR")} تومان
+              </div>
+              <Link
+                className="py-4 px-8 rounded-4xl bg-blue-primary text-white"
+                to={"/"}>
+                رزرو کنید
+              </Link>
+            </div>
+            <div className="font-Rokh flex flex-col  gap-6">
               <h5 className="font-Bold text-xl">ویژگی ها</h5>
-              <div className="flex gap-4">
+              <div className="flex gap-4 flex-wrap">
                 {item.features.map((feature) => (
                   <div
                     key={idTour + feature.title}
@@ -34,6 +44,7 @@ export const CheckTour = (): JSX.Element => {
               </div>
             </div>
             <div className="w-full border border-dark-secondary"></div>
+
             <div className="font-Rokh">
               <h5 className="font-bold text-xl">برنامه تور (روز به روز)</h5>
               <div className="">
