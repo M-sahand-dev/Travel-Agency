@@ -1,5 +1,5 @@
 import { type JSX, useId } from "react";
-import { Link, Outlet, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa6";
 import { CiBookmarkPlus } from "react-icons/ci";
 import { ReservedMenu, Review, SliderImg } from "./index";
