@@ -10,7 +10,9 @@ export const HostTour = (): JSX.Element => {
   return (
     <div>
       <div className="">
-        <div className="">{currentTour?.hostTour.title}</div>
+        <div className=" mb-4 font-black text-xl">
+          {currentTour?.hostTour.title}
+        </div>
         <div className="">
           {currentTour?.hostTour.services.map((item: string, i: number) => (
             <span key={i}>{item}</span>

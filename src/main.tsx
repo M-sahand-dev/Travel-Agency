@@ -11,8 +11,6 @@ import {
   LowsTure,
   HostTour,
   Coment,
-  Review,
-  ProductDetails,
 } from "./components";
 
 createRoot(document.getElementById("root")!).render(
@@ -26,6 +24,7 @@ createRoot(document.getElementById("root")!).render(
             <Route path="/*" element={<LandingPage />} />
           </Route>
           <Route path="/detail/:id" element={<DetailPage />}>
+            <Route index element={<CheckTour />} />
             <Route path="check" element={<CheckTour />} />
             <Route path="place" element={<Place />} />
             <Route path="lows" element={<LowsTure />} />

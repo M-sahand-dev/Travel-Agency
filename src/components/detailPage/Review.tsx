@@ -17,7 +17,11 @@ export const Review = (): JSX.Element => {
             <NavLink
               key={item.id}
               to={item.to.replace(":id", id || "")}
-              className={({ isActive }) => (isActive ? "active-link" : "")}>
+              className={({ isActive }) =>
+                isActive
+                  ? "  border-b-2 border-b-blue-primary p-4 font-bold text-blue-primary  transition duration-200 ease-in-out"
+                  : "p-4 hover:text-gary-primary transition duration-200 ease-in-out"
+              }>
               {item.name}
             </NavLink>
           ))}

@@ -173,41 +173,41 @@ export const tourProductData: TourProduct[] = [
     place: [
       {
         id: 1,
-        img: "/images/malaysia/klcc.jpg",
+        img: "https://satraa.com/blog/wp-content/uploads/2020/01/Untitled-1-min.jpg",
         title: "برج‌های دوقلو پتروناس",
         description:
           "نماد معروف شهر کوالالامپور با معماری خیره‌کننده و چشم‌انداز فوق‌العاده از بالای برج.",
       },
       {
         id: 2,
-        img: "/images/malaysia/batu-caves.jpg",
+        img: "https://satraa.com/blog/wp-content/uploads/2020/01/Untitled-1-min.jpg",
         title: "غارهای باتو",
         description:
           "معبد هندو با ۲۷۲ پله رنگارنگ و مجسمه طلایی عظیم الهه موروگان.",
       },
       {
         id: 3,
-        img: "/images/malaysia/langkawi.jpg",
+        img: "https://satraa.com/blog/wp-content/uploads/2020/01/Untitled-1-min.jpg",
         title: "جزیره لنکاوی",
         description:
           "بهشت استوایی با ساحل‌های بکر، جنگل‌های حرا و تله‌کابین هوایی.",
       },
       {
         id: 4,
-        img: "/images/malaysia/genting.jpg",
+        img: "https://satraa.com/blog/wp-content/uploads/2020/01/Untitled-1-min.jpg",
         title: "تفریحگاه گنتینگ هایلند",
         description: "شهر بازی و کازینو روی ابرها با هوای خنک در ارتفاعات.",
       },
       {
         id: 5,
-        img: "/images/malaysia/melaka.jpg",
+        img: "https://satraa.com/blog/wp-content/uploads/2020/01/Untitled-1-min.jpg",
         title: "شهر تاریخی ملاکا",
         description:
           "ترکیبی از معماری پرتغالی، هلندی و انگلیسی با کانال‌های آبی رنگارنگ.",
       },
       {
         id: 6,
-        img: "/images/malaysia/cameron.jpg",
+        img: "https://satraa.com/blog/wp-content/uploads/2020/01/Untitled-1-min.jpg",
         title: "تپه‌های کامرون",
         description: "منطقه ییلاقی با مزارع چای سرسبز و باغ‌های توت فرنگی.",
       },

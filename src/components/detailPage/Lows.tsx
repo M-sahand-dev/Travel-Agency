@@ -10,29 +10,41 @@ export const LowsTure = (): JSX.Element => {
 
   return (
     <div>
-      <div className="">
+      <div className="py-4 flex flex-col gap-4">
         <div className="">
-          <h5>توضیحات</h5>
+          <h5 className="mb-4 font-black text-xl">لغو سفر</h5>
           {currentTour?.lows.cancellation.map((txt: string, i: number) => (
-            <p key={idTure + i}>{txt}</p>
+            <p key={idTure + i} className="px-4">
+              <span className="text-red-primary">*</span>
+              {txt}
+            </p>
           ))}
         </div>
         <div className="">
-          <h5>توضیحات</h5>
+          <h5 className="mb-4 font-black text-xl">وسایل مورد نیاز</h5>
           {currentTour?.lows.general.map((txt: string, i: number) => (
-            <p key={idTure + i}>{txt}</p>
+            <p key={idTure + i} className="px-4">
+              <span className="text-red-primary">*</span>
+              {txt}
+            </p>
           ))}
         </div>
         <div className="">
-          <h5>توضیحات</h5>
+          <h5 className="mb-4 font-black text-xl">توضیحات پزشکی و لوازمات</h5>
           {currentTour?.lows.health.map((txt: string, i: number) => (
-            <p key={idTure + i}>{txt}</p>
+            <p key={idTure + i} className="px-4">
+              <span className="text-red-primary">*</span>
+              {txt}
+            </p>
           ))}
         </div>
         <div className="">
-          <h5>توضیحات</h5>
+          <h5 className="mb-4 font-black text-xl">قوانین</h5>
           {currentTour?.lows.notes.map((txt: string, i: number) => (
-            <p key={idTure + i}>{txt}</p>
+            <p key={idTure + i} className="px-4">
+              <span className="text-red-primary">*</span>
+              {txt}
+            </p>
           ))}
         </div>
       </div>

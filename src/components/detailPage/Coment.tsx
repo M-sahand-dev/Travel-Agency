@@ -51,8 +51,8 @@ export const Coment = (): JSX.Element => {
   return (
     <div>
       <div className="">
-        <h5>نظرات</h5>
-        <div className="">
+        <h5 className="mb-4 font-black text-xl">نظرات</h5>
+        <div className="flex flex-col gap-4">
           {currentTour?.comment.map((user) => (
             <div
               key={idTure + user.id}
@@ -98,7 +98,7 @@ export const Coment = (): JSX.Element => {
           <button
             type="button"
             onClick={() => setShowAllComments(!showAllComments)}
-            className="grid place-items-center w-full p-4 bg-blue-primary rounded-6xl font-bold text-2xl">
+            className="grid place-items-center w-full p-4 bg-blue-primary rounded-6xl font-bold text-2xl my-4">
             {showAllComments ? "نمایش کمتر" : `دیدن همه `}
           </button>
         )} */}
