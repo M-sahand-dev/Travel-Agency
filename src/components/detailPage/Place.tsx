@@ -1,5 +1,5 @@
 import { type JSX, useId } from "react";
-import { useParams } from "react-router-dom";
+import { Outlet, useParams } from "react-router-dom";
 import { tourProductData } from "../../constants";
 
 export const Place = (): JSX.Element => {
@@ -22,6 +22,7 @@ export const Place = (): JSX.Element => {
           </div>
         ))}
       </div>
+      <Outlet />
     </div>
   );
 };

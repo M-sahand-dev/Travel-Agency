@@ -11,8 +11,6 @@ export const DetailPage = (): JSX.Element => {
         <ProductDetails />
       </div>
       <Footer />
-
-      <Outlet />
     </div>
   );
 };

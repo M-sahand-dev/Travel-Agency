@@ -1,5 +1,5 @@
 import { useId, useState, type JSX } from "react";
-import { useParams } from "react-router-dom";
+import { Outlet, useParams } from "react-router-dom";
 import { tourProductData } from "../../constants";
 import { BiDislike, BiLike, BiSolidDislike, BiSolidLike } from "react-icons/bi";
 import type { UserInteraction } from "../../types";
@@ -47,6 +47,7 @@ export const Coment = (): JSX.Element => {
       return newInteractions;
     });
   };
+
   return (
     <div>
       <div className="">
@@ -102,6 +103,7 @@ export const Coment = (): JSX.Element => {
           </button>
         )} */}
       </div>
+      <Outlet />
     </div>
   );
 };

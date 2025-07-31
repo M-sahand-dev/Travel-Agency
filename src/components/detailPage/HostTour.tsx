@@ -6,6 +6,7 @@ export const HostTour = (): JSX.Element => {
   const { id } = useParams();
   const currentTour = tourProductData.find((tour) => tour.id === Number(id));
   console.log(currentTour);
+
   return (
     <div>
       <div className="">

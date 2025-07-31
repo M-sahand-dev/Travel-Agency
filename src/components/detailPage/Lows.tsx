@@ -1,5 +1,5 @@
 import { useId, type JSX } from "react";
-import { useParams } from "react-router-dom";
+import { Outlet, useParams } from "react-router-dom";
 import { tourProductData } from "../../constants";
 
 export const LowsTure = (): JSX.Element => {
@@ -7,6 +7,7 @@ export const LowsTure = (): JSX.Element => {
   const idTure = useId();
   const currentTour = tourProductData.find((tour) => tour.id === Number(id));
   console.log(currentTour?.lows.cancellation);
+
   return (
     <div>
       <div className="">
@@ -35,6 +36,7 @@ export const LowsTure = (): JSX.Element => {
           ))}
         </div>
       </div>
+      <Outlet />
     </div>
   );
 };
