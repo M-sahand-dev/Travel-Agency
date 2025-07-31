@@ -55,7 +55,6 @@ export const ProductDetails = (): JSX.Element => {
           </div>
           <ReservedMenu tureProduct={tureProduct} />
         </div>
-        <Outlet />
       </div>
     );
   } else {

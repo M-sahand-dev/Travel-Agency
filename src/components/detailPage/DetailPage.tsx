@@ -1,7 +1,6 @@
 import { type JSX } from "react";
 import { Footer, Header } from "../index";
 import { ProductDetails } from "./index";
-import { Outlet } from "react-router-dom";
 
 export const DetailPage = (): JSX.Element => {
   return (

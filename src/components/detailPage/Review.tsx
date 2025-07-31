@@ -9,7 +9,6 @@ export const Review = (): JSX.Element => {
   if (!currentTour) {
     return <div>تور یافت نشد</div>;
   }
-
   return (
     <div className="">
       <div>
