@@ -9,7 +9,8 @@ export const ProductItems = (): JSX.Element => {
   const location = useLocation();
   return (
     <Link
-      to={`/detail/${productTour.map((id) => id.id)}${location.search}`}
+      // change import link
+      to={`/detail/${1}${location.search}`}
       className=" grid grid-cols-3 max-lg:grid-cols-1 gap-4 mt-8">
       {productTour.map((product) => (
         <div
