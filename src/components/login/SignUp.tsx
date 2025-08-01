@@ -3,7 +3,7 @@ import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 
-export const Login = (): JSX.Element => {
+export const SignUp = (): JSX.Element => {
   return (
     <>
       <div className="container p-8 flex items-center justify-between max-lg:justify-center max-lg:flex-col h-screen overflow-hidden">
@@ -18,7 +18,7 @@ export const Login = (): JSX.Element => {
             <div className="flex gap-6 flex-col p-4 ">
               <div className="w-full">
                 <h2 className="max-lg:hidden font-medium text-2xl py-2">
-                  ورود
+                  ثبت نام
                 </h2>
                 <h1 className="max-lg:block hidden font-normal text-2xl py-2">
                   خوش آمدید
@@ -38,22 +38,21 @@ export const Login = (): JSX.Element => {
                     />
                     <FaRegEyeSlash className="text-dark-secondary text-2xl" />
                   </div>
+                  <div className="flex items-center  border border-dark-secondary p-2  rounded-4xl">
+                    <input
+                      type="password"
+                      className="w-full p-2 outline-hidden placeholder:text-dark-secondary"
+                      placeholder="تکرار رمز عبور"
+                    />
+                    <FaRegEyeSlash className="text-dark-secondary text-2xl" />
+                  </div>
                 </form>
               </div>
-              <Link to={"/"} className="max-lg:block hidden text-blue-primary">
-                رمز عبور خود را فراموش کرده اید؟
-              </Link>
               <button
                 type="button"
                 className={` p-4 text-white bg-gray-desaible dark:bg-dark-quaternary rounded-4xl w-full`}>
                 ارسال
               </button>
-              <div className="max-lg:hidden flex items-center justify-center font-bold text-5xs">
-                <span>رمز عبور خود را فراموش کرده اید؟ </span>
-                <Link to={"/"} className=" text-blue-primary">
-                  بازیابی رمز عبور
-                </Link>
-              </div>
             </div>
             <div className="flex  items-center justify-center w-full">
               <div className="border border-gray-quinary-2 w-full h-px"></div>
@@ -69,9 +68,9 @@ export const Login = (): JSX.Element => {
               <FcGoogle className=" w-6 h-6" />
             </button>
             <div className="flex font-bold items-center justify-center text-5xs w-full">
-              حساب کاربری ندارید؟
-              <Link to={"/signUp"} className=" text-blue-primary">
-                ثبت نام
+              عضو سفرکن هستید؟
+              <Link to={"/login"} className=" text-blue-primary">
+                ورود
               </Link>
             </div>
           </div>
