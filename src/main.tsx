@@ -11,7 +11,7 @@ import {
   LowsTure,
   HostTour,
   Coment,
-  ReservedMenu,
+  Login,
 } from "./components";
 
 createRoot(document.getElementById("root")!).render(
@@ -21,6 +21,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/" element={<App />}>
           <Route index element={<LandingPage />} />
           <Route path="/" element={<App />} />
+          <Route path="/Login" element={<Login />} />
           <Route path="/" element={<LandingPage />}>
             <Route path="/*" element={<LandingPage />} />
           </Route>
