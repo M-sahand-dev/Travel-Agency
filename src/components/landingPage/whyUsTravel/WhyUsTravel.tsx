@@ -1,6 +1,7 @@
 import { type JSX } from "react";
 import { whyUsTravelData } from "../../../constants";
 import { v4 as uuidv4 } from "uuid";
+import { HeaderBoxTitle } from "../../ui";
 
 export const WhyUsTravel = (): JSX.Element => {
   const id = uuidv4();
@@ -17,10 +18,7 @@ export const WhyUsTravel = (): JSX.Element => {
           src="/public/image/Vector-light.png"
           alt=""
         />
-        <h1 className="font-bold text-lg max-lg:text-md max-sm:text-base font-Rokh">
-          چرا سفر کن ❓
-          <div className="absolute h-[3px] w-[45px] bg-blue-primary"></div>
-        </h1>
+        <HeaderBoxTitle>چرا سفر کن ❓</HeaderBoxTitle>
         <div className="bg-blue-primary custom-box   dark:bg-dark-primary dark:border dark:white-quinary mt-8 rounded-5xl p-12 grid grid-cols-3 max-lg:grid-cols-1 gap-16">
           {whyUsTravelData.map((item) => (
             <div
