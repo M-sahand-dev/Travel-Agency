@@ -26,7 +26,7 @@ export const ProductDetails = (): JSX.Element => {
             <Link
               to={`/`}
               className="flex items-center gap-2 p-4 dark:border-dark-secondary border rounded-2xl">
-              بازگشت به خانه
+              <span className="max-sm:hidden">بازگشت به خانه</span>
               <FaArrowLeft />
             </Link>
           </div>
@@ -35,7 +35,7 @@ export const ProductDetails = (): JSX.Element => {
         <div className="flex gap-6 mt-4">
           <div className="w-full">
             <div className="flex justify-between items-center ">
-              <div className=" font-bold flex items-center gap-1 text-4xl font-Rokh">
+              <div className=" font-bold flex items-center gap-1 text-4xl max-lg:text-3xl max-md:text-2xl font-Rokh">
                 تور
                 <h1>
                   {tureProduct.checkTour.map((item) => item.planDay.length)}
