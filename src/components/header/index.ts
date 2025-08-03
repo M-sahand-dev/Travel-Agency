@@ -1,5 +1,5 @@
 export * from "./Header";
-export * from "./Title";
+export * from "../ui/Title";
 export * from "./Menu";
 export * from "./MenuResponsive";
 export * from "./BagBtn";

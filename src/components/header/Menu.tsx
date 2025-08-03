@@ -12,7 +12,7 @@ export const Menu = (): JSX.Element => {
         <div className=""></div>
         <IoIosArrowDown className="inline-block" />
       </Link>
-      <Link className="flex gap-2 items-center" to="/c/">
+      <Link className="flex gap-2 items-center" to="/">
         تور خارجی
         <div className=""></div>
         <IoIosArrowDown className="inline-block" />

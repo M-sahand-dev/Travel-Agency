@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 import { IoIosArrowDown } from "react-icons/io";
-import { RiSearch2Line } from "react-icons/ri";
+// import { RiSearch2Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { BagBtn, Title, UserBtnPanel, DarkModeMobile } from "./index";
 import type { MenuResponsiveProps } from "../../types";
@@ -20,16 +20,7 @@ export const MenuResponsive = ({
         <UserBtnPanel />
         <BagBtn />
       </div>
-      <div className="shadow-secondary dark:shadow-tertiary flex items-center rounded-4xl">
-        <Link to="/" className="text-2xl p-4">
-          <RiSearch2Line />
-        </Link>
-        <input
-          className="w-full p-4 outline-hidden"
-          type="search"
-          placeholder="کجا میخوای بری ؟"
-        />
-      </div>
+
       <div className="flex flex-col gap-4 *:hover:text-blue-tertiary">
         <Link to="/">هتل</Link>
         <Link className="flex gap-2 items-center" to="/">

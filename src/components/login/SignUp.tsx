@@ -1,12 +1,27 @@
-import { type JSX } from "react";
-import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+import { useEffect, useState, type JSX } from "react";
+import { FaRegEyeSlash } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 
 export const SignUp = (): JSX.Element => {
+  const [, setIsDarkMode] = useState(false);
+  const savedTheme = () => {
+    const localStorageTheme = localStorage.getItem("theme");
+    if (localStorageTheme === "dark") {
+      document.documentElement.classList.add("dark");
+      setIsDarkMode(true);
+    } else {
+      document.documentElement.classList.remove("dark");
+      setIsDarkMode(false);
+    }
+  };
+
+  useEffect(() => {
+    savedTheme();
+  }, []);
   return (
     <>
-      <div className="container p-8 flex items-center justify-between max-lg:justify-center max-lg:flex-col h-screen overflow-hidden">
+      <div className="container mx-auto p-8 flex items-center justify-between max-lg:justify-center max-lg:flex-col h-screen overflow-hidden">
         <img
           src={"/public/image/loginPicture.png"}
           alt="loginPicture"
