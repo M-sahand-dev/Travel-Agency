@@ -41,12 +41,14 @@ export const HeroImg = (): JSX.Element => {
               alt=""
             />
             <div className="relative ">
-              <div className="bg-white-tertiary border rounded-4xl py-6 px-8 absolute top-4 left-4 border-gradent-primary ">
+              <div className="bg-white-tertiary max-lg:w-40 max-lg:h-40 border rounded-4xl py-6 px-8 absolute top-4 left-4 border-gradent-primary ">
                 <span className="flex items-center gap-[2px] font-bold text-md">
                   <CiLocationOn />
                   {items.contry}
                 </span>
-                <h3 className="font-bold text-2xl text-76">{items.city}</h3>
+                <h3 className="font-bold max-lg:text-2xl text-76">
+                  {items.city}
+                </h3>
               </div>
             </div>
           </SwiperSlide>
@@ -54,7 +56,7 @@ export const HeroImg = (): JSX.Element => {
       </Swiper>
       {/*
        */}
-      <div className="absolute z-50 top-52 left-8 text-5xl flex items-center justify-between font-Rokh gap-4">
+      <div className="absolute z-50 top-52 left-8 mt-4 text-5xl flex items-center justify-between font-Rokh gap-4">
         <button className="next">
           <FaArrowRight />
         </button>

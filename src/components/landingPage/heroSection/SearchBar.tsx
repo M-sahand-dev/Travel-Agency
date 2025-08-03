@@ -5,6 +5,7 @@ import { BsCalendarDate } from "react-icons/bs";
 import { LuUserRound } from "react-icons/lu";
 import { v4 as uuidv4 } from "uuid";
 import { cityNames } from "../../../constants/data";
+import { Link } from "react-router-dom";
 
 export const SearchBar = (): JSX.Element => {
   const id = uuidv4();
@@ -59,11 +60,12 @@ export const SearchBar = (): JSX.Element => {
           <p>تعداد </p>
           <IoIosArrowDown className="inline-block" />
         </div>
-        <button
+        <Link
+          to={"/"}
           type="button"
           className="py-3.5 px-14 bg-blue-primary rounded-5xl text-white">
           جستجو
-        </button>
+        </Link>
       </div>
     </div>
   );
