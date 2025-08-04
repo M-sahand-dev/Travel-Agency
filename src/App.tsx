@@ -1,12 +1,28 @@
 import "./App.css";
 import { Outlet } from "react-router-dom";
+import { Preloader } from "./components/ui";
+import { useEffect, useState, type JSX } from "react";
 
-function App() {
-  return (
-    <>
-      <Outlet />
-    </>
-  );
-}
+export const App = (): JSX.Element => {
+  // Loading state control
+  const [loading, setLoadig] = useState(true);
+  const fetchingData = async () => {
+    return new Promise<void>((resolve) => {
+      const timer = setTimeout(() => {
+        setLoadig(false);
+        resolve();
+      }, 2000); // 2 seconds delay
 
-export default App;
+      // Cleanup function to prevent memory leaks
+      return () => clearTimeout(timer);
+    });
+  };
+  useEffect(() => {
+    fetchingData();
+    // Add 'loaded' class to body when loading completes
+    if (!loading) {
+      document.body.classList.add("loaded");
+    }
+  }, [loading]);
+  return <>{loading ? <Preloader /> : <Outlet />}</>;
+};
