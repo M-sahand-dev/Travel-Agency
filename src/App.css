@@ -17,6 +17,8 @@
     background-image: url('/public/image/baner/light.png');
     background-repeat: no-repeat;
 }
+
+
 /* Change to data-set  */
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -36,6 +38,7 @@
 
     --color-dark-glass-contrast: #000000e6;
     --color-dark-glass-contrast-2: #C1C1C133;
+    --color-dark-glass-contrast-3:#5d5d5dd6;
     /* blue */
     --color-blue-primary: #5264ff;
     --color-blue-secondary: #0098ea;
@@ -81,6 +84,7 @@
     --shadow-primary :rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     --shadow-secondary: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     --shadow-tertiary: rgb(255 255 255 / 2%) 0px 1px 3px 0px, rgb(255 255 255 / 15%) 0px 0px 0px 1px;
+    --shadow-quaternary: 0 4px 30px #0000001a;
     /* font */
     --font-IRANSansWeb: "IRANSansWeb";
     --font-Rokh:"RokhFaNum Normal";

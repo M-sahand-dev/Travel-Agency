@@ -10,7 +10,7 @@ export const Footer = (): JSX.Element => {
     <div className="footer mt-14 bg-dark-quinary-3  p-4 grid place-items-center text-white">
       <div className=" container px-8">
         <div className="flex justify-between items-center">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap">
             {footerMenu.map((item) => (
               <div key={id + item.id} className="">
                 {" | "}

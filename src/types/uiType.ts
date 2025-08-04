@@ -163,3 +163,26 @@ export interface NavReview {
 export type OutletContext = {
   currentTour: TourProduct;
 };
+interface TravelAgencySection {
+  title: string;
+  description?: string;
+  items?: string[];
+}
+
+export interface TravelAgencyContent {
+  header: TravelAgencySection;
+  features: TravelAgencySection;
+  services: TravelAgencySection;
+  aboutUs: TravelAgencySection;
+  testimonials: TravelAgencySection;
+  callToAction: Omit<TravelAgencySection, "title" | "items"> & {
+    text: string;
+    linkText: string;
+  };
+}
+export interface CompanyValue {
+  id: number;
+  title: string;
+  description: string;
+  icon?: string; // Optional icon class or emoji
+}
