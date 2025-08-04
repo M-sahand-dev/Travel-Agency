@@ -1,6 +1,6 @@
 import { useEffect, useState, type JSX } from "react";
 import { Header, Footer, Preloader, HeaderBoxTitle } from "../index";
-import { Link } from "react-router-dom";
+
 import { BsInstagram } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
 
