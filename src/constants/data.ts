@@ -1212,3 +1212,1243 @@ export const companyValues: CompanyValue[] = [
       "رهبران ما اعضای تیم‌شان را برای انجام وظایف رشد داده و بستر این رشد را فراهم می‌کنند.",
   },
 ];
+
+export const hotelReservation: TourProduct[] = [
+  // نمونه اول (همان بورج العرب)
+  {
+    id: 1,
+    title: "هتل بورج العرب دبی",
+    contry: "امارات متحده عربی",
+    categoryTour: "اقامت لوکس",
+    isDomestic: false,
+    img: [
+      "https://www.burj-al-arab.com/wp-content/uploads/2020/11/Burj-Al-Arab-Exterior-Day.jpg",
+      "https://www.burj-al-arab.com/wp-content/uploads/2020/11/Royal-Two-Bedroom-Suite-Living-Area.jpg",
+      "https://www.burj-al-arab.com/wp-content/uploads/2020/11/Al-Mahara-Restaurant.jpg",
+    ],
+    numbers: 4.9,
+    time: "3 شب",
+    price: 2500000,
+    discount: 15,
+    startTour: "1403/9/1",
+    endTour: "1403/9/4",
+    strength: "2 بزرگسال",
+    benefitsItem: [
+      { id: 1, benefits: "استخر اختصاصی", cont: 150000 },
+      { id: 2, benefits: "اسپا برای هر نفر", cont: 350000 },
+      { id: 3, benefits: "صبحانه لوکس", cont: 120000 },
+      { id: 4, benefits: "ترانسفر فرودگاهی", cont: 200000 },
+    ],
+    benefits: [],
+    checkTour: [
+      {
+        id: 1,
+        description:
+          "هتل ۷ ستاره بورج العرب نماد لوکس‌گرایی در دبی است. این هتل با معماری منحصر به فردش به شکل بادبان کشتی، یکی از شناخته‌شده‌ترین هتل‌های جهان محسوب می‌شود. تمام سوئیت‌های این هتل دو طبقه بوده و با استانداردهای بالای خدمات هتلداری تجربه‌ای بی‌نظیر را برای مهمانان فراهم می‌کنند.",
+        features: [
+          { id: 1, icon: PiPizzaLight, title: "رستوران‌های بین‌المللی" },
+          { id: 3, icon: IoWifiSharp, title: "وای فای پرسرعت" },
+          { id: 4, icon: FiCoffee, title: "میان وعده رایگان" },
+          { id: 5, icon: BsFileMedical, title: "سالن اسپا و wellness" },
+        ],
+        planDay: [
+          {
+            id: 1,
+            title: "روز اول",
+            description:
+              "ورود به هتل و استقبال گرم با نوشیدنی خوشامدگویی. استراحت در سوئیت لوکس و استفاده از امکانات هتل.",
+          },
+          {
+            id: 2,
+            title: "روز دوم",
+            description:
+              "صرف صبحانه در رستوران اسکای ویو با نمای پانوراما از دبی. استفاده از ساحل اختصاصی هتل و امکانات آبی.",
+          },
+          {
+            id: 3,
+            title: "روز سوم",
+            description:
+              "تجربه اسپا و ماساژ حرفه‌ای. شام در رستوران زیرآبی آل ماهارا با نمای آکواریوم.",
+          },
+        ],
+      },
+    ],
+    place: [
+      {
+        id: 1,
+        img: "https://www.burj-al-arab.com/wp-content/uploads/2020/11/Burj-Al-Arab-Exterior-Night.jpg",
+        title: "سوئیت رویال",
+        description:
+          "سوئیت‌های دو طبقه با دکوراسیون لوکس، سرویس بهداشتی مرمرین و حمام اختصاصی با محصولات اختصاصی هتل.",
+      },
+      {
+        id: 2,
+        img: "https://www.burj-al-arab.com/wp-content/uploads/2020/11/Al-Mahara-Restaurant.jpg",
+        title: "رستوران آل ماهارا",
+        description:
+          "رستوران زیرآبی با آکواریوم عظیم که تجربه‌ای منحصر به فرد از صرف غذا در زیر آب را ارائه می‌دهد.",
+      },
+      {
+        id: 3,
+        img: "https://www.burj-al-arab.com/wp-content/uploads/2020/11/Talise-Spa-Treatment-Room.jpg",
+        title: "اسپای تالیسه",
+        description:
+          "مرکز اسپا و wellness با انواع ماساژهای درمانی و آرامش‌بخش در فضایی لوکس و آرام.",
+      },
+    ],
+    lows: {
+      general: [
+        "حداقل سن رزرو ۲۱ سال است.",
+        "پاسپورت معتبر با حداقل ۶ ماه اعتبار الزامی است.",
+        "هزینه‌های اضافی مانند mini-bar در چک‌اوت محاسبه می‌شود.",
+      ],
+      cancellation: [
+        "لغو تا ۷ روز قبل: بدون جریمه",
+        "لغو ۳ تا ۷ روز قبل: ۵۰% هزینه یک شب",
+        "لغو کمتر از ۳ روز قبل: ۱۰۰% هزینه",
+      ],
+      health: [
+        "استفاده از استخر و اسپا نیاز به رزرو قبلی دارد.",
+        "ماساژ برای بانوان باردار توصیه نمی‌شود.",
+      ],
+      notes: [
+        "ساعت چک‌این: ۱۵:00 | چک‌اوت: ۱۲:00",
+        "حیوانات خانگی مجاز نیستند.",
+        "سیگار کشیدن فقط در مناطق مشخص شده امکان‌پذیر است.",
+      ],
+    },
+    hostTour: {
+      title: "خدمات هتل بورج العرب",
+      services: [
+        "باتلر شخصی ۲۴ ساعته",
+        "ترانسفر رولز رویس",
+        "دسترسی به ساحل اختصاصی",
+        "ورودی رایگان به Wild Wadi Waterpark",
+        "اینترنت پرسرعت رایگان",
+      ],
+      conditions: [
+        "حداقل اقامت ۲ شب",
+        "پرداخت ۱۰۰% در زمان رزرو",
+        "ارائه کارت شناسایی معتبر در چک‌این",
+      ],
+    },
+    comment: [
+      {
+        id: 1,
+        userName: "@hamed_dubai",
+        image: "/images/users/hamed.jpg",
+        description:
+          "بهترین تجربه اقامتی عمرم بود! خدمات باتلر واقعاً بی‌نظیر بود. رستوران آل ماهارا رو حتماً تجربه کنید.",
+        date: "1402/08/10",
+      },
+      {
+        id: 2,
+        userName: "@sara_luxury",
+        image: "/images/users/sara.jpg",
+        description:
+          "هتل واقعاً شگفت‌انگیزه. نمای سوئیت‌ها به دریاست و دکوراسیون خیلی شیک و مدرن داره. اسپاش هم عالیه.",
+        date: "1402/07/22",
+      },
+      {
+        id: 3,
+        userName: "@ali_traveler",
+        image: "/images/users/ali.jpg",
+        description:
+          "گرونه ولی ارزشش رو داره. صبحونه هتل تنوع فوق‌العاده‌ای داره و کیفیت خدمات واقعاً در سطح ۷ ستاره است.",
+        date: "1402/09/05",
+      },
+    ],
+  },
+
+  // نمونه دوم: هتل مارینا بی سندز سنگاپور
+  {
+    id: 2,
+    title: "هتل مارینا بی سندز",
+    contry: "سنگاپور",
+    categoryTour: "اقامت لوکس",
+    isDomestic: false,
+    img: [
+      "https://www.marinabaysands.com/content/dam/marinabaysands/singapore/accommodation/hotel-towers/MBS-Hotel-Tower-Exterior.jpg",
+      "https://www.marinabaysands.com/content/dam/marinabaysands/singapore/accommodation/deluxe-room/MBS-Deluxe-Room-King.jpg",
+      "https://www.marinabaysands.com/content/dam/marinabaysands/singapore/restaurants/bread-street-kitchen/MBS-Bread-Street-Kitchen-Interior.jpg",
+    ],
+    numbers: 4.8,
+    time: "4 شب",
+    price: 1800000,
+    discount: 10,
+    startTour: "1403/9/5",
+    endTour: "1403/9/9",
+    strength: "2 بزرگسال",
+    benefitsItem: [
+      { id: 1, benefits: "استخر بی‌نظیر", cont: 200000 },
+      { id: 2, benefits: "اسکای پارک", cont: 150000 },
+      { id: 3, benefits: "صبحانه بوفه", cont: 100000 },
+    ],
+    benefits: [],
+    checkTour: [
+      {
+        id: 1,
+        description:
+          "هتل مارینا بی سندز با معماری آینده‌نگرانه و استخر بی‌نظیر روی بام، یکی از نمادهای سنگاپور محسوب می‌شود. این مجموعه شامل کازینو، مرکز خرید و سالن‌های نمایش است.",
+        features: [
+          { id: 1, icon: PiPizzaLight, title: "رستوران گوردون رمزی" },
+          { id: 3, icon: IoWifiSharp, title: "وای فای رایگان" },
+          { id: 4, icon: FiCoffee, title: "کافه‌تریا" },
+          { id: 5, icon: BsFileMedical, title: "مرکز سلامت" },
+        ],
+        planDay: [
+          {
+            id: 1,
+            title: "روز اول",
+            description:
+              "ورود به هتل و استقبال. گشت و گذار در مرکز خرید هتل و شام در یکی از رستوران‌های معروف مجموعه.",
+          },
+          {
+            id: 2,
+            title: "روز دوم",
+            description:
+              "بازدید از اسکای پارک و استخر معروف هتل. عصرها تماشای نمایش Spectra.",
+          },
+          {
+            id: 3,
+            title: "روز سوم",
+            description:
+              "بازدید از جاذبه‌های سنگاپور مانند باغ‌های کنار خلیج و مرکز شهر.",
+          },
+        ],
+      },
+    ],
+    place: [
+      {
+        id: 1,
+        img: "https://www.marinabaysands.com/content/dam/marinabaysands/singapore/attractions/infinity-pool/MBS-Infinity-Pool-Day.jpg",
+        title: "استخر بی‌نهایت",
+        description:
+          "استخر روی بام با منظره پانوراما از شهر سنگاپور در ارتفاع 200 متری.",
+      },
+      {
+        id: 2,
+        img: "https://www.marinabaysands.com/content/dam/marinabaysands/singapore/restaurants/ce-la-vi/MBS-Ce-La-Vi-Interior.jpg",
+        title: "رستوران CE LA VI",
+        description:
+          "رستوران لوکس روی بام با منوی آسیایی-فرانسوی و نمای 360 درجه از شهر.",
+      },
+      {
+        id: 3,
+        img: "https://www.marinabaysands.com/content/dam/marinabaysands/singapore/attractions/art-science-museum/MBS-ArtScience-Museum-Exterior.jpg",
+        title: "موزه ArtScience",
+        description:
+          "نمایشگاه‌های تعاملی در موزه‌ای با معماری منحصر به فرد به شکل گل نیلوفر آبی.",
+      },
+    ],
+    lows: {
+      general: [
+        "ورود به استخر فقط برای مهمانان هتل مجاز است.",
+        "حداقل سن برای ورود به کازینو 21 سال است.",
+      ],
+      cancellation: [
+        "لغو تا 14 روز قبل: بدون جریمه",
+        "لغو 7 تا 14 روز قبل: 30% هزینه",
+        "لغو کمتر از 7 روز قبل: 50% هزینه",
+      ],
+      health: ["استخر برای کودکان زیر 12 سال فقط با همراهی بزرگسال مجاز است."],
+      notes: [
+        "چک‌این از ساعت 15:00 | چک‌اوت تا 11:00",
+        "پارکینگ رایگان برای مهمانان",
+      ],
+    },
+    hostTour: {
+      title: "خدمات هتل مارینا بی سندز",
+      services: [
+        "دسترسی به اسکای پارک",
+        "ورود رایگان به موزه ArtScience",
+        "اینترنت پرسرعت",
+        "ترانسفر فرودگاهی",
+      ],
+      conditions: ["حداقل اقامت 2 شب", "پرداخت 50% پیش‌پرداخت"],
+    },
+    comment: [
+      {
+        id: 1,
+        userName: "@sara_singapore",
+        image: "/images/users/sara2.jpg",
+        description:
+          "استخر روی بام تجربه‌ای فراموش‌نشدنی بود! منظره شهر سنگاپور عالی بود.",
+        date: "1402/07/15",
+      },
+      {
+        id: 2,
+        userName: "@reza_travel",
+        image: "/images/users/reza.jpg",
+        description:
+          "موقعیت هتل عالیه. نزدیک به همه جاذبه‌های اصلی شهره. اتاق‌ها هم خیلی تمیز و مدرن بودند.",
+        date: "1402/08/22",
+      },
+    ],
+  },
+
+  // نمونه سوم: هتل برج الخلیفه دبی
+  {
+    id: 3,
+    title: "هتل آرمانی برج الخلیفه",
+    contry: "امارات متحده عربی",
+    categoryTour: "اقامت لوکس",
+    isDomestic: false,
+    img: [
+      "https://www.armanihotels.com/content/dam/armani/hotels/dubai/accommodation/armani-deluxe-room/armani-deluxe-room-living-area.jpg",
+      "https://www.armanihotels.com/content/dam/armani/hotels/dubai/dining/armani-hashi/armani-hashi-restaurant.jpg",
+      "https://www.armanihotels.com/content/dam/armani/hotels/dubai/wellness/armani-spa/armani-spa-treatment-room.jpg",
+    ],
+    numbers: 4.7,
+    time: "3 شب",
+    price: 2200000,
+    discount: 5,
+    startTour: "1403/10/1",
+    endTour: "1403/10/4",
+    strength: "2 بزرگسال",
+    benefitsItem: [
+      { id: 1, benefits: "صبحانه در اتاق", cont: 150000 },
+      { id: 2, benefits: "اسپا", cont: 300000 },
+      { id: 3, benefits: "ترانسفر فرودگاهی", cont: 250000 },
+    ],
+    benefits: [],
+    checkTour: [
+      {
+        id: 1,
+        description:
+          "هتل آرمانی در برج الخلیفه، بلندترین برج جهان، تجربه‌ای منحصر به فرد از زندگی لوکس را ارائه می‌دهد. طراحی داخلی توسط جورجیو آرمانی انجام شده و تمام جزئیات با دقت بالا انتخاب شده‌اند.",
+        features: [
+          { id: 1, icon: PiPizzaLight, title: "رستوران هاشی" },
+          { id: 3, icon: IoWifiSharp, title: "وای فای پرسرعت" },
+          { id: 4, icon: FiCoffee, title: "کافه آرمانی" },
+          { id: 5, icon: BsFileMedical, title: "اسپای اختصاصی" },
+        ],
+        planDay: [
+          {
+            id: 1,
+            title: "روز اول",
+            description:
+              "ورود به هتل و استقبال ویژه. گشت و گذار در مرکز خرید دبی مال و تماشای آبنمای دبی.",
+          },
+          {
+            id: 2,
+            title: "روز دوم",
+            description:
+              "صرف صبحانه در اتاق با منظره شهر. بازدید از آکواریوم دبی مال و شام در رستوران هاشی.",
+          },
+          {
+            id: 3,
+            title: "روز سوم",
+            description:
+              "تجربه اسپای لوکس آرمانی. عصرها تماشای غروب از تراس هتل.",
+          },
+        ],
+      },
+    ],
+    place: [
+      {
+        id: 1,
+        img: "https://www.armanihotels.com/content/dam/armani/hotels/dubai/accommodation/armani-suite/armani-suite-living-area.jpg",
+        title: "سوئیت آرمانی",
+        description:
+          "سوئیت‌های طراحی شده توسط جورجیو آرمانی با مبلمان و دکوراسیون اختصاصی.",
+      },
+      {
+        id: 2,
+        img: "https://www.armanihotels.com/content/dam/armani/hotels/dubai/dining/armani-hashi/armani-hashi-restaurant.jpg",
+        title: "رستوران هاشی",
+        description:
+          "رستوران ژاپنی با کیفیت عالی و محیطی شیک در طبقات بالای برج الخلیفه.",
+      },
+      {
+        id: 3,
+        img: "https://www.armanihotels.com/content/dam/armani/hotels/dubai/wellness/armani-spa/armani-spa-treatment-room.jpg",
+        title: "اسپای آرمانی",
+        description:
+          "مرکز اسپا با خدمات درمانی و آرامش‌بخش در محیطی کاملاً لوکس.",
+      },
+    ],
+    lows: {
+      general: ["حداقل سن رزرو 21 سال است.", "پاسپورت معتبر الزامی است."],
+      cancellation: [
+        "لغو تا 30 روز قبل: بدون جریمه",
+        "لغو 15 تا 30 روز قبل: 50% هزینه",
+        "لغو کمتر از 15 روز قبل: 100% هزینه",
+      ],
+      health: ["استفاده از اسپا نیاز به رزرو قبلی دارد."],
+      notes: [
+        "چک‌این از ساعت 15:00 | چک‌اوت تا 12:00",
+        "حیوانات خانگی مجاز نیستند.",
+      ],
+    },
+    hostTour: {
+      title: "خدمات هتل آرمانی",
+      services: [
+        "باتلر شخصی",
+        "دسترسی به استخر و سالن ورزشی",
+        "اینترنت پرسرعت",
+        "ترانسفر مرسدس بنز",
+      ],
+      conditions: ["حداقل اقامت 2 شب", "پرداخت 100% در زمان رزرو"],
+    },
+    comment: [
+      {
+        id: 1,
+        userName: "@ali_dubai",
+        image: "/images/users/ali2.jpg",
+        description:
+          "تجربه زندگی در بلندترین برج جهان واقعاً بی‌نظیر بود. خدمات هتل در سطح بسیار بالایی بود.",
+        date: "1402/06/10",
+      },
+      {
+        id: 2,
+        userName: "@narges_luxury",
+        image: "/images/users/narges.jpg",
+        description:
+          "طراحی داخلی هتل خیره‌کننده است. هر جزئیاتی با دقت انتخاب شده. رستوران هاشی هم عالی بود.",
+        date: "1402/07/25",
+      },
+    ],
+  },
+
+  // نمونه چهارم: هتل شانگریلا بانکوک
+  {
+    id: 4,
+    title: "هتل شانگریلا بانکوک",
+    contry: "تایلند",
+    categoryTour: "اقامت لوکس",
+    isDomestic: false,
+    img: [
+      "https://www.shangri-la.com/content/dam/shangri-la/hotels/bangkok/shangrila/dining/restaurants/sala-rim-naam/sala-rim-naam-02.jpg",
+      "https://www.shangri-la.com/content/dam/shangri-la/hotels/bangkok/shangrila/accommodation/deluxe-river-view-room/deluxe-river-view-room-02.jpg",
+      "https://www.shangri-la.com/content/dam/shangri-la/hotels/bangkok/shangrila/wellness/chi-spa/chi-spa-01.jpg",
+    ],
+    numbers: 4.6,
+    time: "5 شب",
+    price: 1500000,
+    discount: 20,
+    startTour: "1403/10/10",
+    endTour: "1403/10/15",
+    strength: "2 بزرگسال",
+    benefitsItem: [
+      { id: 1, benefits: "صبحانه بوفه", cont: 120000 },
+      { id: 2, benefits: "ماساژ تایلندی", cont: 250000 },
+      { id: 3, benefits: "قایق سواری", cont: 180000 },
+    ],
+    benefits: [],
+    checkTour: [
+      {
+        id: 1,
+        description:
+          "هتل شانگریلا بانکوک با موقعیت ممتاز در کنار رودخانه چائو فرایا، ترکیبی از خدمات لوکس و معماری تایلندی را ارائه می‌دهد. این هتل با فضای سبز وسیع و استخرهای متعدد، محیطی آرامش‌بخش در قلب بانکوک ایجاد کرده است.",
+        features: [
+          { id: 1, icon: PiPizzaLight, title: "رستوران بین‌المللی" },
+          { id: 3, icon: IoWifiSharp, title: "وای فای رایگان" },
+          { id: 4, icon: FiCoffee, title: "چای سنتی تایلندی" },
+          { id: 5, icon: BsFileMedical, title: "اسپای چی" },
+        ],
+        planDay: [
+          {
+            id: 1,
+            title: "روز اول",
+            description:
+              "ورود به هتل و استقبال با گل‌گردن. گشت و گذار در محله تاریخی بانکوک.",
+          },
+          {
+            id: 2,
+            title: "روز دوم",
+            description:
+              "بازدید از کاخ بزرگ و معبد بودای زمردین. شام در رستوران سنتی تایلندی هتل.",
+          },
+          {
+            id: 3,
+            title: "روز سوم",
+            description:
+              "قایق‌سواری در رودخانه چائو فرایا و بازدید از بازارهای شناور.",
+          },
+        ],
+      },
+    ],
+    place: [
+      {
+        id: 1,
+        img: "https://www.shangri-la.com/content/dam/shangri-la/hotels/bangkok/shangrila/accommodation/shangri-la-suite/shangri-la-suite-01.jpg",
+        title: "سوئیت رودخانه‌ای",
+        description:
+          "سوئیت‌های لوکس با نمای رودخانه چائو فرایا و دکوراسیون تایلندی-چینی.",
+      },
+      {
+        id: 2,
+        img: "https://www.shangri-la.com/content/dam/shangri-la/hotels/bangkok/shangrila/dining/restaurants/sala-rim-naam/sala-rim-naam-02.jpg",
+        title: "رستوران سالا ریم نام",
+        description:
+          "رستوران سنتی تایلندی در فضایی رویایی با اجرای رقص و موسیقی محلی.",
+      },
+      {
+        id: 3,
+        img: "https://www.shangri-la.com/content/dam/shangri-la/hotels/bangkok/shangrila/wellness/chi-spa/chi-spa-01.jpg",
+        title: "اسپای چی",
+        description:
+          "مرکز اسپا با الهام از طب سنتی چینی و تایلندی در محیطی کاملاً آرام.",
+      },
+    ],
+    lows: {
+      general: [
+        "پاسپورت معتبر الزامی است.",
+        "هزینه خدمات اضافی در چک‌اوت محاسبه می‌شود.",
+      ],
+      cancellation: [
+        "لغو تا 14 روز قبل: بدون جریمه",
+        "لغو 7 تا 14 روز قبل: 30% هزینه",
+        "لغو کمتر از 7 روز قبل: 50% هزینه",
+      ],
+      health: ["ماساژ برای افراد با شرایط خاص پزشکی نیاز به مشاوره دارد."],
+      notes: [
+        "چک‌این از ساعت 14:00 | چک‌اوت تا 12:00",
+        "پارکینگ رایگان برای مهمانان",
+      ],
+    },
+    hostTour: {
+      title: "خدمات هتل شانگریلا",
+      services: [
+        "ترانسفر با قایق اختصاصی",
+        "دسترسی به استخر و سالن ورزشی",
+        "اینترنت پرسرعت",
+        "پارکینگ رایگان",
+      ],
+      conditions: ["حداقل اقامت 3 شب", "پرداخت 50% پیش‌پرداخت"],
+    },
+    comment: [
+      {
+        id: 1,
+        userName: "@mahsa_thai",
+        image: "/images/users/mahsa.jpg",
+        description:
+          "منظره رودخانه از اتاق عالی بود. خدمات هتل بسیار حرفه‌ای و کارکنان خوش‌برخورد بودند.",
+        date: "1402/05/15",
+      },
+      {
+        id: 2,
+        userName: "@amir_travel",
+        image: "/images/users/amir.jpg",
+        description:
+          "رستوران تایلندی هتل بهترین غذایی بود که در بانکوک خوردم. محیط هتل هم خیلی آروم و دلنشینه.",
+        date: "1402/06/20",
+      },
+    ],
+  },
+
+  // نمونه پنجم: هتل ریچموند استانبول
+  {
+    id: 5,
+    title: "هتل ریچموند استانبول",
+    contry: "ترکیه",
+    categoryTour: "اقامت اقتصادی",
+    isDomestic: false,
+    img: [
+      "https://www.richmondhotels.com.tr/wp-content/uploads/2021/05/richmond-nisantasi-hotel-istanbul-exterior.jpg",
+      "https://www.richmondhotels.com.tr/wp-content/uploads/2021/05/deluxe-room-1.jpg",
+      "https://www.richmondhotels.com.tr/wp-content/uploads/2021/05/rooftop-restaurant-1.jpg",
+    ],
+    numbers: 4.3,
+    time: "4 شب",
+    price: 850000,
+    discount: 15,
+    startTour: "1403/11/1",
+    endTour: "1403/11/5",
+    strength: "2 بزرگسال",
+    benefitsItem: [
+      { id: 1, benefits: "صبحانه بوفه", cont: 80000 },
+      { id: 2, benefits: "ترانسفر فرودگاهی", cont: 150000 },
+    ],
+    benefits: [],
+    checkTour: [
+      {
+        id: 1,
+        description:
+          "هتل ریچموند در منطقه نیشانتاشی استانبول، یکی از بهترین انتخاب‌ها برای مسافران اقتصادی است. این هتل با موقعیت عالی نزدیک به مراکز خرید و جاذبه‌های توریستی، اقامتی راحت را ارائه می‌دهد.",
+        features: [
+          { id: 1, icon: PiPizzaLight, title: "رستوران روی پشت بام" },
+          { id: 3, icon: IoWifiSharp, title: "وای فای رایگان" },
+          { id: 4, icon: FiCoffee, title: "کافه‌تریا" },
+        ],
+        planDay: [
+          {
+            id: 1,
+            title: "روز اول",
+            description:
+              "ورود به هتل و استقبال. گشت و گذار در منطقه نیشانتاشی و خرید از فروشگاه‌های معروف.",
+          },
+          {
+            id: 2,
+            title: "روز دوم",
+            description:
+              "بازدید از میدان تکسیم و خیابان استقلال. استفاده از رستوران روی پشت بام هتل.",
+          },
+          {
+            id: 3,
+            title: "روز سوم",
+            description:
+              "بازدید از مسجد ایاصوفیه و کاخ توپکاپی. شام در رستوران‌های محلی.",
+          },
+        ],
+      },
+    ],
+    place: [
+      {
+        id: 1,
+        img: "https://www.richmondhotels.com.tr/wp-content/uploads/2021/05/deluxe-room-1.jpg",
+        title: "اتاق دلکسه",
+        description:
+          "اتاق‌های دلباز با طراحی مدرن و امکانات کامل برای اقامتی راحت.",
+      },
+      {
+        id: 2,
+        img: "https://www.richmondhotels.com.tr/wp-content/uploads/2021/05/rooftop-restaurant-1.jpg",
+        title: "رستوران روی پشت بام",
+        description:
+          "رستوران با منظره پانوراما از شهر استانبول و منوی بین‌المللی.",
+      },
+      {
+        id: 3,
+        img: "https://www.richmondhotels.com.tr/wp-content/uploads/2021/05/lobby-bar-1.jpg",
+        title: "لابی بار",
+        description:
+          "محلی دنج برای استراحت و نوشیدن نوشیدنی‌های خوشمزه در محیطی آرام.",
+      },
+    ],
+    lows: {
+      general: ["پاسپورت معتبر الزامی است."],
+      cancellation: [
+        "لغو تا 7 روز قبل: بدون جریمه",
+        "لغو 3 تا 7 روز قبل: 30% هزینه",
+        "لغو کمتر از 3 روز قبل: 50% هزینه",
+      ],
+      health: [],
+      notes: ["چک‌این از ساعت 14:00 | چک‌اوت تا 12:00"],
+    },
+    hostTour: {
+      title: "خدمات هتل ریچموند",
+      services: ["اینترنت پرسرعت", "صبحانه بوفه", "دسترسی آسان به مراکز خرید"],
+      conditions: ["حداقل اقامت 2 شب", "پرداخت 30% پیش‌پرداخت"],
+    },
+    comment: [
+      {
+        id: 1,
+        userName: "@farhad_istanbul",
+        image: "/images/users/farhad.jpg",
+        description:
+          "موقعیت هتل عالی بود. نزدیک به همه مراکز خرید اصلی. اتاق‌ها هم تمیز و مرتب بودند.",
+        date: "1402/04/10",
+      },
+      {
+        id: 2,
+        userName: "@zahra_travel",
+        image: "/images/users/zahra.jpg",
+        description:
+          "برای قیمتی که پرداخت کردیم واقعاً ارزش داشت. صبحانه تنوع خوبی داشت و کارکنان خوش‌برخورد بودند.",
+        date: "1402/05/15",
+      },
+    ],
+  },
+
+  // نمونه ششم: هتل پلازا نیویورک
+  {
+    id: 6,
+    title: "هتل پلازا نیویورک",
+    contry: "آمریکا",
+    categoryTour: "اقامت لوکس",
+    isDomestic: false,
+    img: [
+      "https://www.theplazany.com/wp-content/uploads/2021/09/The-Plaza-Hotel-Exterior.jpg",
+      "https://www.theplazany.com/wp-content/uploads/2021/09/Grand-Luxury-King-Room.jpg",
+      "https://www.theplazany.com/wp-content/uploads/2021/09/Palm-Court-Afternoon-Tea.jpg",
+    ],
+    numbers: 4.7,
+    time: "5 شب",
+    price: 3500000,
+    discount: 10,
+    startTour: "1403/12/1",
+    endTour: "1403/12/6",
+    strength: "2 بزرگسال",
+    benefitsItem: [
+      { id: 1, benefits: "صبحانه در Palm Court", cont: 150000 },
+      { id: 2, benefits: "تور شهری", cont: 250000 },
+      { id: 3, benefits: "ترانسفر فرودگاهی", cont: 300000 },
+    ],
+    benefits: [],
+    checkTour: [
+      {
+        id: 1,
+        description:
+          "هتل پلازا یکی از نمادهای تاریخی و لوکس نیویورک است که از سال 1907 میزبان شخصیت‌های سرشناس جهانی بوده است. این هتل با معماری بی‌نظیر و موقعیت ممتاز در مرکز منهتن، تجربه‌ای منحصر به فرد از اقامت در نیویورک را ارائه می‌دهد.",
+        features: [
+          { id: 1, icon: PiPizzaLight, title: "رستوران The Palm Court" },
+          { id: 3, icon: IoWifiSharp, title: "وای فای پرسرعت" },
+          { id: 4, icon: FiCoffee, title: "چای عصرانه" },
+          { id: 5, icon: BsFileMedical, title: "مرکز اسپا" },
+        ],
+        planDay: [
+          {
+            id: 1,
+            title: "روز اول",
+            description:
+              "ورود به هتل و استقبال ویژه. گشت و گذار در سنترال پارک و محله پنجم آونو.",
+          },
+          {
+            id: 2,
+            title: "روز دوم",
+            description:
+              "بازدید از موزه متروپولیتن و راکفلر سنتر. چای عصرانه در Palm Court.",
+          },
+          {
+            id: 3,
+            title: "روز سوم",
+            description:
+              "بازدید از مجسمه آزادی و الیس آیلند. شام در رستوران‌های معروف منهتن.",
+          },
+        ],
+      },
+    ],
+    place: [
+      {
+        id: 1,
+        img: "https://www.theplazany.com/wp-content/uploads/2021/09/Grand-Luxury-King-Room.jpg",
+        title: "اتاق گرند لوکس",
+        description:
+          "اتاق‌های مجلل با طراحی کلاسیک و مبلمان عتیقه، پنجره‌های بلند و سرویس بهداشتی مرمرین.",
+      },
+      {
+        id: 2,
+        img: "https://www.theplazany.com/wp-content/uploads/2021/09/Palm-Court-Afternoon-Tea.jpg",
+        title: "Palm Court",
+        description:
+          "سالن معروف چای عصرانه با سقف شیشه‌ای و فضایی رویایی، یکی از نمادهای هتل پلازا.",
+      },
+      {
+        id: 3,
+        img: "https://www.theplazany.com/wp-content/uploads/2021/09/The-Plaza-Hotel-Rooftop.jpg",
+        title: "تراس روی پشت بام",
+        description:
+          "تراس خصوصی با نمای پانوراما از سنترال پارک و خط افق منهتن.",
+      },
+    ],
+    lows: {
+      general: [
+        "پاسپورت و ویزای معتبر الزامی است.",
+        "حداقل سن رزرو 21 سال است.",
+      ],
+      cancellation: [
+        "لغو تا 30 روز قبل: بدون جریمه",
+        "لغو 14 تا 30 روز قبل: 50% هزینه",
+        "لغو کمتر از 14 روز قبل: 100% هزینه",
+      ],
+      health: [],
+      notes: [
+        "چک‌این از ساعت 15:00 | چک‌اوت تا 12:00",
+        "حیوانات خانگی مجاز نیستند.",
+      ],
+    },
+    hostTour: {
+      title: "خدمات هتل پلازا",
+      services: [
+        "باتلر شخصی",
+        "دسترسی به مرکز اسپا",
+        "اینترنت پرسرعت",
+        "ترانسفر مرسدس بنز",
+      ],
+      conditions: ["حداقل اقامت 3 شب", "پرداخت 100% در زمان رزرو"],
+    },
+    comment: [
+      {
+        id: 1,
+        userName: "@sara_nyc",
+        image: "/images/users/sara3.jpg",
+        description:
+          "تجربه اقامت در یک هتل تاریخی واقعاً بی‌نظیر بود. چای عصرانه در Palm Court رو هرگز فراموش نمی‌کنم!",
+        date: "1402/03/05",
+      },
+      {
+        id: 2,
+        userName: "@amir_usa",
+        image: "/images/users/amir2.jpg",
+        description:
+          "موقعیت هتل عالیه. دقیقاً روبروی سنترال پارک و نزدیک به همه جاذبه‌های اصلی. خدمات هم در سطح بالایی بود.",
+        date: "1402/04/15",
+      },
+    ],
+  },
+
+  // نمونه هفتم: هتل بایان تری استانبول
+  {
+    id: 7,
+    title: "هتل بایان تری استانبول",
+    contry: "ترکیه",
+    categoryTour: "اقامت لوکس",
+    isDomestic: false,
+    img: [
+      "https://www.bayantree.com/content/dam/bayantree/hotels/turkey/istanbul/bayan-tree-istanbul/overview/bayan-tree-istanbul-exterior.jpg",
+      "https://www.bayantree.com/content/dam/bayantree/hotels/turkey/istanbul/bayan-tree-istanbul/accommodation/one-bedroom-suite/one-bedroom-suite-living-area.jpg",
+      "https://www.bayantree.com/content/dam/bayantree/hotels/turkey/istanbul/bayan-tree-istanbul/dining/rooftop-restaurant/rooftop-restaurant-terrace.jpg",
+    ],
+    numbers: 4.8,
+    time: "4 شب",
+    price: 1800000,
+    discount: 12,
+    startTour: "1403/12/10",
+    endTour: "1403/12/14",
+    strength: "2 بزرگسال",
+    benefitsItem: [
+      { id: 1, benefits: "صبحانه بوفه", cont: 120000 },
+      { id: 2, benefits: "اسپا", cont: 280000 },
+      { id: 3, benefits: "ترانسفر فرودگاهی", cont: 200000 },
+    ],
+    benefits: [],
+    checkTour: [
+      {
+        id: 1,
+        description:
+          "هتل بایان تری در منطقه بشیکتاش استانبول، با معماری مدرن و امکانات لوکس، یکی از بهترین انتخاب‌ها برای مسافران نازک‌بین است. این هتل با نمای پانوراما از تنگه بسفر، اقامتی به یاد ماندنی را ارائه می‌دهد.",
+        features: [
+          { id: 1, icon: PiPizzaLight, title: "رستوران روی پشت بام" },
+          { id: 3, icon: IoWifiSharp, title: "وای فای پرسرعت" },
+          { id: 4, icon: FiCoffee, title: "کافه‌تریا" },
+          { id: 5, icon: BsFileMedical, title: "مرکز اسپا" },
+        ],
+        planDay: [
+          {
+            id: 1,
+            title: "روز اول",
+            description:
+              "ورود به هتل و استقبال. گشت و گذار در منطقه اورتاکوی و بازدید از مسجد اورتاکوی.",
+          },
+          {
+            id: 2,
+            title: "روز دوم",
+            description:
+              "قایق‌سواری در تنگه بسفر و بازدید از کاخ دلما باغچه. شام در رستوران روی پشت بام هتل.",
+          },
+          {
+            id: 3,
+            title: "روز سوم",
+            description:
+              "بازدید از میدان تکسیم و خیابان استقلال. تجربه اسپای لوکس هتل.",
+          },
+        ],
+      },
+    ],
+    place: [
+      {
+        id: 1,
+        img: "https://www.bayantree.com/content/dam/bayantree/hotels/turkey/istanbul/bayan-tree-istanbul/accommodation/one-bedroom-suite/one-bedroom-suite-living-area.jpg",
+        title: "سوئیت یک خوابه",
+        description:
+          "سوئیت‌های دلباز با طراحی مدرن و نمای پانوراما از تنگه بسفر، دارای آشپزخانه مجهز.",
+      },
+      {
+        id: 2,
+        img: "https://www.bayantree.com/content/dam/bayantree/hotels/turkey/istanbul/bayan-tree-istanbul/dining/rooftop-restaurant/rooftop-restaurant-terrace.jpg",
+        title: "رستوران روی پشت بام",
+        description:
+          "رستوران با منظره خیره‌کننده از تنگه بسفر و پل بسفر، ارائه‌دهنده منوی بین‌المللی و ترکی.",
+      },
+      {
+        id: 3,
+        img: "https://www.bayantree.com/content/dam/bayantree/hotels/turkey/istanbul/bayan-tree-istanbul/wellness/spa/spa-treatment-room.jpg",
+        title: "اسپای بایان تری",
+        description:
+          "مرکز اسپا با خدمات درمانی و آرامش‌بخش در محیطی کاملاً لوکس و آرام.",
+      },
+    ],
+    lows: {
+      general: ["پاسپورت معتبر الزامی است."],
+      cancellation: [
+        "لغو تا 14 روز قبل: بدون جریمه",
+        "لغو 7 تا 14 روز قبل: 30% هزینه",
+        "لغو کمتر از 7 روز قبل: 50% هزینه",
+      ],
+      health: ["استفاده از اسپا نیاز به رزرو قبلی دارد."],
+      notes: ["چک‌این از ساعت 15:00 | چک‌اوت تا 12:00"],
+    },
+    hostTour: {
+      title: "خدمات هتل بایان تری",
+      services: [
+        "دسترسی به استخر و سالن ورزشی",
+        "اینترنت پرسرعت",
+        "ترانسفر فرودگاهی",
+      ],
+      conditions: ["حداقل اقامت 2 شب", "پرداخت 50% پیش‌پرداخت"],
+    },
+    comment: [
+      {
+        id: 1,
+        userName: "@nima_istanbul",
+        image: "/images/users/nima.jpg",
+        description:
+          "منظره تنگه بسفر از اتاق واقعاً خیره‌کننده بود. هتل موقعیت عالی داره و خدماتش هم در سطح بالاییه.",
+        date: "1402/02/20",
+      },
+      {
+        id: 2,
+        userName: "@shima_luxury",
+        image: "/images/users/shima.jpg",
+        description:
+          "اسپای هتل یکی از بهترین تجربه‌های ماساژ من بود. رستوران روی پشت بام هم عصرهای فوق‌العاده‌ای رو ایجاد می‌کنه.",
+        date: "1402/03/15",
+      },
+    ],
+  },
+
+  // نمونه هشتم: هتل آتلانتیس دبی
+  {
+    id: 8,
+    title: "هتل آتلانتیس دبی",
+    contry: "امارات متحده عربی",
+    categoryTour: "اقامت تفریحی",
+    isDomestic: false,
+    img: [
+      "https://www.atlantis.com/content/dam/atlantis/dubai/atlantis-the-palm/exterior/atlantis-the-palm-exterior.jpg",
+      "https://www.atlantis.com/content/dam/atlantis/dubai/atlantis-the-palm/accommodation/underwater-suite/underwater-suite-living-area.jpg",
+      "https://www.atlantis.com/content/dam/atlantis/dubai/atlantis-the-palm/dining/bread-street-kitchen/bread-street-kitchen-interior.jpg",
+    ],
+    numbers: 4.7,
+    time: "4 شب",
+    price: 2200000,
+    discount: 15,
+    startTour: "1404/1/1",
+    endTour: "1404/1/5",
+    strength: "2 بزرگسال, 1 کودک",
+    benefitsItem: [
+      { id: 1, benefits: "ورود رایگان به آکواونچر", cont: 300000 },
+      { id: 2, benefits: "صبحانه بوفه", cont: 150000 },
+      { id: 3, benefits: "ترانسفر فرودگاهی", cont: 200000 },
+    ],
+    benefits: [],
+    checkTour: [
+      {
+        id: 1,
+        description:
+          "هتل آتلانتیس دبی در جزیره نخل جمیرا، یکی از معروف‌ترین هتل‌های تفریحی جهان است. این مجموعه شامل پارک آبی آکواونچر، آکواریوم عظیم و سواحل خصوصی می‌شود که آن را به مقصدی ایده‌آل برای خانواده‌ها تبدیل کرده است.",
+        features: [
+          { id: 1, icon: PiPizzaLight, title: "رستوران نوبو" },
+          { id: 3, icon: IoWifiSharp, title: "وای فای پرسرعت" },
+          { id: 4, icon: FiCoffee, title: "کافه‌تریا" },
+          { id: 5, icon: BsFileMedical, title: "مرکز اسپا" },
+        ],
+        planDay: [
+          {
+            id: 1,
+            title: "روز اول",
+            description:
+              "ورود به هتل و استقبال. گشت و گذار در محوطه هتل و آکواریوم Lost Chambers.",
+          },
+          {
+            id: 2,
+            title: "روز دوم",
+            description:
+              "بازدید از پارک آبی آکواونچر و تجربه سرسره‌های مهیج. شام در رستوران نوبو.",
+          },
+          {
+            id: 3,
+            title: "روز سوم",
+            description:
+              "استراحت در ساحل خصوصی هتل و استفاده از امکانات آبی. عصرها بازدید از دبی مال.",
+          },
+        ],
+      },
+    ],
+    place: [
+      {
+        id: 1,
+        img: "https://www.atlantis.com/content/dam/atlantis/dubai/atlantis-the-palm/accommodation/underwater-suite/underwater-suite-living-area.jpg",
+        title: "سوئیت زیرآبی",
+        description:
+          "سوئیت‌های منحصر به فرد با دیوارهای شیشه‌ای که نمای بی‌نظیری از زندگی دریایی آکواریوم هتل ارائه می‌دهند.",
+      },
+      {
+        id: 2,
+        img: "https://www.atlantis.com/content/dam/atlantis/dubai/atlantis-the-palm/attractions/aquaventure/aquaventure-waterpark.jpg",
+        title: "پارک آبی آکواونچر",
+        description:
+          "یکی از بزرگ‌ترین پارک‌های آبی جهان با سرسره‌های مهیج و رودخانه‌های خروشان.",
+      },
+      {
+        id: 3,
+        img: "https://www.atlantis.com/content/dam/atlantis/dubai/atlantis-the-palm/dining/bread-street-kitchen/bread-street-kitchen-interior.jpg",
+        title: "رستوران برد استریت",
+        description:
+          "رستوران تحت مدیریت سرآشپه مشهور گوردون رمزی با منوی بین‌المللی.",
+      },
+    ],
+    lows: {
+      general: ["پاسپورت معتبر الزامی است.", "حداقل سن رزرو 21 سال است."],
+      cancellation: [
+        "لغو تا 21 روز قبل: بدون جریمه",
+        "لغو 7 تا 21 روز قبل: 50% هزینه",
+        "لغو کمتر از 7 روز قبل: 100% هزینه",
+      ],
+      health: ["برخی از سرسره‌های آکواونچر برای کودکان محدودیت قدی دارند."],
+      notes: [
+        "چک‌این از ساعت 15:00 | چک‌اوت تا 12:00",
+        "حیوانات خانگی مجاز نیستند.",
+      ],
+    },
+    hostTour: {
+      title: "خدمات هتل آتلانتیس",
+      services: [
+        "ورود رایگان به آکواونچر",
+        "دسترسی به آکواریوم Lost Chambers",
+        "اینترنت پرسرعت",
+        "ترانسفر فرودگاهی",
+      ],
+      conditions: ["حداقل اقامت 3 شب", "پرداخت 50% پیش‌پرداخت"],
+    },
+    comment: [
+      {
+        id: 1,
+        userName: "@hamed_family",
+        image: "/images/users/hamed2.jpg",
+        description:
+          "بهترین هتل برای خانواده‌ها! بچه‌ها عاشق پارک آبی شدن و ما از سوئیت و خدمات هتل راضی بودیم.",
+        date: "1402/01/10",
+      },
+      {
+        id: 2,
+        userName: "@sara_adventure",
+        image: "/images/users/sara4.jpg",
+        description:
+          "سرسره‌های آکواونچر واقعاً هیجان‌انگیز بودند. سوئیت زیرآبی هم تجربه‌ای منحصر به فرد بود که ارزشش رو داشت.",
+        date: "1402/02/15",
+      },
+    ],
+  },
+
+  // نمونه نهم: هتل شیانگ لا شیراز
+  {
+    id: 9,
+    title: "هتل شیانگ لا شیراز",
+    contry: "ایران",
+    categoryTour: "اقامت لوکس",
+    isDomestic: true,
+    img: [
+      "https://www.xianglahotels.com/content/dam/xiangla/hotels/iran/shiraz/xiang-la-shiraz/exterior/xiang-la-shiraz-exterior.jpg",
+      "https://www.xianglahotels.com/content/dam/xiangla/hotels/iran/shiraz/xiang-la-shiraz/accommodation/deluxe-room/deluxe-room-living-area.jpg",
+      "https://www.xianglahotels.com/content/dam/xiangla/hotels/iran/shiraz/xiang-la-shiraz/dining/persian-restaurant/persian-restaurant-interior.jpg",
+    ],
+    numbers: 4.5,
+    time: "3 شب",
+    price: 1200000,
+    discount: 20,
+    startTour: "1404/2/1",
+    endTour: "1404/2/4",
+    strength: "2 بزرگسال",
+    benefitsItem: [
+      { id: 1, benefits: "صبحانه بوفه", cont: 100000 },
+      { id: 2, benefits: "ماساژ", cont: 200000 },
+      { id: 3, benefits: "ترانسفر فرودگاهی", cont: 150000 },
+    ],
+    benefits: [],
+    checkTour: [
+      {
+        id: 1,
+        description:
+          "هتل شیانگ لا شیراز با ترکیبی از معماری مدرن و عناصر سنتی ایرانی، یکی از بهترین هتل‌های ۵ ستاره ایران محسوب می‌شود. این هتل با موقعیت عالی نزدیک به جاذبه‌های تاریخی شیراز، اقامتی لوکس و به یاد ماندنی را ارائه می‌دهد.",
+        features: [
+          { id: 1, icon: PiPizzaLight, title: "رستوران ایرانی" },
+          { id: 3, icon: IoWifiSharp, title: "وای فای پرسرعت" },
+          { id: 4, icon: FiCoffee, title: "کافه سنتی" },
+          { id: 5, icon: BsFileMedical, title: "مرکز اسپا" },
+        ],
+        planDay: [
+          {
+            id: 1,
+            title: "روز اول",
+            description:
+              "ورود به هتل و استقبال. بازدید از حافظیه و سعدیه در هوای خنک عصرگاهی شیراز.",
+          },
+          {
+            id: 2,
+            title: "روز دوم",
+            description:
+              "بازدید از تخت جمشید و پاسارگاد. شام در رستوران ایرانی هتل با موسیقی زنده.",
+          },
+          {
+            id: 3,
+            title: "روز سوم",
+            description:
+              "بازدید از باغ ارم و نارنجستان قوام. تجربه اسپای سنتی هتل.",
+          },
+        ],
+      },
+    ],
+    place: [
+      {
+        id: 1,
+        img: "https://www.xianglahotels.com/content/dam/xiangla/hotels/iran/shiraz/xiang-la-shiraz/accommodation/deluxe-room/deluxe-room-living-area.jpg",
+        title: "اتاق دلکسه",
+        description:
+          "اتاق‌های دلباز با طراحی ترکیبی از مدرن و سنتی، پنجره‌های بزرگ با نمای باغ یا شهر.",
+      },
+      {
+        id: 2,
+        img: "https://www.xianglahotels.com/content/dam/xiangla/hotels/iran/shiraz/xiang-la-shiraz/dining/persian-restaurant/persian-restaurant-interior.jpg",
+        title: "رستوران ایرانی",
+        description:
+          "رستوران با منوی اصیل شیرازی و فضایی سنتی با معماری ایرانی و موسیقی زنده.",
+      },
+      {
+        id: 3,
+        img: "https://www.xianglahotels.com/content/dam/xiangla/hotels/iran/shiraz/xiang-la-shiraz/wellness/spa/spa-treatment-room.jpg",
+        title: "اسپای سنتی",
+        description:
+          "مرکز اسپا با خدمات ماساژ سنتی ایرانی و حمام سنتی (حمام شیخ بهایی).",
+      },
+    ],
+    lows: {
+      general: ["کارت شناسایی معتبر الزامی است."],
+      cancellation: [
+        "لغو تا 7 روز قبل: بدون جریمه",
+        "لغو 3 تا 7 روز قبل: 30% هزینه",
+        "لغو کمتر از 3 روز قبل: 50% هزینه",
+      ],
+      health: [],
+      notes: ["چک‌این از ساعت 14:00 | چک‌اوت تا 12:00"],
+    },
+    hostTour: {
+      title: "خدمات هتل شیانگ لا",
+      services: [
+        "راهنمای گردشگری",
+        "دسترسی به استخر و سالن ورزشی",
+        "اینترنت پرسرعت",
+        "پارکینگ رایگان",
+      ],
+      conditions: ["حداقل اقامت 2 شب", "پرداخت 30% پیش‌پرداخت"],
+    },
+    comment: [
+      {
+        id: 1,
+        userName: "@ali_shiraz",
+        image: "/images/users/ali3.jpg",
+        description:
+          "هتل موقعیت عالی داره و نزدیک به همه جاذبه‌های اصلی شیرازه. خدماتش هم در سطح استانداردهای بین‌المللی بود.",
+        date: "1401/12/05",
+      },
+      {
+        id: 2,
+        userName: "@narges_culture",
+        image: "/images/users/narges2.jpg",
+        description:
+          "رستوران ایرانی هتل واقعاً عالی بود. غذاهای اصیل شیرازی رو با کیفیت بالا سرو می‌کنن. معماری هتل هم ترکیب جالبی از مدرن و سنتیه.",
+        date: "1402/01/20",
+      },
+    ],
+  },
+
+  // نمونه دهم: هتل فرمانیه تهران
+  {
+    id: 10,
+    title: "هتل فرمانیه تهران",
+    contry: "ایران",
+    categoryTour: "اقامت لوکس",
+    isDomestic: true,
+    img: [
+      "https://www.fermanihotel.com/content/dam/fermani/tehran/fermani-hotel-tehran/exterior/fermani-hotel-tehran-exterior.jpg",
+      "https://www.fermanihotel.com/content/dam/fermani/tehran/fermani-hotel-tehran/accommodation/superior-room/superior-room-living-area.jpg",
+      "https://www.fermanihotel.com/content/dam/fermani/tehran/fermani-hotel-tehran/dining/rooftop-restaurant/rooftop-restaurant-terrace.jpg",
+    ],
+    numbers: 4.4,
+    time: "2 شب",
+    price: 950000,
+    discount: 10,
+    startTour: "1404/2/15",
+    endTour: "1404/2/17",
+    strength: "2 بزرگسال",
+    benefitsItem: [
+      { id: 1, benefits: "صبحانه بوفه", cont: 80000 },
+      { id: 2, benefits: "پارکینگ رایگان", cont: 50000 },
+    ],
+    benefits: [],
+    checkTour: [
+      {
+        id: 1,
+        description:
+          "هتل فرمانیه در منطقه اعیانی فرمانیه تهران، با معماری مدرن و امکانات لوکس، یکی از بهترین انتخاب‌ها برای اقامت در پایتخت است. این هتل با فاصله کم از مراکز تجاری و دیدنی تهران، دسترسی آسان به تمام نقاط شهر را فراهم می‌کند.",
+        features: [
+          { id: 1, icon: PiPizzaLight, title: "رستوران روی پشت بام" },
+          { id: 3, icon: IoWifiSharp, title: "وای فای پرسرعت" },
+          { id: 4, icon: FiCoffee, title: "کافه‌تریا" },
+        ],
+        planDay: [
+          {
+            id: 1,
+            title: "روز اول",
+            description:
+              "ورود به هتل و استقبال. بازدید از برج میلاد و خرید از مراکز تجاری اطراف.",
+          },
+          {
+            id: 2,
+            title: "روز دوم",
+            description:
+              "بازدید از کاخ سعدآباد و مجموعه نیاوران. شام در رستوران روی پشت بام هتل با نمای شهر.",
+          },
+        ],
+      },
+    ],
+    place: [
+      {
+        id: 1,
+        img: "https://www.fermanihotel.com/content/dam/fermani/tehran/fermani-hotel-tehran/accommodation/superior-room/superior-room-living-area.jpg",
+        title: "اتاق سوپریور",
+        description:
+          "اتاق‌های مدرن و دلباز با امکانات کامل، مناسب برای اقامت‌های کاری و تفریحی.",
+      },
+      {
+        id: 2,
+        img: "https://www.fermanihotel.com/content/dam/fermani/tehran/fermani-hotel-tehran/dining/rooftop-restaurant/rooftop-restaurant-terrace.jpg",
+        title: "رستوران روی پشت بام",
+        description:
+          "رستوران با منظره پانوراما از شهر تهران و منوی بین‌المللی و ایرانی.",
+      },
+      {
+        id: 3,
+        img: "https://www.fermanihotel.com/content/dam/fermani/tehran/fermani-hotel-tehran/wellness/fitness-center/fitness-center.jpg",
+        title: "سالن ورزشی",
+        description:
+          "سالن ورزشی مجهز با جدیدترین دستگاه‌های بدنسازی و مربی اختصاصی.",
+      },
+    ],
+    lows: {
+      general: ["کارت شناسایی معتبر الزامی است."],
+      cancellation: [
+        "لغو تا 3 روز قبل: بدون جریمه",
+        "لغو 1 تا 3 روز قبل: 30% هزینه",
+        "لغو کمتر از 24 ساعت قبل: 50% هزینه",
+      ],
+      health: [],
+      notes: ["چک‌این از ساعت 14:00 | چک‌اوت تا 12:00"],
+    },
+    hostTour: {
+      title: "خدمات هتل فرمانیه",
+      services: ["دسترسی به سالن ورزشی", "اینترنت پرسرعت", "پارکینگ رایگان"],
+      conditions: ["حداقل اقامت 1 شب", "پرداخت 30% پیش‌پرداخت"],
+    },
+    comment: [
+      {
+        id: 1,
+        userName: "@reza_tehran",
+        image: "/images/users/reza2.jpg",
+        description:
+          "هتل برای اقامت‌های کاری عالیه. موقعیتش در منطقه فرمانیه خیلی خوبه و دسترسی به مراکز تجاری اصلی راحته.",
+        date: "1401/11/10",
+      },
+      {
+        id: 2,
+        userName: "@fatima_business",
+        image: "/images/users/fatima2.jpg",
+        description:
+          "اتاق‌ها تمیز و مرتب بودند. اینترنت هتل سرعت خوبی داشت که برای کارم خیلی مهم بود. رستوران روی پشت بام هم دید خوبی به شهر داره.",
+        date: "1402/01/05",
+      },
+    ],
+  },
+];

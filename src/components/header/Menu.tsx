@@ -6,7 +6,7 @@ import { IoIosArrowDown } from "react-icons/io";
 export const Menu = (): JSX.Element => {
   return (
     <div className="lg:flex hidden items-center gap-4 *:hover:text-blue-tertiary">
-      <Link to="/">هتل</Link>
+      <Link to="/hotel">هتل</Link>
       <Link className="flex gap-2 items-center" to="/">
         تور داخلی
         <div className=""></div>

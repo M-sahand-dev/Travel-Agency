@@ -22,7 +22,7 @@ export const MenuResponsive = ({
       </div>
 
       <div className="flex flex-col gap-4 *:hover:text-blue-tertiary">
-        <Link to="/">هتل</Link>
+        <Link to="/hotel">هتل</Link>
         <Link className="flex gap-2 items-center" to="/">
           تور داخلی
           <div className=""></div>

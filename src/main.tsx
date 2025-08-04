@@ -15,6 +15,7 @@ import {
   SignUp,
   AboutUs,
   CallUs,
+  HotelTour,
 } from "./components";
 
 createRoot(document.getElementById("root")!).render(
@@ -24,6 +25,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/" element={<App />}>
           <Route index element={<LandingPage />} />
           <Route path="/" element={<App />} />
+          <Route path="/hotel" element={<HotelTour />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/aboutUs" element={<AboutUs />} />
