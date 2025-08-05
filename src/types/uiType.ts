@@ -186,3 +186,87 @@ export interface CompanyValue {
   description: string;
   icon?: string; // Optional icon class or emoji
 }
+
+interface CoverageItem {
+  title: string;
+  description?: string;
+  icon?: string | IconType; // Can be a string for class names or an
+  subText?: string;
+}
+
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+interface TableRow {
+  factor: string;
+  calculation: string;
+}
+
+interface TableData {
+  headers: string[];
+  rows: TableRow[];
+}
+
+interface PricingFactor {
+  title: string;
+  description: string;
+  image: string;
+}
+
+// اینترفیس‌های اصلی
+interface MainBanner {
+  title: string;
+  description: string;
+  image: string;
+}
+
+interface ServicesSection {
+  title: string;
+  description: string;
+  coverages: CoverageItem[];
+}
+
+interface WhatIsInsurance {
+  split(arg0: string): unknown;
+  title: string;
+  description: string;
+  image: string;
+}
+
+interface PurchaseInfo {
+  title: string;
+  description: string;
+  image: string;
+  coverages: CoverageItem[];
+  note?: string;
+}
+
+interface PricingFactors {
+  title: string;
+  description: string;
+  factors: PricingFactor[];
+}
+
+interface CalculationMethod {
+  title: string;
+  description: string;
+  table: TableData;
+  note: string;
+}
+
+interface FAQSection {
+  title: string;
+  items: FAQItem[];
+}
+
+export interface TravelInsuranceData {
+  mainBanner: MainBanner;
+  services: ServicesSection;
+  whatIsInsurance: WhatIsInsurance;
+  purchaseInfo: PurchaseInfo;
+  pricingFactors: PricingFactors;
+  calculationMethod: CalculationMethod;
+  faqs: FAQSection;
+}

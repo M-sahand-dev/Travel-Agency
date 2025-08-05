@@ -33,7 +33,7 @@ export const MenuResponsive = ({
           <div className=""></div>
           <IoIosArrowDown className="inline-block" />
         </Link>
-        <Link to="/">بیمه مسافرتی</Link>
+        <Link to="/travel-insurance">بیمه مسافرتی</Link>
         <Link to="/">سفرنامه</Link>
       </div>
       <div className="border-t-2 border-gray-quaternary pt-4">

@@ -8,3 +8,4 @@ export * from "./aboutUs";
 export * from "./callUs";
 export * from "./hotel";
 export * from "./tourPlace";
+export * from "./travel-insurance";
