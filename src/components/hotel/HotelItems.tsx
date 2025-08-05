@@ -1,10 +1,11 @@
 import { useId, type JSX } from "react";
 import { hotelReservation } from "../../constants";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaPlus, FaStar } from "react-icons/fa";
 
 export const HotelItems = (): JSX.Element => {
   const id = useId();
+  const location = useLocation();
   return (
     <div className="grid grid-cols-3 gap-4 mt-14 max-lg:grid-cols-1">
       {hotelReservation.map((product) => (

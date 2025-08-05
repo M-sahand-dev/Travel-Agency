@@ -17,6 +17,8 @@ import {
   CallUs,
   HotelTour,
 } from "./components";
+import { InternalTour } from "./components/tourPlace/InternalTour.tsx";
+import { ExternalTour } from "./components/tourPlace/ExternalTour.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -26,6 +28,8 @@ createRoot(document.getElementById("root")!).render(
           <Route index element={<LandingPage />} />
           <Route path="/" element={<App />} />
           <Route path="/hotel" element={<HotelTour />} />
+          <Route path="/internal-tour" element={<InternalTour />} />
+          <Route path="/external-tour" element={<ExternalTour />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/aboutUs" element={<AboutUs />} />
