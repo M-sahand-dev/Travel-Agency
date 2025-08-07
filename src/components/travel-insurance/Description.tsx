@@ -5,6 +5,11 @@ import { IoIosArrowDown } from "react-icons/io";
 export const Description = (): JSX.Element => {
   const id = useId();
   const [isExpanded, setIsExpanded] = useState(false);
+  const [showMore, setShowMore] = useState<string | null>(null);
+
+  const handelShowMore = (question: string) => {
+    setShowMore(showMore === question ? null : question);
+  };
   const paragraphs =
     travelInsuranceData.whatIsInsurance.description.split("\n");
   return (
@@ -117,12 +122,67 @@ export const Description = (): JSX.Element => {
               </div>
             ))}
           </div>
+          <p className=" leading-9 text-base text-justify">
+            {travelInsuranceData.purchaseInfo.note}
+          </p>
         </div>
         <img
           src={travelInsuranceData.purchaseInfo.image}
           alt={travelInsuranceData.purchaseInfo.title}
-          className="w-[600px] h-[600px] rounded-2xl max-lg:w-[400px] max-lg:h-[400px] max-md:w-[300px] max-md:h-[300px]"
+          className="w-[600px] h-[600px] rounded-2xl max-lg:w-[400px] max-lg:h-[400px] max-md:w-[300px] max-md:h-[300px] max-lg:hidden"
         />
+      </div>
+      <div className="py-14 flex flex-col items-center ">
+        <h2 className="font-black text-3xl ">
+          {travelInsuranceData.pricingFactors.title}
+        </h2>
+        <p className=" leading-9 text-base text-justify">
+          {travelInsuranceData.pricingFactors.description}
+        </p>
+        <div className=" flex justify-between gap-8 max-lg:flex-wrap max-lg:gap-4 max-lg:justify-center">
+          {travelInsuranceData.pricingFactors.factors.map((pricingFactor) => (
+            <div
+              key={pricingFactor.title}
+              className="flex flex-col gap-4 items-center w-96 text-center">
+              <img src={pricingFactor.image} alt={pricingFactor.title} />
+              <h3 className="">{pricingFactor.title}</h3>
+              <p className=" leading-9 text-base  text-center">
+                {pricingFactor.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="">
+        <h2 className="font-black text-3xl py-8">
+          {travelInsuranceData.faqs.title}
+        </h2>
+        <div className="flex flex-col gap-6">
+          {travelInsuranceData.faqs.items.map((faq, i) => (
+            <div
+              key={id + i}
+              className="border border-dark-secondary p-6 rounded-2xl cursor-pointer">
+              <div
+                onClick={() => handelShowMore(faq.question)}
+                className="flex justify-between gap-4 items-center text-2xl">
+                <h3>{faq.question}</h3>
+                <IoIosArrowDown
+                  className={`transition-transform duration-300 ease-in-out ${
+                    showMore === faq.question ? "rotate-180" : ""
+                  }`}
+                />
+              </div>
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                  showMore === faq.question
+                    ? "max-h-[500px] opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}>
+                <p className="pt-4 leading-9 text-base">{faq.answer}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

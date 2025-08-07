@@ -2540,19 +2540,22 @@ export const travelInsuranceData: TravelInsuranceData = {
         title: "سن مسافر",
         description:
           "به این معنا که هر چه مسافر سن بیشتری داشته باشد، قیمت بیمه مسافرتی او بیشتر می‌شود.",
-        image: "/assets/images/insurance-people-image.svg",
+        image:
+          "/public/image/travel-insurance/insurance-people-image-0a0ef110.svg",
       },
       {
         title: "مدت سفر",
         description:
           "یعنی اگر مسافر مدت بیشتری در مقصد اقامت کند، باید هزینه بیشتری پرداخت کند.",
-        image: "/assets/images/insurance-time-image.svg",
+        image:
+          "/public/image/travel-insurance/insurance-time-image-4c4f16e0.svg",
       },
       {
         title: "مقصد سفر",
         description:
           "منطقه جغرافیایی مقصد سفر شما در قیمت بیمه مسافرتی موثر است؛ به‌عنوان مثال کشورهای آمریکا و کانادا گران‌ترین نرخ بیمه مسافرتی به شمار می‌آیند.",
-        image: "/assets/images/insurance-location-image.svg",
+        image:
+          "/public/image/travel-insurance/insurance-location-image-c8c45af9.svg",
       },
     ],
   },
