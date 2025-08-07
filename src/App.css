@@ -17,7 +17,20 @@
     background-image: url('/public/image/baner/light.png');
     background-repeat: no-repeat;
 }
-
+.btn-icon-area{
+    cursor: pointer;
+    height: 2.5rem;
+    transition-duration: 0.15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    width: 2.5rem;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .1s;
+    display: flex
+;
+}
 
 /* Change to data-set  */
 @custom-variant dark (&:where(.dark, .dark *));

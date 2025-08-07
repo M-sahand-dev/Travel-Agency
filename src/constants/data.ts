@@ -12,6 +12,7 @@ import type {
   CompanyValue,
   TravelInsuranceData,
   Travelogue,
+  DashbordMenuProp,
   // TravelInsuranceData,
 } from "../types";
 import { PiPizzaLight } from "react-icons/pi";
@@ -27,7 +28,17 @@ import {
   FaPlane,
   FaClock,
   FaTimesCircle,
+  FaUser,
+  FaUsers,
+  FaStar,
+  FaDollarSign,
 } from "react-icons/fa";
+import {
+  MdCardTravel,
+  MdOutlineLocalPostOffice,
+  MdPayment,
+} from "react-icons/md";
+import { BiSupport } from "react-icons/bi";
 
 export const iconBar: IIconBar[] = [
   { id: 1, icon: "⛺", title: "کمپ" },
@@ -2823,4 +2834,15 @@ export const travelogues: Travelogue[] = [
     views: 3420,
     likes: 88,
   },
+];
+
+export const dashbordMenu: DashbordMenuProp[] = [
+  { id: 1, title: "حساب کاربری", icon: FaUser },
+  { id: 2, title: "خرید خودکار", icon: MdPayment },
+  { id: 3, title: "سفرهای من", icon: MdCardTravel },
+  { id: 4, title: "لیست مسافران", icon: FaUsers },
+  { id: 5, title: "علاقه‌مندی‌ها", icon: FaStar },
+  { id: 6, title: "درخواست پشتیبانی", icon: BiSupport },
+  { id: 6, title: "تیکت ها", icon: MdOutlineLocalPostOffice },
+  { id: 7, title: "موجودی و اعتبار من", icon: FaDollarSign },
 ];

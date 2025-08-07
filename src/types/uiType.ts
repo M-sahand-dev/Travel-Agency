@@ -291,3 +291,8 @@ export interface Travelogue {
   views: number;
   likes: number;
 }
+export interface DashbordMenuProp {
+  id: number;
+  title: string;
+  icon: IconType;
+}

@@ -19,9 +19,11 @@ import {
   TravelInsurance,
   Itinerary,
   AllProduct,
+  PanelUser,
 } from "./components";
 import { InternalTour } from "./components/tourPlace/InternalTour.tsx";
 import { ExternalTour } from "./components/tourPlace/ExternalTour.tsx";
+// import {tureProduct} from "./constants"
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -38,7 +40,8 @@ createRoot(document.getElementById("root")!).render(
           <Route path="/allproduct" element={<AllProduct />}>
             <Route path="/allproduct/*" element={<AllProduct />} />
           </Route>
-          <Route path="/Login" element={<Login />} />
+          {/*  Updated to use PanelUser */}
+          <Route path="/Login" element={<PanelUser />} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/callUs" element={<CallUs />} />
@@ -52,6 +55,10 @@ createRoot(document.getElementById("root")!).render(
             <Route path="lows" element={<LowsTure />} />
             <Route path="hostTour" element={<HostTour />} />
             <Route path="coment" element={<Coment />} />
+            {/* <Route
+              path="/reserved"
+              // element={<ReservedMenu tureProduct={tureProduct} />}
+            /> */}
           </Route>
           {/* <Route path="/detail/:id" element={<DetailPage />}>
             <Route path="/detail/:id/reserved" element={<ReservedMenu />} />

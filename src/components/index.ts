@@ -11,3 +11,4 @@ export * from "./tourPlace";
 export * from "./travel-insurance";
 export * from "./itinerary";
 export * from "./allproduct";
+export * from "./userPanel";
