@@ -34,7 +34,7 @@ export const MenuResponsive = ({
           <IoIosArrowDown className="inline-block" />
         </Link>
         <Link to="/travel-insurance">بیمه مسافرتی</Link>
-        <Link to="/">سفرنامه</Link>
+        <Link to="/itinerary">سفرنامه</Link>
       </div>
       <div className="border-t-2 border-gray-quaternary pt-4">
         {/* dark mode button */}

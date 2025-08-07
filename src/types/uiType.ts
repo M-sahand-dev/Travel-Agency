@@ -270,3 +270,23 @@ export interface TravelInsuranceData {
   calculationMethod: CalculationMethod;
   faqs: FAQSection;
 }
+
+interface User {
+  name: string;
+  avatar: string;
+  rank: number;
+}
+
+export interface Travelogue {
+  id: number;
+  user: User;
+  title: string;
+  destination: string[];
+  description: string;
+  image: string;
+  date: string;
+  time: string;
+  rating: number;
+  views: number;
+  likes: number;
+}

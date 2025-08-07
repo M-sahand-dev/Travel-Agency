@@ -11,6 +11,7 @@ import type {
   TravelAgencyContent,
   CompanyValue,
   TravelInsuranceData,
+  Travelogue,
   // TravelInsuranceData,
 } from "../types";
 import { PiPizzaLight } from "react-icons/pi";
@@ -2634,3 +2635,192 @@ export const travelInsuranceData: TravelInsuranceData = {
     ],
   },
 };
+export const travelogues: Travelogue[] = [
+  {
+    id: 1,
+    user: {
+      name: "پریسا لطیفیان",
+      avatar: "https://randomuser.me/api/portraits/women/65.jpg",
+      rank: 2,
+    },
+    title: "سفر به بهشت ایران، رامسر زیبا",
+    destination: ["آسیا", "ایران", "استان مازندران", "رامسر"],
+    description:
+      "سفر یعنی جمع کردن تکه‌های شادی از هر گوشه‌ی زمین، از صدای امواج دریا گرفته تا عطر جنگل‌های بارون‌زده...",
+    image:
+      "https://cdn.alibaba.ir/ostorage/alibaba-mag/wp-content/uploads/2019/12/ramsar-attractions-cover.jpg",
+    date: "۱۴ مرداد ۱۴۰۴",
+    time: "12:00",
+    rating: 4.8,
+    views: 3555,
+    likes: 92,
+  },
+  {
+    id: 2,
+    user: {
+      name: "علی مرادی",
+      avatar: "https://randomuser.me/api/portraits/men/33.jpg",
+      rank: 5,
+    },
+    title: "کشف زیبایی‌های کویر لوت",
+    destination: ["آسیا", "ایران", "کرمان", "کویر لوت"],
+    description:
+      "کویر لوت جایی‌ست که شب‌هایش جادویی و ستاره‌هایش دست‌نیافتنی‌اند...",
+    image:
+      "https://www.alibaba.ir/mag/wp-content/uploads/2021/12/%DA%A9%D9%88%DB%8C%D8%B1-%D9%84%D9%88%D8%AA-%D8%AF%D9%82%DB%8C%D9%82%D8%A7-%D8%AF%D8%B1-%DA%A9%D8%AF%D8%A7%D9%85-%D8%A7%D8%B3%D8%AA%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA-%D8%AE%D8%A8%D8%B1%DA%AF%D8%B2%D8%A7%D8%B1%DB%8C-%D8%AC%D9%85%D8%A7%D8%B1%D8%A7%D9%86-.jpg",
+    date: "۱ مرداد ۱۴۰۴",
+    time: "10:30",
+    rating: 4.5,
+    views: 4100,
+    likes: 80,
+  },
+  {
+    id: 3,
+    user: {
+      name: "مهدیه کریمی",
+      avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+      rank: 3,
+    },
+    title: "چالوس؛ در آغوش جنگل و دریا",
+    destination: ["آسیا", "ایران", "مازندران", "چالوس"],
+    description: "با هر قدم در چالوس، صدای جنگل با امواج دریا آمیخته می‌شد...",
+    image:
+      "https://www.iranhotelonline.com/blog/wp-content/uploads/2023/05/1683365111_%D8%AF%DB%8C%D8%AF%D9%86%DB%8C-%D9%87%D8%A7%DB%8C-%D8%AC%D8%A7%D8%AF%D9%87-%DA%86%D8%A7%D9%84%D9%88%D8%B3-jpg.webp",
+    date: "۷ مرداد ۱۴۰۴",
+    time: "14:00",
+    rating: 4.7,
+    views: 2890,
+    likes: 74,
+  },
+  {
+    id: 4,
+    user: {
+      name: "سینا تهرانی",
+      avatar: "https://randomuser.me/api/portraits/men/20.jpg",
+      rank: 4,
+    },
+    title: "شیراز؛ عطر بهارنارنج و شعر",
+    destination: ["آسیا", "ایران", "فارس", "شیراز"],
+    description:
+      "شیراز شهری‌ست که با حافظ آغاز می‌شود و با عطر بهارنارنج تمام...",
+    image:
+      "https://www.farsosareh.com/files/upload/%D8%AF%D8%B1%D9%88%D8%A7%D8%B2%D9%87%20%D9%82%D8%B1%D8%A2%D9%86.jpg",
+    date: "۱۰ مرداد ۱۴۰۴",
+    time: "11:15",
+    rating: 4.9,
+    views: 4780,
+    likes: 112,
+  },
+  {
+    id: 5,
+    user: {
+      name: "الهام رضایی",
+      avatar: "https://randomuser.me/api/portraits/women/50.jpg",
+      rank: 6,
+    },
+    title: "کیش، نگین خلیج فارس",
+    destination: ["آسیا", "ایران", "هرمزگان", "کیش"],
+    description:
+      "جزیره‌ای گرم، پر از انرژی و رنگ در دل آب‌های نیلگون خلیج فارس...",
+    image:
+      "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIQEA8PEBIVFQ8PDw8PDw8QDxAPDw8PFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQGy0dHR0rLS0tLS0tLS0tLSstNS0yLS0tLS0rKy0tLS0tKy0tLS0tLS0tLS0tLS0tLS0tLS0tK//AABEIAMIBBAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAACAAEDBAUGBwj/xABGEAACAQIDBQMIBgYIBwAAAAAAAQIDEQQSIQUTMUFRImGRBhQVUnGBobEjMkLB0fAWYpSi4fEHJFNUZHKT0jNDY3SCksL/xAAZAQEBAQEBAQAAAAAAAAAAAAABAAIDBAX/xAAnEQACAgICAQQCAgMAAAAAAAAAAQIREhMDUSEEIjFBFGGh8AUVgf/aAAwDAQACEQMRAD8A4DILIWso6ij7Z5cSnlHsXN2gXQEsSsmEmSSosDIIUxJhJiUAlERViUg4zFlHUCEkiGokaphxiyo1ZIkPlGjJ80SJoqNWROmA6TLA+ZEDopyosjdJmhmQEmhBpGe6bByFyUkA5I1RzdFXdjqJPZC3Y0BGgkwtywoUBovIKE4ssQoE8aSI0oszsjJI0Gy8qaJYRRGlApQwb6E8MCXYVEh6ldIPJ0UYldYRD5FECpjEVp4lsaYOUUXHJCM5zY44htRXQ4GotThRzyDsLUFNjplRZBJsL3AphxuNDY8YIkjSFBS6FmnDqrAbSshjh7kkcKWo0x27EbxRW3Nh8odWtYp1K5pIy5JE7aI5yRWdRguTNKJyfISyqEbqgDqJrEw5i3jHSbCiiSI0Fgxw7fMd4VhqduAaxLKmauJEqIShYPeXCVnxGitEeYW8HlS6O5HlGgcmSb8bfg5B1AaLJjuswHVZKooLKiorZXzyFZk7SFYaCyFUwlAksKxUVkeUQdhFRWUbjpj5R8p5hBHUQlEIaIFRJYRGTCVQaFMs0pFhVCiqw++YYnRclF11SvVqsidRgsVEy+SwJpkbiTZR1A3RzZBlHyE6gEoCBXUAlAnyBbsaIrqA+QsKmFkGiKygEoFhUx1TGiK+QdUyyqY+7GgK27Fuy0qY+7GiKu7HVItqAWUqGinuh90W8rHysaKinuglSLagwlTZUNFRUglh0Wt0xbllQ+CFYVCJ90xFTNeOjn0h0iVQHUDyGSJIKxKoBKAkQ5RZCdUwlTECBQHUCwqYSpiRXUAlAnVMJUzRFdQCVMsqmEqQ0RWUB1TLSohqiNFRUVMJUy2qQapCVFNUglSLiohKiJUU1SCVIuqiEqI0NFFUglSLyoBKgJUUVSHVIvrDhrDCNGduh1RNOOEuSLAd/wAAtIVBsydyPujY9Hd/wH9HPkWcTWmXRjqiPuzW9Hy6C8xl0LOI6Z9GUqbCVJmn5q1yDjQ7ic0K4n9mXumI2VQEZzN6f2cKoBKBMoBKmeWzjiQqASgTqmGqQliV1TCVMtKkGqRoKKipBqkW40iSNE0iopqkW6eBvRnVvrCpTha2jUoybd+qyrxLuD2c6l+1CKVk5VJqC1v48DTx2y40KUqbq5pupSnlhCWRfRz4yemubS3Tw48nNGLUb8to0oHMqkGqRoRw5JHDnpQUZ6ohqgaMcOHHDjZYmdGgGqBpLDhrDFkixM1UCSOGNJYYNYYsxxM5YV9PgP5t3GpHDhqiGY4mUsOGqBprDhrDhsRYmV5uEsOaiw4Sw5nahxMyNFk8Yy6l7zcfzcHyIVaKNp9Qozl/NF5YcdUTD5EaTa+ypvX6qFvH6qLm4F5uGUTezk7Kef8AVQLXcXXSS4g2j1LJDnyMp5e4RceXqMOYe888jTJI0woxJYwPPmYwLWx9mecVN0pKLcZSi5JtNxV8unDnqM9nVI3cqc0le7cJJK176+5lvYNTd4ijL/qKL/yy7L+DZ6JvrZFrFdqeaLpunKyklCTd30eluWvI83P6uXFJeLTNKCPLo0NG+UdW+SXe+XAkjRPRa+HdTSeXWcXJShSl2ezel9Xh3u71KOIwtNNfRUrKU3JRp7v6KzUaat9Vq6vLW6T0V9OP+0p+YjqONjQJYUC9iqcuLycnJQUkt412mk27J24Xduo1KCel1fjbg0j08H+QhyyxXhk+IgVDRL3+P8jb2vG+dPjfC205biX4lKUVH6zSvonJpfMP0rSrSmlJJucEk2rNU6WVtP2s1z8qzh5/toYwdMrRw5LHDl6FEljQPXtM6ygsOSRw5fWHC834JWv2n7ll/ExLmo0uIpRoBrDlvzWfKUV7Yt/eJUKl0rwcrNvsySy6W59bnOXPVGtJXjhyRYcuQoz5pe642NThTlJLhGTbvayS1ZmfPimy1MrrDBLDF+hTbSbja6T43JlQMb7LWZqw4Sw5pqgGqBl8xazKWHC83NRUAlRMvmLWZaw46w5qKiEqIbh1mYsMLzXvNTci3SM7maUV0ZTwr5Ne9CWGfd8TW3SFukW5j/wyvN33BLDmnu0NkRbSM3zfuXgI08iEW1l7uzxCNZE0ayObWM7ySOO7wykYVHUUKyvH2r5nc7ynUcKrjFtxUoylFOUYzyzcU+KV4Ruv1V0PJsLtBZ4a/aj8zr9hbZhKlGlm7VODk7p3yuzv4zt7jyeqtpPo14OxUYxUFTioxhTyxilZRjomlbguyvAq4iCfB2tGNPScuC4c+PHXnYzIbfhG7U7XurJX0b/PgRvbdFuzla13fLa6Svy9h81sUHXhe+r1lGTtLRJLgr8E+ftZh42jdXvd9pq+V5W32bK32eHzvxLWN25TjTc7SbtZqy5ppPj7DNrbUp/RxbfajGza0vpdfE5uzRVxVG/ZaTjm0jJOy7Pt63177EVCvu5xnFK8b2TcnFppLWPB8OfREmK2nT7TV/tNKzu2n95UpY6DvmUo6aac7639n3ApyXkqOho+VNZfWhBxWrspRsubvcvx8s6ORydOpnS+pFRld9zuro42G04ZpU4p5pU56yjaKjqr/FGfDHxy05ZWoy525tJ2+Z64es54r5sjuMB/SDScstSElq8zVrw14OLsdHW23SSjWjOMqbozlB51HPLNDs68H3HkM8ZB6O7s9NGnH38UVNo4qU0223e6TqWm79VfX3nSHq+Sqf8AJHo+J8sa85TjQyJwvJ2Wd5bacu5vRFV/0hVqcYZqClVcIJvM2nGy+lairK7zaK9tDgqGPqQi4Kbs0k0rWtbrZXLNHHqDamm80ISjeTSWaOvDjrqc3z8qfzZI9H2f5dzXbxMae67EZblTzxlNtrs3elovR2OiflFhq9F7qqm55IpSTi2pNJ2UlrZN+B43V2rStJOLTzttRm7ZdLJJ9937yvT2lkyzjUdou8YuWaMdfV8TcfUcmLUvNifRVK1l7CVNHjGzf6TKtPs11vI8pQtCaV3o19V8unvOr2V5cUcTdU5vMleUJxcZJaL2PjybPbHljJHRJP4O9THTOTj5QRf2viSLb8evxN5I1qZ1Nx7nL+n49Ren49QtBpZ0GExLm6qdvo6rpq1+CjF69+rLOY47C7XUHVei3lRzXessVf4Msen16xiEk0WlnU5gFXi5ON+1FJtdE72+TOY/SD9YqQ219NVm3pOFKN+ri5/iaclaLSzst8vWV+gTmupxdXadOTu2790pR+TKmA2xkq125Sy2hGGaUpXSzc29eJOSTQvhO6VaMuE17rcQkv1vgjkn5SL1gX5Sr1jWSLUzsE+/5CON/SVet8BBaLUzzBeSlfqvGn/uGfkriPyof7jsobIXq+FyZbGi+VgU5P7PlPJHF4fyWxKnFvgpRbTUdUn/AJjZ2bsKtCMIyavGMo6aXTldrR9LL3G8tiJc2SR2ZFdfA5csdiqRRnKPwZ08A8zlaMVdtRSnJJdNZGdPAyi7ucba/Ybvxet132fcdDPZ9Pm/mV54aguN/iedekgje+ZztTDSs4xxGVOGTSlUbtkydONrP2hPAZpX3y+s5a0J3u9Xr7bm5lw/T5jZ8OuS8TX4sOi3S7MOWxZtP6aKbVk9zLTUg/R2pp/WY8O19BN3aejOh3+G9VeIzxGH5xXjcvxoL6HdLswHsGau99BtpJydKSulJu3HvKk9h2yp4il2VZKSloufN93gdTGthvVTGnUw/qLwv9xpenh0y3S7OSlsJtv+tUNeqk/uH9Af4vD914VfnY6eVSjyh+7/AAIpVKfKn+7/AANrgh0W6XZgUPJhKzWMw+a99VUt7OBK/JOUrXxuG0SS1mrJctUbEoRf2fgQOnDmvgP48eg3yM5eRf8AjMK+5TivnIgXka4K0cThrd9eL/8As1t3Dp8BKjB8vE1+PEdsjEqeS/8AisP43Q1HyfqU3eli6CbVnrLVHQRw0AngoPhE1HhS+A2yMujsytGKisRR0SWkpfciR4Cta/nFH/3ki5LBL1QfNV6p0qSHZIqPBV/7xQ/1ZfgKOCr/AN5w/wDrv8C9DC3+wvei5SwUfUj4E2y2S7Myrha08ijiMOskFCTddrM7t3WnevAixGBrwt/WMO/biYxOip7Pj6kfckWlsjN9hfumItxVG85Ps4d77+3w37Xf7iyoVZQio18PmUpuV8RZWajbW3czr4eSyl9mPwJqfkhH1Y+ISn8fo0s/2cLUw+IX/NoP2Yj+Ab304wi69BZbrWu9FZfq+07p+SC5KK94K8ku9e4y+S2m/ofecVHA1mv+Nh2/+8jH4OBG8BiP7XDftkfwO2n5I96t3NkMvJlrr4s1tZVI43zDE/2mH/a4/gI65+T0v1vH+A5bn/UFSNGjtWmvsNFhbYpdGcBHbD6/EhrbZdtPmeSEZJ+09M5xa8o9Ijtql0E9q03wR5YttTXP4kkdvz6o9OMuzxPkXR6PV2hD1UZ2KxcH6pxMtuzfNEU9ryfNBhIM0zpcRUg+aMyu4/m5jz2i+4he0GbUaDwbMIx6/MkVNdUYkdo9wXpPuGnYYo240O9eJNGFuEvic8tq25fEf0v3fE15LFHUUatuMiV4lHKR2s+ga2xLoi8g4HTOqu8HMnyZz0dtT6IkjtufRF5M4m5lXQSh3fAx47YmGtqyHyFM2FBjxi/WMn0lJ80HDHd5pWXk1NeonfqUVj48yWOMgNBbLkZ24/MN4u38yj5xBiVeJUWTNCOPsSR2rb8szfOI9BOsuhYIc5GzDbHt8WSenLdfE5yeKIZYszrQ7ZHUrb3eN6fsco8SxKs2GpDukdU/KMjl5SHMuT6j6lrRbpHSfpRLqI5hxHLAtsjht9LqLfS6sWUdRN4IsmNvWEp94api3RmgsbP3ibY7pjKIGlQ2oSzEkCaCMts6KKIY3JEmWIWJYwvy8DLlRtQKigEqRZjOF7XXXusNWxFOKd5K6+yrtsNiN4EcYBqxD52n9Ra6vtZorT3EM8ZJOzim3wSk7/IlyE4pF0dMhjVvxVn0bV/gR1MQoq9m9bafxNObRmkXEEjP9IQ5yt3NN/IZbUh1t7U1cNoOKNOLYWZmX6ViuMl7oSZI9qU/WVrXTtJe7hoaXIZxRo70W/KFLaUG+Mbf+TfgkS1MdDguj4px+/vJ8qXyZcS3vn1DhWfUo0MdRkm5TyW0XZcsz00VvvLGdaZVJ37mn4G1yxObiXoVHyZJvH1M+ticsXKMXp6zyp+xljC4mMknd66WfG/Q2pozRPmuFGncevOFO28eX28vb0J6Si1eLTT4NO6FcifwVURqgg40CxCmTwpGsiKKwwSw76mjuQlRK0BmPDMRrbkReAo8sQcUBlZJTi+hls0SRQ5JCi+hL5u+hzbIqNg5i48P3EUqJWJCqocayGdIbdBRtSolVVdSPG1p1LRzWjF6Rjovb7RvNiGpSaOcuPI6LlJ6MUk1xT4q9r6gLBp3vL2LpqV+0ht6zk+Fr4Oi5UX3h0leDtbld9rmypjKiklli1lVtfYvvuD5wxTxF9HyMLjaZp8iaM+d76cuAyi0XlNBZl0OuLOVrsoybfFAbtmg5R6CzoMWVrsz1SYai+hdzoTmhxZWuypSg003wers9bdCWpXbUY8oritPzyCuwVFBrZZIanXd7vhzCp4p31110XT2dOQ6SHUUGv8AQWibezlFu9rtLLxCliqqVrppNWvCLtbhyIotE0KgxhJfAPEGptWvP6073VvqxWnThwLGD2jUgklor8Mqs/AjTRZp1F0OihIw6NrCbQm0nyZsYXGt8TmaeJSLVDaFjr5MUdhRqplmCXU5WltUtU9rLqNlidIorqIwo7UXURZFicKrE+HauZiqk1PEtcDTkipnQ0Zr8q5JOUVyMWnjWg3jPzc5UiNCtUT5FSoV54lgSrv8s0kgJmPGxV3neS0Zq51pUFmhu0op/wAyrKKJ61ZZePAz5VA419i2TZIkVTDRfABVB1WOvtZm2RywgHmjLSqhKqWqI5sqRwg06SXMvKoDKGbih1r6M5Ga6aFuu40I4aK5fMPdoyuLsczMVIfdGjukNuh1IsjOdMZ0y+6QG6DWiyKeQfIW1SFui1lkVVANQLCpBKmOBZFdRCJsgsoYFZGpBKYTQ1gxGwo1WGq7IbDWCistLEvqIq2EVFZnriHEQjzI6ksQmxCIBrkcnqIRokGFTeohGgZO+BExCNw+DLBHXAQjQB0yRcBCOkTLDiOIR0MjphoQhQiYSEIgG5jSEIiBEOICEhxCAQRhCBiMwRCMiCxmIQMhhCEZI//Z",
+    date: "۵ مرداد ۱۴۰۴",
+    time: "16:45",
+    rating: 4.4,
+    views: 3245,
+    likes: 65,
+  },
+  {
+    id: 6,
+    user: {
+      name: "سجاد عزیزی",
+      avatar: "https://randomuser.me/api/portraits/men/52.jpg",
+      rank: 7,
+    },
+    title: "تجربه آرامش در ماسوله",
+    destination: ["آسیا", "ایران", "گیلان", "ماسوله"],
+    description: "ماسوله مثل رویاهای قدیمی‌ست که زنده شده‌اند...",
+    image:
+      "https://hamrahtrip.ir/wp-content/uploads/2024/08/%D9%85%D8%A7%D8%B3%D9%88%D9%84%D9%87-780x470.webp",
+    date: "۳ مرداد ۱۴۰۴",
+    time: "09:00",
+    rating: 4.6,
+    views: 2700,
+    likes: 78,
+  },
+  {
+    id: 7,
+    user: {
+      name: "نگار شریفی",
+      avatar: "https://randomuser.me/api/portraits/women/22.jpg",
+      rank: 9,
+    },
+    title: "سفر به دل تاریخ: اصفهان",
+    destination: ["آسیا", "ایران", "اصفهان", "اصفهان"],
+    description: "اصفهان نصف جهان است؛ ترکیبی از تاریخ، هنر و معماری اسلامی...",
+    image:
+      "https://safarmarket.com/blog/data/uploaded_files/425dacd8e1c7fa676e435608.jpg",
+    date: "۸ مرداد ۱۴۰۴",
+    time: "13:30",
+    rating: 5.0,
+    views: 5000,
+    likes: 140,
+  },
+  {
+    id: 8,
+    user: {
+      name: "احمد آذری",
+      avatar: "https://randomuser.me/api/portraits/men/28.jpg",
+      rank: 1,
+    },
+    title: "سفر به تبریز؛ شهر اولین‌ها",
+    destination: ["آسیا", "ایران", "آذربایجان شرقی", "تبریز"],
+    description:
+      "تبریز هم مدرن است و هم اصیل. شهری با تاریخ کهن و مردم مهمان‌نواز...",
+    image:
+      "https://titrplus.com/wp-content/uploads/2024/07/images_1720861029_66924165aeddb.png",
+    date: "۲ مرداد ۱۴۰۴",
+    time: "15:00",
+    rating: 4.2,
+    views: 2190,
+    likes: 55,
+  },
+  {
+    id: 9,
+    user: {
+      name: "فرزانه کیانی",
+      avatar: "https://randomuser.me/api/portraits/women/36.jpg",
+      rank: 8,
+    },
+    title: "سفر به همدان؛ دل در گرو تاریخ",
+    destination: ["آسیا", "ایران", "همدان", "همدان"],
+    description:
+      "آرامگاه بوعلی، غار علیصدر و سرمای دلچسب همدان را از یاد نمی‌برم...",
+    image:
+      "https://files.virgool.io/upload/users/35226/posts/vihbwgcnjnv2/7jezrqybxc9r.jpeg",
+    date: "۶ مرداد ۱۴۰۴",
+    time: "18:20",
+    rating: 4.3,
+    views: 2300,
+    likes: 59,
+  },
+  {
+    id: 10,
+    user: {
+      name: "محمد سلیمانی",
+      avatar: "https://randomuser.me/api/portraits/men/42.jpg",
+      rank: 10,
+    },
+    title: "سفر به یزد؛ شهر بادگیرها",
+    destination: ["آسیا", "ایران", "یزد", "یزد"],
+    description:
+      "کوچه‌های کاه‌گلی، بادگیرهای بلند و آفتاب گرم یزد، همگی در ذهنم مانده‌اند...",
+    image:
+      "https://yazdarghotel.com/wp-content/uploads/2024/04/Sightseeing-places-in-Yazd.jpg",
+    date: "۹ مرداد ۱۴۰۴",
+    time: "17:00",
+    rating: 4.7,
+    views: 3420,
+    likes: 88,
+  },
+];
