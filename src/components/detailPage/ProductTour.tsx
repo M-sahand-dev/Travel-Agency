@@ -1,6 +1,5 @@
 import { type JSX } from "react";
 
-// import { LoremProduct } from "../ui";
 import { productTour } from "../../constants";
 import { v4 as uuidv4 } from "uuid";
 import { ProductBox, TitleProduct } from "../index";
@@ -16,7 +15,6 @@ export const ProductTour = (): JSX.Element => {
             <ProductBox key={id + product.id} {...product} hotel={false} />
           ))}
         </div>
-        {/* <LoremProduct /> */}
       </div>
     </div>
   );
