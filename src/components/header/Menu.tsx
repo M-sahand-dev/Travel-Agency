@@ -19,7 +19,7 @@ export const Menu = (): JSX.Element => {
       </Link>
       <Link to="/travel-insurance">بیمه مسافرتی</Link>
       <Link to="/itinerary">سفرنامه</Link>
-      <Link to="/" className="text-2xl">
+      <Link to="/allproduct" className="text-2xl">
         <RiSearch2Line />
       </Link>
     </div>

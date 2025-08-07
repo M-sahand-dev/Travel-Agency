@@ -18,6 +18,7 @@ import {
   HotelTour,
   TravelInsurance,
   Itinerary,
+  AllProduct,
 } from "./components";
 import { InternalTour } from "./components/tourPlace/InternalTour.tsx";
 import { ExternalTour } from "./components/tourPlace/ExternalTour.tsx";
@@ -34,6 +35,9 @@ createRoot(document.getElementById("root")!).render(
           <Route path="/external-tour" element={<ExternalTour />} />
           <Route path="/travel-insurance" element={<TravelInsurance />} />
           <Route path="/itinerary" element={<Itinerary />} />
+          <Route path="/allproduct" element={<AllProduct />}>
+            <Route path="/allproduct/*" element={<AllProduct />} />
+          </Route>
           <Route path="/Login" element={<Login />} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/aboutUs" element={<AboutUs />} />

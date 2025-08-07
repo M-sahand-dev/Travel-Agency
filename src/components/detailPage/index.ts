@@ -9,4 +9,4 @@ export * from "./Lows";
 export * from "./HostTour";
 export * from "./Coment";
 export * from "./ProductTour";
-export * from "./Title";
+export * from "./TitleProduct";

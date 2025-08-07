@@ -20,7 +20,11 @@ export const MenuResponsive = ({
         <UserBtnPanel />
         <BagBtn />
       </div>
-
+      <Link
+        to={"/allproduct"}
+        className="grid place-items-center bg-blue-primary p-4 rounded-4xl text-white">
+        جستوجو
+      </Link>
       <div className="flex flex-col gap-4 *:hover:text-blue-tertiary">
         <Link to="/hotel">هتل</Link>
         <Link className="flex gap-2 items-center" to="/internal-tour">

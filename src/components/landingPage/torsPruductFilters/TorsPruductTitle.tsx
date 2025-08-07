@@ -1,6 +1,6 @@
 import { type JSX } from "react";
 import { LuSettings2 } from "react-icons/lu";
-import { CategoryMenu } from "./index";
+import { CategoryMenu } from "./CategoryMenu";
 import { HeaderBoxTitle, SeeMoreBtn } from "../../ui";
 
 export const TitleMenu = ({
