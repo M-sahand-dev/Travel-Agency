@@ -153,6 +153,80 @@ export const Description = (): JSX.Element => {
           ))}
         </div>
       </div>
+      <div className="py-14 flex flex-col gap-6">
+        <h2 className="font-black text-3xl ">
+          {travelInsuranceData.calculationMethod.title}
+        </h2>
+        <p className=" leading-9 text-base text-justify">
+          {travelInsuranceData.calculationMethod.description}
+        </p>
+        <div className="overflow-hidden rounded-xl shadow-[var(--shadow-md)] border border-[var(--grays-300)]">
+          <table className="w-full border-collapse ">
+            <thead>
+              <tr className="bg-[var(--secondary-100)]">
+                {travelInsuranceData.calculationMethod.table.headers.map(
+                  (header, index) => (
+                    <th
+                      key={header}
+                      className={`
+              p-4 text-right font-semibold text-[var(--secondary-500)]
+              border-b border-[var(--secondary-300)]
+              ${
+                index === 0
+                  ? "rounded-tr-xl border-l border-[var(--grays-300)] pr-6"
+                  : "rounded-tl-xl border-r border-[var(--grays-300)] pl-6"
+              }
+            `}>
+                      {header}
+                    </th>
+                  )
+                )}
+              </tr>
+            </thead>
+            <tbody>
+              {travelInsuranceData.calculationMethod.table.rows.map(
+                (row, rowIndex) => (
+                  <tr
+                    key={rowIndex}
+                    className={`
+            border-b border-[var(--grays-300)] last:border-b-0
+            ${rowIndex % 2 === 0 ? "" : "bg-[var(--gray-100)]"}
+            hover:bg-[var(--secondary-100)]
+            transition-colors duration-150
+          `}>
+                    <td className="p-5 font-medium text-[var(--grays-700)] place-items-center align-top w-[35%] border-l border-[var(--grays-300)] pr-6">
+                      <span className="flex items-center justify-center gap-2 w-full h-full">
+                        {/* <span className="w-2 h-2 rounded-full bg-[var(--secondary-400)]"></span> */}
+                        {row.factor}
+                      </span>
+                    </td>
+                    <td className="p-5 text-[var(--grays-600)] align-top border-r border-[var(--grays-300)] pl-6">
+                      <div className="flex flex-wrap gap-x-4 gap-y-2">
+                        {row.calculation.split("•").map((item, i) => (
+                          <span
+                            key={i}
+                            className="inline-flex items-center py-1 px-3 rounded-lg bg-[var(--gray-100)] text-[var(--grays-600)] text-sm">
+                            {item.trim()}
+                          </span>
+                        ))}
+                      </div>
+                      {row.factor === "سن مسافر" && (
+                        <p className="mt-3 text-[var(--grays-400)] text-sm italic">
+                          (خیلی از شرکت‌های بیمه ممکن است به افراد بالای ۸۰ یا
+                          ۸۵ سال، بیمه مسافرتی ارائه نکنند.)
+                        </p>
+                      )}
+                    </td>
+                  </tr>
+                )
+              )}
+            </tbody>
+          </table>
+        </div>
+        <p className=" leading-9 text-base text-justify">
+          {travelInsuranceData.calculationMethod.note}
+        </p>
+      </div>
       <div className="">
         <h2 className="font-black text-3xl py-8">
           {travelInsuranceData.faqs.title}
