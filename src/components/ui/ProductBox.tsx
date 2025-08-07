@@ -11,6 +11,7 @@ export const ProductBox = ({
   time,
   price,
   discount,
+  hotel,
 }: ProductTour): JSX.Element => {
   const location = useLocation();
   return (
@@ -29,7 +30,7 @@ export const ProductBox = ({
       <div className="mt-4 p-2">
         <div className="flex justify-between ">
           <Link to={`/detail/${id}${location.search}`} className=" text-2xl">
-            تور {title}
+            {!hotel ? "تور" : ""} {title}
           </Link>
           <p className="flex items-center gap-1">
             <FaStar className="text-yellow-500" />
@@ -57,7 +58,7 @@ export const ProductBox = ({
             </p>
             <span className="font-Rokh text-2xl font-semibold">تومان</span>
             <p className="font-Rokh text-sm font-semibold text-gray-500">
-              هر فرد
+              {hotel ? "هر اتاق ساده" : "هر فرد"}
             </p>
           </div>
           <button

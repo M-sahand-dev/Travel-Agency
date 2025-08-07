@@ -13,7 +13,7 @@ export const ProductTour = (): JSX.Element => {
         <Title />
         <div className=" grid grid-cols-3 max-lg:grid-cols-1 gap-4 mt-8">
           {productTour.map((product) => (
-            <ProductBox key={id + product.id} {...product} />
+            <ProductBox key={id + product.id} {...product} hotel={false} />
           ))}
         </div>
         <LoremProduct />

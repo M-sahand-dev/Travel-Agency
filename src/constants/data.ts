@@ -1235,7 +1235,7 @@ export const hotelReservation: TourProduct[] = [
     categoryTour: "اقامت لوکس",
     isDomestic: false,
     img: [
-      "https://www.burj-al-arab.com/wp-content/uploads/2020/11/Burj-Al-Arab-Exterior-Day.jpg",
+      "https://cdn01.booking.ir/2023/6/b6176703-bb36-4d91-9d94-099f1e6dd224.jpg",
       "https://www.burj-al-arab.com/wp-content/uploads/2020/11/Royal-Two-Bedroom-Suite-Living-Area.jpg",
       "https://www.burj-al-arab.com/wp-content/uploads/2020/11/Al-Mahara-Restaurant.jpg",
     ],
@@ -1381,7 +1381,7 @@ export const hotelReservation: TourProduct[] = [
     categoryTour: "اقامت لوکس",
     isDomestic: false,
     img: [
-      "https://www.marinabaysands.com/content/dam/marinabaysands/singapore/accommodation/hotel-towers/MBS-Hotel-Tower-Exterior.jpg",
+      "https://cdn01.booking.ir/2023/6/b6176703-bb36-4d91-9d94-099f1e6dd224.jpg",
       "https://www.marinabaysands.com/content/dam/marinabaysands/singapore/accommodation/deluxe-room/MBS-Deluxe-Room-King.jpg",
       "https://www.marinabaysands.com/content/dam/marinabaysands/singapore/restaurants/bread-street-kitchen/MBS-Bread-Street-Kitchen-Interior.jpg",
     ],
@@ -1508,7 +1508,7 @@ export const hotelReservation: TourProduct[] = [
     categoryTour: "اقامت لوکس",
     isDomestic: false,
     img: [
-      "https://www.armanihotels.com/content/dam/armani/hotels/dubai/accommodation/armani-deluxe-room/armani-deluxe-room-living-area.jpg",
+      "https://cdn01.booking.ir/2023/6/b6176703-bb36-4d91-9d94-099f1e6dd224.jpg",
       "https://www.armanihotels.com/content/dam/armani/hotels/dubai/dining/armani-hashi/armani-hashi-restaurant.jpg",
       "https://www.armanihotels.com/content/dam/armani/hotels/dubai/wellness/armani-spa/armani-spa-treatment-room.jpg",
     ],
@@ -1632,7 +1632,7 @@ export const hotelReservation: TourProduct[] = [
     categoryTour: "اقامت لوکس",
     isDomestic: false,
     img: [
-      "https://www.shangri-la.com/content/dam/shangri-la/hotels/bangkok/shangrila/dining/restaurants/sala-rim-naam/sala-rim-naam-02.jpg",
+      "https://cdn01.booking.ir/2023/6/b6176703-bb36-4d91-9d94-099f1e6dd224.jpg",
       "https://www.shangri-la.com/content/dam/shangri-la/hotels/bangkok/shangrila/accommodation/deluxe-river-view-room/deluxe-river-view-room-02.jpg",
       "https://www.shangri-la.com/content/dam/shangri-la/hotels/bangkok/shangrila/wellness/chi-spa/chi-spa-01.jpg",
     ],
@@ -1759,7 +1759,7 @@ export const hotelReservation: TourProduct[] = [
     categoryTour: "اقامت اقتصادی",
     isDomestic: false,
     img: [
-      "https://www.richmondhotels.com.tr/wp-content/uploads/2021/05/richmond-nisantasi-hotel-istanbul-exterior.jpg",
+      "https://cdn01.booking.ir/2023/6/b6176703-bb36-4d91-9d94-099f1e6dd224.jpg",
       "https://www.richmondhotels.com.tr/wp-content/uploads/2021/05/deluxe-room-1.jpg",
       "https://www.richmondhotels.com.tr/wp-content/uploads/2021/05/rooftop-restaurant-1.jpg",
     ],
@@ -1873,7 +1873,7 @@ export const hotelReservation: TourProduct[] = [
     categoryTour: "اقامت لوکس",
     isDomestic: false,
     img: [
-      "https://www.theplazany.com/wp-content/uploads/2021/09/The-Plaza-Hotel-Exterior.jpg",
+      "https://cdn01.booking.ir/2023/6/b6176703-bb36-4d91-9d94-099f1e6dd224.jpg",
       "https://www.theplazany.com/wp-content/uploads/2021/09/Grand-Luxury-King-Room.jpg",
       "https://www.theplazany.com/wp-content/uploads/2021/09/Palm-Court-Afternoon-Tea.jpg",
     ],
@@ -2000,7 +2000,7 @@ export const hotelReservation: TourProduct[] = [
     categoryTour: "اقامت لوکس",
     isDomestic: false,
     img: [
-      "https://www.bayantree.com/content/dam/bayantree/hotels/turkey/istanbul/bayan-tree-istanbul/overview/bayan-tree-istanbul-exterior.jpg",
+      "https://cdn01.booking.ir/2023/6/b6176703-bb36-4d91-9d94-099f1e6dd224.jpg",
       "https://www.bayantree.com/content/dam/bayantree/hotels/turkey/istanbul/bayan-tree-istanbul/accommodation/one-bedroom-suite/one-bedroom-suite-living-area.jpg",
       "https://www.bayantree.com/content/dam/bayantree/hotels/turkey/istanbul/bayan-tree-istanbul/dining/rooftop-restaurant/rooftop-restaurant-terrace.jpg",
     ],
@@ -2120,7 +2120,7 @@ export const hotelReservation: TourProduct[] = [
     categoryTour: "اقامت تفریحی",
     isDomestic: false,
     img: [
-      "https://www.atlantis.com/content/dam/atlantis/dubai/atlantis-the-palm/exterior/atlantis-the-palm-exterior.jpg",
+      "https://cdn01.booking.ir/2023/6/b6176703-bb36-4d91-9d94-099f1e6dd224.jpg",
       "https://www.atlantis.com/content/dam/atlantis/dubai/atlantis-the-palm/accommodation/underwater-suite/underwater-suite-living-area.jpg",
       "https://www.atlantis.com/content/dam/atlantis/dubai/atlantis-the-palm/dining/bread-street-kitchen/bread-street-kitchen-interior.jpg",
     ],
@@ -2244,7 +2244,7 @@ export const hotelReservation: TourProduct[] = [
     categoryTour: "اقامت لوکس",
     isDomestic: true,
     img: [
-      "https://www.xianglahotels.com/content/dam/xiangla/hotels/iran/shiraz/xiang-la-shiraz/exterior/xiang-la-shiraz-exterior.jpg",
+      "https://cdn01.booking.ir/2023/6/b6176703-bb36-4d91-9d94-099f1e6dd224.jpg",
       "https://www.xianglahotels.com/content/dam/xiangla/hotels/iran/shiraz/xiang-la-shiraz/accommodation/deluxe-room/deluxe-room-living-area.jpg",
       "https://www.xianglahotels.com/content/dam/xiangla/hotels/iran/shiraz/xiang-la-shiraz/dining/persian-restaurant/persian-restaurant-interior.jpg",
     ],
@@ -2365,7 +2365,7 @@ export const hotelReservation: TourProduct[] = [
     categoryTour: "اقامت لوکس",
     isDomestic: true,
     img: [
-      "https://www.fermanihotel.com/content/dam/fermani/tehran/fermani-hotel-tehran/exterior/fermani-hotel-tehran-exterior.jpg",
+      "https://cdn01.booking.ir/2023/6/b6176703-bb36-4d91-9d94-099f1e6dd224.jpg",
       "https://www.fermanihotel.com/content/dam/fermani/tehran/fermani-hotel-tehran/accommodation/superior-room/superior-room-living-area.jpg",
       "https://www.fermanihotel.com/content/dam/fermani/tehran/fermani-hotel-tehran/dining/rooftop-restaurant/rooftop-restaurant-terrace.jpg",
     ],

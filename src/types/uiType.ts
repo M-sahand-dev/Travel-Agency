@@ -46,6 +46,7 @@ export interface ProductTour {
   time: string;
   price: number;
   discount: number;
+  hotel: boolean;
 }
 
 export interface WhyUsTravelData {
