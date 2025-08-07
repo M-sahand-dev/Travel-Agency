@@ -61,7 +61,7 @@ export const Description = (): JSX.Element => {
           ))}
         </div>
       </div>
-      <div className="py-4 flex max-lg:flex-wrap gap-8 ">
+      <div className="py-4 flex max-lg:flex-wrap gap-8  max-lg:justify-center">
         <img
           src={travelInsuranceData.whatIsInsurance.image}
           alt={travelInsuranceData.whatIsInsurance.title}
@@ -178,7 +178,9 @@ export const Description = (): JSX.Element => {
                     ? "max-h-[500px] opacity-100"
                     : "max-h-0 opacity-0"
                 }`}>
-                <p className="pt-4 leading-9 text-base">{faq.answer}</p>
+                <p className="pt-4 leading-9 text-base text-dark-glass-contrast-3">
+                  {faq.answer}
+                </p>
               </div>
             </div>
           ))}
