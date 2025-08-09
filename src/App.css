@@ -72,6 +72,48 @@
     --color-dark-quinary-4: #2E2E2E;
     --color-dark-quinary-5:#181818;
 
+    /* start style panel */
+        --color-primary-dark: #1a2035;
+    --color-primary-main: #2a3a6a;
+    --color-primary-light: #3a4a8a;
+    --color-primary-contrast: #ffffff;
+
+    --color-secondary-dark: #0d1a3a;
+    --color-secondary-main: #1d2a5a;
+    --color-secondary-light: #2d3a7a;
+    --color-secondary-contrast: #f0f0f0;
+
+    --color-background-default: #121829;
+    --color-background-paper: #1a2035;
+    --color-background-contrast: #2a3a6a;
+
+    --color-text-primary: #e0e0e0;
+    --color-text-secondary: #a0a0a0;
+    --color-text-disabled: #606060;
+    --color-text-contrast: #ffffff;
+
+    --color-status-success: #4caf50;
+    --color-status-error: #f44336;
+    --color-status-warning: #ff9800;
+    --color-status-info: #2196f3;
+
+    --color-border-default: #2a3a6a;
+    --color-border-light: #1a2035;
+    --color-border-dark: #3a4a8a;
+
+    --color-action-hover: rgba(42, 58, 106, 0.5);
+    --color-action-selected: rgba(42, 58, 106, 0.7);
+    --color-action-active: #3a4a8a;
+
+    --shadow-small: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --shadow-large: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+    --radius-small: 4px;
+    --radius-medium: 8px;
+    --radius-large: 12px;
+    --radius-xlarge: 16px;
+    /* end style panel */
 
     --color-dark-glass-contrast: #000000e6;
     --color-dark-glass-contrast-2: #C1C1C133;
