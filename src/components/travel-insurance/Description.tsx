@@ -4,7 +4,6 @@ import { IoIosArrowDown } from "react-icons/io";
 
 export const Description = (): JSX.Element => {
   const id = useId();
-  const [isExpanded, setIsExpanded] = useState(false);
   const [showMore, setShowMore] = useState<string | null>(null);
 
   const handelShowMore = (question: string) => {
@@ -71,26 +70,11 @@ export const Description = (): JSX.Element => {
           <h2 className="font-black text-3xl ">
             {travelInsuranceData.whatIsInsurance.title}
           </h2>
-          {isExpanded ? (
-            paragraphs.map((para, index) => (
-              <p key={index} className=" leading-9 text-base text-justify">
-                {para}
-              </p>
-            ))
-          ) : (
-            <p className=" leading-9 text-base text-justify">{paragraphs[0]}</p>
-          )}
-
-          {paragraphs.length > 1 && (
-            <button
-              onClick={() => setIsExpanded(!isExpanded)}
-              className="mt-4 text-blue-600 hover:text-blue-800 transition-colors cursor-pointer flex items-center gap-1 text-sm md:text-base">
-              {isExpanded ? "نمایش کمتر" : "مطالعه بیشتر"}
-              <IoIosArrowDown
-                className={`transition-transform duration-300 ${isExpanded ? "rotate-180" : ""}`}
-              />
-            </button>
-          )}
+          {paragraphs.map((para, index) => (
+            <p key={index} className=" leading-9 text-base text-justify">
+              {para}
+            </p>
+          ))}
         </div>
       </div>
       <div className="py-4 flex max-lg:flex-wrap gap-8 items-center">
