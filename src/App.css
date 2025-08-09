@@ -3,7 +3,12 @@
 @import 'swiper/css';
 @import 'swiper/css/navigation';
 
-
+:root {
+    --dark-blue-primary: #1e1e1e;
+    --dark-blue-secondary: #1e1e1e;
+    --accent-blue: #5263ff98;
+    --text-color: #0037ff8c;
+}
 
 .discountP{
     background-image: url('/public/image/Vector-.png');
@@ -30,6 +35,25 @@
     transition-duration: .1s;
     display: flex
 ;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark-blue-secondary);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-blue);
+    border-radius: 10px;
+    border: 3px solid var(--dark-blue-secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0037ff8c;
 }
 
 /* Change to data-set  */

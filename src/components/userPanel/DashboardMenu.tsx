@@ -5,7 +5,7 @@ import { dashbordMenu } from "../../constants";
 export const DashboardMenu = (): JSX.Element => {
   const id = useId();
   return (
-    <div className="-right-65 sm:-right-70  fixed top-0 bottom-0 z-50 md:static lg:sticky lg:top-5 lg:h-max overflow-y-auto w-65 sm:w-70 md:w-66 lg:w-70 shrink-0 bg-dark-glass-contrast-3 md:border-l md:border-l-black-10 px-7 py-5 lg:rounded-lg max-md:transition-all max-md:duration-300">
+    <div className="-right-65 sm:-right-70  fixed !h-[calc(100vh-64px)] lg:h-screen  z-50 md:static lg:sticky lg:top-5 overflow-y-auto w-65 sm:w-70 md:w-66 lg:w-70 shrink-0 bg-dark-glass-contrast-3 md:border-l md:border-l-black-10 px-7 py-5 lg:rounded-lg max-md:transition-all max-md:duration-300">
       <div className="">
         <div className="flex items-center justify-between pb-5 mb-5 border-b border-dark-glass-contrast-2">
           <div className="flex items-center gap-x-3">

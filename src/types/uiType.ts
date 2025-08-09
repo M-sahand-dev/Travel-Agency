@@ -296,3 +296,9 @@ export interface DashbordMenuProp {
   title: string;
   icon: IconType;
 }
+export interface HeroMeniItem {
+  id: number;
+  image: string;
+  title: string;
+  name: string;
+}

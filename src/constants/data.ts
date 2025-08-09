@@ -13,6 +13,7 @@ import type {
   TravelInsuranceData,
   Travelogue,
   DashbordMenuProp,
+  HeroMeniItem,
   // TravelInsuranceData,
 } from "../types";
 import { PiPizzaLight } from "react-icons/pi";
@@ -92,6 +93,7 @@ export const productTour: ProductTour[] = [
     time: "3 روز و 4 شب",
     price: 85000000,
     discount: 20,
+    hotel: false,
   },
   {
     id: 2,
@@ -101,6 +103,7 @@ export const productTour: ProductTour[] = [
     time: "3 روز و 4 شب",
     price: 65000000,
     discount: 0,
+    hotel: false,
   },
   {
     id: 3,
@@ -110,6 +113,7 @@ export const productTour: ProductTour[] = [
     time: "3 روز و 4 شب",
     price: 45000000,
     discount: 0,
+    hotel: false,
   },
 ];
 
@@ -2845,4 +2849,31 @@ export const dashbordMenu: DashbordMenuProp[] = [
   { id: 6, title: "درخواست پشتیبانی", icon: BiSupport },
   { id: 6, title: "تیکت ها", icon: MdOutlineLocalPostOffice },
   { id: 7, title: "موجودی و اعتبار من", icon: FaDollarSign },
+];
+
+export const heroMeniItem: HeroMeniItem[] = [
+  {
+    id: 1,
+    image: "/public/image/panel/airplane.png",
+    title: "سفر های من",
+    name: "مسافرت",
+  },
+  {
+    id: 2,
+    image: "/public/image/panel/questions-empty.png",
+    title: "پرسش ها",
+    name: "پرسش",
+  },
+  {
+    id: 3,
+    image: "/public/image/panel/tickets-empty.png",
+    title: "تیکت ها",
+    name: "تیکت",
+  },
+  {
+    id: 4,
+    image: "/public/image/panel/transactions-empty.png",
+    title: "کیف پول",
+    name: "تومان",
+  },
 ];
