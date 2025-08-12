@@ -7,11 +7,23 @@ import { v4 as uuidv4 } from "uuid";
 import { tourProductData } from "../../../constants/data";
 import { Link } from "react-router-dom";
 import type { TourProduct } from "../../../types";
+import { Calendar } from "react-multi-date-picker";
+import type { DateObject } from "react-multi-date-picker";
+import persian from "react-date-object/calendars/persian";
+import persian_fa from "react-date-object/locales/persian_fa";
 
 export const SearchBar = (): JSX.Element => {
   const id = uuidv4();
   const [toggleShape, setToggleShape] = useState(false);
   const [selectPlace, setSelectPlace] = useState<string>("");
+  const [selectedDate, setSelectedDate] = useState<string>("");
+  const [showDatePicker, setShowDatePicker] = useState(false);
+
+  const handleDateChange = (dateObject: DateObject) => {
+    const dateString = dateObject.format("YYYY/MM/DD");
+    setSelectedDate(dateString);
+    setShowDatePicker(false);
+  };
 
   const handleToggle = () => {
     setToggleShape(!toggleShape);
@@ -58,10 +70,30 @@ export const SearchBar = (): JSX.Element => {
             </ul>
           </div>
         </div>
-        <div className="">
-          <BsCalendarDate className="" />
-          <p>تاریخ ورود</p>
-          <IoIosArrowDown className="inline-block" />
+        <div className="relative">
+          <div
+            className="flex items-center gap-2 cursor-pointer"
+            onClick={() => setShowDatePicker(!showDatePicker)}>
+            <BsCalendarDate />
+            <p>{selectedDate || "تاریخ ورود"}</p>
+            <IoIosArrowDown
+              className={`inline-block transition-transform ${
+                showDatePicker ? "rotate-180" : ""
+              }`}
+            />
+          </div>
+
+          {showDatePicker && (
+            <div className="absolute top-full right-0 mt-2 z-10">
+              <Calendar
+                calendar={persian}
+                locale={persian_fa}
+                value={selectedDate}
+                onChange={handleDateChange}
+                className="bg-white dark:bg-dark-primary border dark:border-white-secondary rounded-2xl shadow-lg"
+              />
+            </div>
+          )}
         </div>
         <div className="">
           <BsCalendarDate className="" />
