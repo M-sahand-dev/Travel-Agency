@@ -4,12 +4,14 @@ import { IoIosArrowDown } from "react-icons/io";
 import { BsCalendarDate } from "react-icons/bs";
 import { LuUserRound } from "react-icons/lu";
 import { v4 as uuidv4 } from "uuid";
-import { cityNames } from "../../../constants/data";
+import { tourProductData } from "../../../constants/data";
 import { Link } from "react-router-dom";
+import type { TourProduct } from "../../../types";
 
 export const SearchBar = (): JSX.Element => {
   const id = uuidv4();
   const [toggleShape, setToggleShape] = useState(false);
+  const [selectPlace, setSelectPlace] = useState<string>("");
 
   const handleToggle = () => {
     setToggleShape(!toggleShape);
@@ -22,8 +24,14 @@ export const SearchBar = (): JSX.Element => {
           <CiLocationOn className="" />
 
           <p>
-            <span className="text-red-primary">*</span>
-            مقصد خود را انتخاب کنید
+            {selectPlace ? (
+              selectPlace
+            ) : (
+              <>
+                <span className="text-red-primary">*</span>
+                مقصد خود را انتخاب کنید
+              </>
+            )}
           </p>
           <IoIosArrowDown
             className={`inline-block ${!toggleShape ? "rotate-180" : "rotate-0"}`}
@@ -34,13 +42,18 @@ export const SearchBar = (): JSX.Element => {
     bg-white dark:bg-dark-primary p-4 rounded-2xl 
     transition-all duration-300 ease-in-out`}>
             <ul className="flex flex-col gap-2 *:hover:bg-gray-200 dark:*:hover:bg-gray-950">
-              {cityNames.map((city: string, index: number) => (
-                <li
-                  id={id + city}
+              {tourProductData.map((city: TourProduct, index: number) => (
+                <button
+                  type="button"
+                  id={id + index}
                   key={id + index}
+                  onClick={() => {
+                    setSelectPlace(city.title);
+                    setToggleShape(false);
+                  }}
                   className="w-full px-4 py-2 *:cursor-pointer rounded-2xl">
-                  <button className="">{city}</button>
-                </li>
+                  <button className="">{city.title}</button>
+                </button>
               ))}
             </ul>
           </div>
