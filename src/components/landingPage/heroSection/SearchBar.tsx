@@ -7,8 +7,7 @@ import { v4 as uuidv4 } from "uuid";
 import { tourProductData } from "../../../constants/data";
 import { Link } from "react-router-dom";
 import type { TourProduct } from "../../../types";
-import { Calendar } from "react-multi-date-picker";
-import type { DateObject } from "react-multi-date-picker";
+import Calendar, { DateObject } from "react-multi-date-picker";
 import persian from "react-date-object/calendars/persian";
 import persian_fa from "react-date-object/locales/persian_fa";
 
@@ -17,12 +16,24 @@ export const SearchBar = (): JSX.Element => {
   const [toggleShape, setToggleShape] = useState(false);
   const [selectPlace, setSelectPlace] = useState<string>("");
   const [selectedDate, setSelectedDate] = useState<string>("");
+  const [selectDataOutput, setSelectDataOutput] = useState<string>("");
   const [showDatePicker, setShowDatePicker] = useState(false);
+  const [showDatePickerOutput, setShowDatePickerOutput] = useState(false);
 
   const handleDateChange = (dateObject: DateObject) => {
     const dateString = dateObject.format("YYYY/MM/DD");
     setSelectedDate(dateString);
     setShowDatePicker(false);
+
+    if (selectDataOutput && new Date(selectDataOutput) < new Date(dateString)) {
+      setSelectDataOutput("");
+    }
+  };
+
+  const handleSelectDataOutput = (dateObject: DateObject) => {
+    const dateString = dateObject.format("YYYY/MM/DD");
+    setSelectDataOutput(dateString);
+    setShowDatePickerOutput(false);
   };
 
   const handleToggle = () => {
@@ -82,23 +93,52 @@ export const SearchBar = (): JSX.Element => {
               }`}
             />
           </div>
-
           {showDatePicker && (
             <div className="absolute top-full right-0 mt-2 z-10">
               <Calendar
                 calendar={persian}
                 locale={persian_fa}
                 value={selectedDate}
+                minDate={new Date()}
                 onChange={handleDateChange}
+                onClose={() => setShowDatePicker(false)}
                 className="bg-white dark:bg-dark-primary border dark:border-white-secondary rounded-2xl shadow-lg"
               />
             </div>
           )}
         </div>
-        <div className="">
-          <BsCalendarDate className="" />
-          <p>تاریخ خروج</p>
-          <IoIosArrowDown className="inline-block" />
+        <div className="relative">
+          <div
+            className="flex items-center gap-2 cursor-pointer"
+            onClick={() => {
+              if (!selectedDate) {
+                alert("لطفا ابتدا تاریخ ورود را انتخاب کنید");
+                return;
+              }
+              setShowDatePickerOutput(!showDatePickerOutput);
+            }}>
+            <BsCalendarDate />
+            <p>{selectDataOutput || "تاریخ خروج"}</p>
+            <IoIosArrowDown
+              className={`inline-block transition-transform ${
+                showDatePickerOutput ? "rotate-180" : ""
+              }`}
+            />
+          </div>
+          {showDatePickerOutput && (
+            <div className="absolute top-full right-0 mt-2 z-10">
+              <Calendar
+                calendar={persian}
+                locale={persian_fa}
+                value={selectDataOutput}
+                onChange={handleSelectDataOutput}
+                minDate={
+                  selectedDate ? new DateObject(selectedDate) : undefined
+                }
+                className="bg-white dark:bg-dark-primary border dark:border-white-secondary rounded-2xl shadow-lg"
+              />
+            </div>
+          )}
         </div>
         <div className="">
           <LuUserRound className="" />
