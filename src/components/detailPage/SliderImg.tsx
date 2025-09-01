@@ -2,6 +2,7 @@ import { useId, useState, type JSX } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import type { Swiper as SwiperType } from "swiper"; // تغییر این خط
 import type { TourProduct } from "../../types";
 
 export const SliderImg = ({
@@ -16,6 +17,7 @@ export const SliderImg = ({
   const handleSlideChange = (swiper: SwiperType) => {
     setActiveIndex(swiper.realIndex);
   };
+
   return (
     <div className=" relative w-full">
       <div className="flex absolute z-10 top-8 w-full items-center bg-dark-glass-contrast-2 p-4 rounded-3xl">

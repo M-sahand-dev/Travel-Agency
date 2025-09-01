@@ -10,3 +10,4 @@ export * from "./HostTour";
 export * from "./Coment";
 export * from "./ProductTour";
 export * from "./TitleProduct";
+export * from "./ReviewMenuResponsiv";

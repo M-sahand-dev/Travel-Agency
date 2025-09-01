@@ -1,6 +1,7 @@
 import { type JSX } from "react";
 import { NavLink, Outlet, useParams } from "react-router-dom";
 import { navReview, tourProductData } from "../../constants";
+import { ReviewMenuResponsiv } from "./ReviewMenuResponsiv";
 
 export const Review = (): JSX.Element => {
   const { id } = useParams();
@@ -12,20 +13,21 @@ export const Review = (): JSX.Element => {
   return (
     <div className="">
       <div>
-        <nav className="flex gap-4 items-center">
+        <nav className="flex gap-4 items-center max-sm:hidden">
           {navReview.map((item) => (
             <NavLink
               key={item.id}
               to={item.to.replace(":id", id || "")}
               className={({ isActive }) =>
                 isActive
-                  ? "  border-b-2 border-b-blue-primary p-4 font-bold text-blue-primary  transition duration-200 ease-in-out"
-                  : "p-4 hover:text-gary-primary transition duration-200 ease-in-out"
+                  ? `border-b-2   border-b-blue-primary p-4 font-bold text-blue-primary  transition duration-200 ease-in-out`
+                  : `p-4  hover:text-gary-primary transition duration-200 ease-in-out`
               }>
               {item.name}
             </NavLink>
           ))}
         </nav>
+        <ReviewMenuResponsiv navReview={navReview} />
       </div>
       <Outlet />
     </div>

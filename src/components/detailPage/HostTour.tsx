@@ -8,20 +8,32 @@ export const HostTour = (): JSX.Element => {
   console.log(currentTour);
 
   return (
-    <div>
-      <div className="">
-        <div className=" mb-4 font-black text-xl">
+    <div className=" rounded-lg  p-6">
+      <div className="mb-6">
+        <div className="text-2xl font-bold  mb-4 border-b pb-2">
           {currentTour?.hostTour.title}
         </div>
-        <div className="flex flex-col gap-2">
-          {currentTour?.hostTour.services.map((item: string, i: number) => (
-            <span key={i}>{item}</span>
-          ))}
+
+        <div className="space-y-3 mb-6">
+          <h3 className="font-semibold text-lg ">Services Included:</h3>
+          <ul className="list-disc pl-5 space-y-2 ">
+            {currentTour?.hostTour.services.map((item: string, i: number) => (
+              <li key={i} className="leading-relaxed">
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
-        <div className="flex flex-col gap-2 mt-4">
-          {currentTour?.hostTour.conditions.map((item: string, i: number) => (
-            <span key={i}>{item}</span>
-          ))}
+
+        <div className="space-y-3">
+          <h3 className="font-semibold text-lg ">Conditions:</h3>
+          <ul className="list-disc pl-5 space-y-2 ">
+            {currentTour?.hostTour.conditions.map((item: string, i: number) => (
+              <li key={i} className="leading-relaxed">
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>

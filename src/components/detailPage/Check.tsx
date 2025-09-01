@@ -18,7 +18,7 @@ export const CheckTour = (): JSX.Element => {
       <div className=" flex flex-col gap-8">
         {currentTour?.checkTour.map((item) => (
           <div key={idTour + item.id} className=" flex flex-col gap-8 py-4 ">
-            <p className="text-base">{item.description}</p>
+            <p className="text-base text-justify">{item.description}</p>
             <div className="w-full border border-dark-secondary max-lg:hidden"></div>
             <div className=" max-lg:flex hidden  items-center justify-between dark:bg-dark-quinary-5 p-4">
               <div className=" font-Rokh text-2xl font-bold">
@@ -26,7 +26,7 @@ export const CheckTour = (): JSX.Element => {
               </div>
               <Link
                 className="py-4 px-8 rounded-4xl bg-blue-primary text-white"
-                to={"/reserved"}>
+                to={"/"}>
                 رزرو کنید
               </Link>
             </div>

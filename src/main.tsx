@@ -11,7 +11,7 @@ import {
   LowsTure,
   HostTour,
   Coment,
-  Login,
+  // Login,
   SignUp,
   AboutUs,
   CallUs,
@@ -40,6 +40,7 @@ createRoot(document.getElementById("root")!).render(
           <Route path="/allproduct" element={<AllProduct />}>
             <Route path="/allproduct/*" element={<AllProduct />} />
           </Route>
+
           {/*  Updated to use PanelUser */}
           <Route path="/Login" element={<PanelUser />} />
           <Route path="/signUp" element={<SignUp />} />
@@ -63,6 +64,10 @@ createRoot(document.getElementById("root")!).render(
           {/* <Route path="/detail/:id" element={<DetailPage />}>
             <Route path="/detail/:id/reserved" element={<ReservedMenu />} />
           </Route> */}
+          {/* <Route
+            path="reserved"
+            element={<ReservedMenu tureProduct={tourProductData} />}
+          /> */}
         </Route>
       </Routes>
     </BrowserRouter>
