@@ -23,11 +23,14 @@ export const Login = (): JSX.Element => {
   return (
     <>
       <div className="container mx-auto p-8 flex items-center justify-between max-lg:justify-center max-lg:flex-col h-screen overflow-hidden">
-        <img
-          src={"/public/image/loginPicture.png"}
-          alt="loginPicture"
-          className=" rounded-4xl max-lg:block hidden w-80"
-        />
+        <Link to={"/"}>
+          {" "}
+          <img
+            src={"/image/loginPicture.png"}
+            alt="loginPicture"
+            className=" rounded-4xl max-lg:block hidden w-80"
+          />
+        </Link>
         <div className=" p-4">
           <h1 className="max-lg:hidden mb-12 font-bold text-4xl">خوش آمدید</h1>
           <div className="flex flex-col items-center gap-4 w-80">
@@ -92,11 +95,14 @@ export const Login = (): JSX.Element => {
             </div>
           </div>
         </div>
-        <img
-          src={"/public/image/loginPicture.png"}
-          alt="loginPicture"
-          className=" rounded-4xl max-lg:hidden"
-        />
+        <Link to={"/"}>
+          {" "}
+          <img
+            src={"/image/loginPicture.png"}
+            alt="loginPicture"
+            className=" rounded-4xl max-lg:hidden"
+          />
+        </Link>
       </div>
     </>
   );

@@ -21,7 +21,7 @@ export const DashboardMenu = (): JSX.Element => {
           }}>
           <div className="flex items-center gap-x-3">
             <img
-              src="/public/image/ad2fccd6f19d4f77fe6308520136edbc166eb172.png"
+              src="/image/ad2fccd6f19d4f77fe6308520136edbc166eb172.png"
               alt="name"
               className="w-11 h-11 rounded-full"
               style={{

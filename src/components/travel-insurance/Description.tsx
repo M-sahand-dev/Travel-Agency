@@ -29,7 +29,7 @@ export const Description = (): JSX.Element => {
         />
         <img
           src={
-            "/public/image/travel-insurance/ChatGPT Image Aug 5, 2025, 04_17_29 PM.png"
+            "/image/travel-insurance/ChatGPT Image Aug 5, 2025, 04_17_29 PM.png"
           }
           className="w-[600px] h-[600px] dark:block hidden rounded-2xl max-lg:w-[400px] max-lg:h-[400px] max-md:w-[300px] max-md:h-[300px]"
           alt=""

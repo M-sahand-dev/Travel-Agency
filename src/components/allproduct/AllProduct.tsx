@@ -34,7 +34,7 @@ export const AllProduct = (): JSX.Element => {
     <div>
       <Header />
       <div className="py-14 ">
-        <div className="relative bg-[url('/public/image/hotel/light-Hotel.webp')] dark:bg-[url('/public/image/hotel/dark-Hotel.png')] bg-no-repeat bg-cover bg-center  p-28">
+        <div className="relative bg-[url('/image/hotel/light-Hotel.webp')] dark:bg-[url('/image/hotel/dark-Hotel.png')] bg-no-repeat bg-cover bg-center  p-28">
           <SearchBar />
           <SearchBarResponsive />
         </div>

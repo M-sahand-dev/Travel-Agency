@@ -10,12 +10,12 @@ export const WhyUsTravel = (): JSX.Element => {
       <div className=" relative container mx-auto">
         <img
           className="dark:block absolute z-[-1]"
-          src="/public/image/world.png"
+          src="/image/world.png"
           alt=""
         />
         <img
           className="dark:hidden absolute z-[-1]"
-          src="/public/image/Vector-light.png"
+          src="/image/Vector-light.png"
           alt=""
         />
         <HeaderBoxTitle>چرا سفر کن ❓</HeaderBoxTitle>

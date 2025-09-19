@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "../public/css/stylesheet.css";
+@import "../css/stylesheet.css";
 @import 'swiper/css';
 @import 'swiper/css/navigation';
 
@@ -11,15 +11,15 @@
 }
 
 .discountP{
-    background-image: url('/public/image/Vector-.png');
+    background-image: url('/image/Vector-.png');
     background-repeat: no-repeat;
 }
 .bane-dark {
-    background-image: url('/public/image/baner/dark.png');
+    background-image: url('/image/baner/dark.png');
     background-repeat: no-repeat;
 }
 .bane-light {
-    background-image: url('/public/image/baner/light.png');
+    background-image: url('/image/baner/light.png');
     background-repeat: no-repeat;
 }
 .btn-icon-area{

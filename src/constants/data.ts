@@ -51,25 +51,25 @@ export const iconBar: IIconBar[] = [
 export const dataHeroImg: dataHeroImgType[] = [
   {
     id: 1,
-    img: "/public/image/place/pataya.png",
+    img: "/image/place/pataya.png",
     contry: "تایلند",
     city: "پاتایا",
   },
   {
     id: 2,
-    img: "/public/image/place/malezy.png",
+    img: "/image/place/malezy.png",
     contry: "مالزی",
     city: "مالزی",
   },
   {
     id: 3,
-    img: "/public/image/place/Dubai .png",
+    img: "/image/place/Dubai .png",
     contry: "امارات",
     city: "دبی",
   },
   {
     id: 4,
-    img: "/public/image/place/antalia.png",
+    img: "/image/place/antalia.png",
     contry: "ترکیه",
     city: "انتالیا",
   },
@@ -88,7 +88,7 @@ export const productTour: ProductTour[] = [
   {
     id: 1,
     title: "مالزی",
-    img: "/public/image/place/malezy.png",
+    img: "/image/place/malezy.png",
     numbers: 4.1,
     time: "3 روز و 4 شب",
     price: 85000000,
@@ -98,7 +98,7 @@ export const productTour: ProductTour[] = [
   {
     id: 2,
     title: "دبی",
-    img: "/public/image/place/Dubai .png",
+    img: "/image/place/Dubai .png",
     numbers: 4.9,
     time: "3 روز و 4 شب",
     price: 65000000,
@@ -108,7 +108,7 @@ export const productTour: ProductTour[] = [
   {
     id: 3,
     title: "آنتالیا",
-    img: "/public/image/place/antalia.png",
+    img: "/image/place/antalia.png",
     numbers: 4.1,
     time: "3 روز و 4 شب",
     price: 45000000,
@@ -1026,19 +1026,19 @@ export const whyUsTravelData: WhyUsTravelData[] = [
   {
     id: 1,
     title: "رزرو آنلاین",
-    icon: "/public/image/icon/airplane.png",
+    icon: "/image/icon/airplane.png",
     description: "رزرو آنلاین بلیط هواپیما و هتل با بهترین قیمت و کیفیت",
   },
   {
     id: 2,
     title: "ضمانت بهترین قیمت",
-    icon: "/public/image/icon/duler.png",
+    icon: "/image/icon/duler.png",
     description: "ما بهترین قیمت ها را برای شما تضمین می کنیم",
   },
   {
     id: 3,
     title: "پشتیبانی 24 ساعته",
-    icon: "/public/image/icon/clock.png",
+    icon: "/image/icon/clock.png",
     description:
       "تیم پشتیبانی ما در هر ساعت از شبانه روز آماده پاسخگویی به شماست",
   },
@@ -1086,7 +1086,7 @@ export const commentUser: CommentUser[] = [
     id: 5,
     userName: "@poetry_lover",
     name: "سیدرضا حسینی",
-    image: "/public/image/ad2fccd6f19d4f77fe6308520136edbc166eb172.png",
+    image: "/image/ad2fccd6f19d4f77fe6308520136edbc166eb172.png",
     description: "حافظیه فضای بسیار روح‌نوازی داشت!",
     date: "1402/07/30",
   },
@@ -2486,8 +2486,7 @@ export const travelInsuranceData: TravelInsuranceData = {
     title: "بیمه مسافرتی سامان، همراه همسفران سفر کن",
     description:
       "همسفران سفر کن می‌توانند در سفرهای خود از بیمه مسافرتی سامان استفاده کنند. بیمه مسافرتی سامان هزینه‌های فوریت‌های پزشکی و دندان‌پزشکی، هزینه‌های ناشی از مفقودی چمدان و هزینه خسارات ناشی از کنسلی رویدادهای جهانی (هنری، ورزشی، تجاری و...) را جبران می‌کند. همچنین این بیمه به انتخاب شما می‌تواند جبران سرقت و حوادث منزل در طول سفر را هم به عهده‌ بگیرد.",
-    image:
-      "/public/image/travel-insurance/insurance-homepage-airplane-05b2e311.png",
+    image: "/image/travel-insurance/insurance-homepage-airplane-05b2e311.png",
   },
   services: {
     title: "خدمات بیمه سامان",
@@ -2497,17 +2496,17 @@ export const travelInsuranceData: TravelInsuranceData = {
       {
         title: "پوشش جهانی خدمات درمانی",
         description: "قرارداد با بیش از ۵۵ هزار مرکز درمانی در سراسر دنیا",
-        icon: "/public/image/travel-insurance/globe-logo-8670c22c.svg",
+        icon: "/image/travel-insurance/globe-logo-8670c22c.svg",
       },
       {
         title: "بالاترین نرخ پوشش بیمه",
         description: "بیشترین سقف پوشش تا ۷۰ هزار یورو",
-        icon: "/public/image/travel-insurance/coverage-logo-897d1add.svg",
+        icon: "/image/travel-insurance/coverage-logo-897d1add.svg",
       },
       {
         title: "خدمات پشتیبانی",
         description: "دارای خدمات و پشتیبانی ۲۴ ساعته",
-        icon: "/public/image/travel-insurance/contact-logo-27c5fffd.svg",
+        icon: "/image/travel-insurance/contact-logo-27c5fffd.svg",
       },
     ],
   },
@@ -2516,7 +2515,7 @@ export const travelInsuranceData: TravelInsuranceData = {
     description: `حادثه خبر نمی‌کند!
 هر جا این جمله معروف را بشنویم یاد بیمه می‌افتیم. حقیقتا هم همینطور است. در واقع بیمه راهی است برای جبران خسارت‌های احتمالی. بیمه مسافرتی هم درست مثل همه بیمه‌های عمر و ماشین و آتش‌سوزی و... دقیقا با همین ماموریت تعریف می‌شود و در اختیار مسافران قرار می‌گیرد؛ بیمه‌ای که قرار است با جبران خسارات احتمالی در سفر برای مسافران، مایه آرامش باشد.تصور کنید در سفر و در شرایطی که کیلومترها دور از خانه هستید، خدای نکرده اتفاق خاصی برای شما بیفتد؛ مثلا نیاز فوری به دندان‌پزشکی پیدا کنید یا خدای نکرده بیماری خاصی در سفر برایتان اتفاق بیفتد که نیاز به ویزیت پزشک یا مراجعه به بیمارستان داشته باشید. بیمه مسافرتی طراحی شده تا خسارت‌های مسافر را در صورت بروز چنین اتفاقاتی تا حد زیادی جبران کند.
 البته نکته مهم درباره همه بیمه‌ها از جمله بیمه‌های مسافرتی این است که شرکت‌های بیمه‌گذار براساس چند فاکتور مختلف ممکن است خدمات متفاوتی به مسافر بدهند که هر کدام از این خدمات هم سقف و محدوده خدمات متفاوتی دارد. بر همین اساس، قیمت هر بیمه مسافرتی هم با دیگری متفاوت است. در ادامه و در همین صفحه درباره این شرایط بیشتر صحبت کرده‌ایم.مهم است که هنگام خرید بیمه مسافرتی به بندهای قرارداد توجه کنید و آن بیمه‌ای را انتخاب کنید که بیشتر از همه با شرایط و خواسته‌های شما جور است. اینکه چه‌جور سفری می‌روید، در انتخاب بیمه مسافرتی مناسب تاثیر دارد؛ مثلا در سفرهای خارجی بهتر است بیمه‌هایی را انتخاب کنید که روی خدمات بیشتری تمرکز دارند.خرید بیمه مسافرتی برای سفر به کشورهایی که نیاز به این بیمه ندارند هم مقرون‌به‌صرفه تمام می‌شود، چون شما در ازای پرداخت حق بیمه بسیار مناسب، خدمات قابل توجهی در حوزه بیمه دریافت خواهید کرد.شرکت‌های بیمه‌گذار با توجه به شرایط شما، می‌توانند بهترین نوع بیمه مسافرتی را به شما معرفی کنند. بنابراین نیازی نیست نگران چگونگی انتخاب نوع بیمه مسافرتی باشید.در ادامه این مطلب، درباره راه‌های خرید بیمه مسافرتی به شکلی مطمئن، قیمت بیمه مسافرتی، سقف بیمه مسافرتی و پوشش انواع خدمات صبحت کرده‌ایم و به پرسش‌های پرتکرار شما درباره بیمه مسافرتی پاسخ داده‌ایم.`,
-    image: "/public/image/travel-insurance/Untitled-1.png",
+    image: "/image/travel-insurance/Untitled-1.png",
     split: function (): unknown {
       throw new Error("Function not implemented.");
     },
@@ -2525,8 +2524,7 @@ export const travelInsuranceData: TravelInsuranceData = {
     title: "خرید بیمه مسافرتی",
     description:
       "خرید بیمه مسافرتی برای بسیاری از سفرها اجباری نیست و این حق انتخاب برای مسافر وجود دارد که در سفرهایش بیمه بگیرد یا خیر؛ اما نکته‌ای که مسافران سفرهای خارجی باید در نظر داشته باشند این است که گرفتن بیمه مسافرتی برای بسیاری از کشورهای خارجی (گرفتن ویزا، مخصوصا شینگن) ضروری است که حتما باید آن بیمه را از یک شرکت معتبر بیمه مسافرتی دریافت کرده باشید. برای خرید بیمه مسافرتی، لازم است که قبل از سفر به یک شرکت بیمه که خدمات بیمه مسافرتی ارائه می‌کند مراجعه کنید یا با سفر کن ارتباط بگیرید. اگر همسفر سفر کن باشید، خرید بیمه مسافرتی سامان از سفر کن، کار به‌صرفه‌تر و سریع‌تری است؛ چرا که بدون دردسر و با پشتیبانی 24 ساعته سفر کن در هفت روز هفته، می‌توانید به‌سرعت بیمه متناسب با شرایطتان را پیدا و خریداری کنید.",
-    image:
-      "/public/image/travel-insurance/Made with insMind-Untitled design.png",
+    image: "/image/travel-insurance/Made with insMind-Untitled design.png",
     coverages: [
       { title: "دندان‌پزشکی", icon: FaTooth },
       { title: "فوریت‌ پزشکی", icon: FaMedkit },
@@ -2556,22 +2554,19 @@ export const travelInsuranceData: TravelInsuranceData = {
         title: "سن مسافر",
         description:
           "به این معنا که هر چه مسافر سن بیشتری داشته باشد، قیمت بیمه مسافرتی او بیشتر می‌شود.",
-        image:
-          "/public/image/travel-insurance/insurance-people-image-0a0ef110.svg",
+        image: "/image/travel-insurance/insurance-people-image-0a0ef110.svg",
       },
       {
         title: "مدت سفر",
         description:
           "یعنی اگر مسافر مدت بیشتری در مقصد اقامت کند، باید هزینه بیشتری پرداخت کند.",
-        image:
-          "/public/image/travel-insurance/insurance-time-image-4c4f16e0.svg",
+        image: "/image/travel-insurance/insurance-time-image-4c4f16e0.svg",
       },
       {
         title: "مقصد سفر",
         description:
           "منطقه جغرافیایی مقصد سفر شما در قیمت بیمه مسافرتی موثر است؛ به‌عنوان مثال کشورهای آمریکا و کانادا گران‌ترین نرخ بیمه مسافرتی به شمار می‌آیند.",
-        image:
-          "/public/image/travel-insurance/insurance-location-image-c8c45af9.svg",
+        image: "/image/travel-insurance/insurance-location-image-c8c45af9.svg",
       },
     ],
   },
@@ -2854,25 +2849,25 @@ export const dashbordMenu: DashbordMenuProp[] = [
 export const heroMeniItem: HeroMeniItem[] = [
   {
     id: 1,
-    image: "/public/image/panel/airplane.png",
+    image: "/image/panel/airplane.png",
     title: "سفر های من",
     name: "مسافرت",
   },
   {
     id: 2,
-    image: "/public/image/panel/questions-empty.png",
+    image: "/image/panel/questions-empty.png",
     title: "پرسش ها",
     name: "پرسش",
   },
   {
     id: 3,
-    image: "/public/image/panel/tickets-empty.png",
+    image: "/image/panel/tickets-empty.png",
     title: "تیکت ها",
     name: "تیکت",
   },
   {
     id: 4,
-    image: "/public/image/panel/transactions-empty.png",
+    image: "/image/panel/transactions-empty.png",
     title: "کیف پول",
     name: "تومان",
   },

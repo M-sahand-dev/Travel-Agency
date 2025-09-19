@@ -6,13 +6,13 @@ import { aboutTravelAgency, companyValues } from "../../constants";
 export const AboutDiscription = (): JSX.Element => {
   return (
     <div className="mx-auto">
-      <div className="dark:bg-[url('/public/image/world.png')] bg-[url('/public/image/Vector-light.png')] h-full  bg-no-repeat bg-cover  bg-center flex  items-center p-24 text-4xl  text-white ">
+      <div className="dark:bg-[url('/image/world.png')] bg-[url('/image/Vector-light.png')] h-full  bg-no-repeat bg-cover  bg-center flex  items-center p-24 text-4xl  text-white ">
         <div className=" flex bg-dark-glass-contrast-3 rounded-2xl w-full p-4  gap-4 relative top-32 border border-gary-tertiary">
           <h1>درباره</h1>
           <Link
             to={"/"}
             className="flex gap-1 font-Rokh font-black pr-0.5 items-center w-20">
-            <img src={"../../../public/image/Vector.png"} className="w-5 h-5" />
+            <img src={"../../../image/Vector.png"} className="w-5 h-5" />
             <span className="">سفرکن</span>
           </Link>
         </div>
